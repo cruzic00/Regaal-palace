@@ -71,6 +71,10 @@ html.light {
 
   body {
     @apply bg-ink font-sans text-[15px] leading-relaxed text-white/65 antialiased;
+    /* Reveal animations start translated past the edge. `clip` contains them
+       without creating a scroll container, so position: sticky still works —
+       `hidden` would break the room-detail sidebar. */
+    overflow-x: clip;
   }
 
   h1,

@@ -80,16 +80,16 @@ export default function Header() {
         scrolled ? 'bg-ink/95 py-3 shadow-xl backdrop-blur' : 'on-photo py-7'
       }`}
     >
-      <div className="container-x flex items-center justify-between gap-8">
+      <div className="container-x flex items-center justify-between gap-4 lg:gap-8">
         <Logo compact={scrolled} />
 
-        <nav className="hidden items-center gap-9 xl:flex">
+        <nav className="hidden items-center gap-6 lg:flex xl:gap-9">
           {nav.map((item) => (
             <NavItem key={item.label} item={item} />
           ))}
         </nav>
 
-        <div className="flex items-center gap-5">
+        <div className="flex items-center gap-3 sm:gap-5">
           <button
             type="button"
             onClick={toggleTheme}
@@ -111,7 +111,7 @@ export default function Header() {
             type="button"
             onClick={() => setOpen((v) => !v)}
             aria-label={open ? 'Close menu' : 'Open menu'}
-            className="text-white xl:hidden"
+            className="text-white lg:hidden"
           >
             {open ? <X className="size-6" /> : <Menu className="size-6" />}
           </button>
@@ -120,7 +120,7 @@ export default function Header() {
 
       {/* Mobile drawer */}
       <div
-        className={`fixed inset-y-0 right-0 z-50 w-80 overflow-y-auto bg-ink-soft px-8 py-8 transition-transform duration-500 xl:hidden ${
+        className={`fixed inset-y-0 right-0 z-50 w-80 overflow-y-auto bg-ink-soft px-8 py-8 transition-transform duration-500 lg:hidden ${
           open ? 'translate-x-0' : 'translate-x-full'
         }`}
       >

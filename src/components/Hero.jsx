@@ -59,10 +59,10 @@ export default function Hero() {
                     <Star key={s} className="size-4 fill-gold text-gold" />
                   ))}
                 </div>
-                <p className="font-display text-sm tracking-[0.3em] text-white uppercase">
+                <p className="font-display text-xs tracking-[0.25em] text-white uppercase sm:text-sm sm:tracking-[0.3em]">
                   Luxury Hotel and Resort
                 </p>
-                <h1 className="mx-auto mt-5 max-w-5xl font-display text-5xl leading-[1.08] font-medium tracking-wide text-white uppercase sm:text-6xl lg:text-[80px]">
+                <h1 className="mx-auto mt-5 max-w-5xl font-display text-[2.1rem] leading-[1.1] font-medium tracking-wide text-white uppercase sm:text-5xl md:text-6xl lg:text-[68px] xl:text-[80px]">
                   The Best Luxury Hotel
                   <span className="block">{slide.place}</span>
                 </h1>
