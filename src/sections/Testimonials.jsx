@@ -1,5 +1,10 @@
 import { Quote, Star } from 'lucide-react'
-import { Reveal, SectionHeading } from '../components/ui'
+import {
+  Reveal,
+  SectionHeading,
+  spreadFromCentre,
+  spreadFromCentreDelays,
+} from '../components/ui'
 import { lead, testimonials } from '../data/site'
 
 export default function Testimonials() {
@@ -12,7 +17,12 @@ export default function Testimonials() {
 
         <div className="mt-14 grid gap-8 lg:grid-cols-3">
           {testimonials.map((item, i) => (
-            <Reveal key={item.name} delay={i * 120}>
+            <Reveal
+              key={item.name}
+              variant="emerge"
+              delay={spreadFromCentreDelays[i]}
+              className={spreadFromCentre[i]}
+            >
               <figure className="relative h-full border border-white/10 bg-ink p-8 transition-colors duration-500 hover:border-gold/40">
                 <Quote className="absolute top-6 right-7 size-9 text-gold/25" />
                 <div className="mb-5 flex gap-1">

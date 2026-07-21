@@ -5,14 +5,30 @@ import { Link } from 'react-router-dom'
 const restingState = {
   up: { transform: 'translateY(38px)', filter: 'blur(12px)' },
   'up-far': { transform: 'translateY(120px)', filter: 'blur(14px)' },
+  // Falls in from above — stagger a row of these and it plays like piano keys.
+  drop: { transform: 'translateY(-70px)', filter: 'blur(12px)' },
   left: { transform: 'translateX(-56px)', filter: 'blur(12px)' },
   right: { transform: 'translateX(56px)', filter: 'blur(12px)' },
+  'right-far': { transform: 'translateX(180px)', filter: 'blur(14px)' },
   zoom: { transform: 'scale(1.1)', filter: 'blur(16px)' },
-  emerge: { transform: 'translateX(var(--spread-x, 0px)) scale(0.82)', filter: 'blur(14px)' },
+  // --spread-x/y let a caller start a card on top of a sibling, so a grid can
+  // look like each card unpacked out of the one before it.
+  emerge: {
+    transform: 'translate(var(--spread-x, 0px), var(--spread-y, 0px)) scale(0.82)',
+    filter: 'blur(14px)',
+  },
   blur: { transform: 'none', filter: 'blur(20px)' },
 }
 
 const arrivedState = { transform: 'none', filter: 'blur(0px)' }
+
+/**
+ * Makes a three-up row unpack outwards from its middle card: the centre zooms in
+ * alone, then the outer two travel out from behind it. 108% is one card width
+ * plus the gap. Only applies at lg, where the three are actually side by side.
+ */
+export const spreadFromCentre = ['lg:[--spread-x:108%]', '', 'lg:[--spread-x:-108%]']
+export const spreadFromCentreDelays = [220, 0, 220]
 
 /**
  * Animates a block whenever it enters the viewport, and plays the same motion

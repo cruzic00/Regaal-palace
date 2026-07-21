@@ -3,6 +3,12 @@ import { ArrowRight, CalendarDays } from 'lucide-react'
 import { Reveal, SectionHeading } from '../components/ui'
 import { lead, posts } from '../data/site'
 
+/**
+ * Both trailing posts start stacked on the first card and deal out to the right.
+ * One step is a card width plus the gap; lg only, where the row is three across.
+ */
+const fan = ['', 'lg:[--spread-x:-108%]', 'lg:[--spread-x:-216%]']
+
 export default function Blog() {
   return (
     <section className="py-24 lg:py-32">
@@ -13,7 +19,7 @@ export default function Blog() {
 
         <div className="mt-14 grid gap-8 md:grid-cols-3">
           {posts.map((post, i) => (
-            <Reveal key={i} delay={i * 120}>
+            <Reveal key={i} variant="emerge" delay={i * 180} className={fan[i]}>
               <article className="group h-full bg-ink-soft">
                 <div className="relative overflow-hidden">
                   <img

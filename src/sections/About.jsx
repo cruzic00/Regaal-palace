@@ -9,20 +9,33 @@ export default function About() {
   return (
     <section className="bg-ink-soft py-24 lg:py-32">
       <div className="container-x grid items-center gap-14 lg:grid-cols-2 lg:gap-20">
-        <Reveal variant="left" className="relative">
-          <img
-            src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=80"
-            alt="Poolside at the resort"
-            loading="lazy"
-            className="aspect-4/5 w-full object-cover"
-          />
-          <img
-            src="https://images.unsplash.com/photo-1445019980597-93fa8acb246c?auto=format&fit=crop&w=800&q=80"
-            alt="Hotel lobby"
-            loading="lazy"
-            className="absolute -right-4 bottom-8 hidden aspect-square w-52 border-8 border-ink-soft object-cover sm:block lg:-right-10 lg:w-64"
-          />
-        </Reveal>
+        <div className="relative">
+          <Reveal variant="left">
+            <div className="group overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=80"
+                alt="Poolside at the resort"
+                loading="lazy"
+                className="aspect-4/5 w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
+              />
+            </div>
+          </Reveal>
+
+          <Reveal
+            variant="right-far"
+            delay={220}
+            className="absolute -right-4 bottom-8 hidden w-52 sm:block lg:-right-10 lg:w-64"
+          >
+            <div className="group overflow-hidden border-8 border-ink-soft">
+              <img
+                src="https://images.unsplash.com/photo-1445019980597-93fa8acb246c?auto=format&fit=crop&w=800&q=80"
+                alt="Hotel lobby"
+                loading="lazy"
+                className="aspect-square w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
+              />
+            </div>
+          </Reveal>
+        </div>
 
         <Reveal variant="right" delay={120}>
           <p className="eyebrow mb-4">Luxury Hotel and Resort</p>

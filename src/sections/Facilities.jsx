@@ -2,6 +2,18 @@ import { ArrowUpRight } from 'lucide-react'
 import { Button, Reveal } from '../components/ui'
 import { facilities, facilityBlurb } from '../data/site'
 
+/**
+ * A 2x2 grid that unpacks one card at a time: each card starts sitting on the
+ * previous one and walks to its own cell. Offsets are one cell + gap, and only
+ * apply from sm up, where the second column actually exists.
+ */
+const chain = [
+  '', // card 1 just zooms into place
+  'sm:[--spread-x:-105%]', // from card 1, to its left
+  'sm:[--spread-x:105%] sm:[--spread-y:-110%]', // from card 2, up and right
+  'sm:[--spread-x:-105%]', // from card 3, to its left
+]
+
 export default function Facilities() {
   return (
     <section className="bg-ink-soft py-24 lg:py-32">
@@ -20,7 +32,7 @@ export default function Facilities() {
 
         <div className="mt-14 grid gap-8 sm:grid-cols-2">
           {facilities.map((item, i) => (
-            <Reveal key={item.no} variant="zoom" delay={i * 110}>
+            <Reveal key={item.no} variant="emerge" delay={i * 200} className={chain[i]}>
               <article className="on-photo group relative h-full overflow-hidden">
                 <img
                   src={item.image}

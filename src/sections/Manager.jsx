@@ -5,11 +5,12 @@ import { manager } from '../data/site'
 export default function Manager() {
   return (
     <section className="on-photo relative overflow-hidden py-24 lg:py-32">
-      <img
-        src={manager.image}
-        alt=""
-        loading="lazy"
-        className="absolute inset-0 size-full object-cover"
+      {/* Pinned to the viewport rather than the section, so the section scrolls
+          over a stationary photo. iOS ignores fixed attachment, hence md: up. */}
+      <div
+        aria-hidden="true"
+        className="absolute inset-0 bg-scroll bg-cover bg-center md:bg-fixed"
+        style={{ backgroundImage: `url(${manager.image})` }}
       />
       <div className="absolute inset-0 bg-scrim/85" />
 

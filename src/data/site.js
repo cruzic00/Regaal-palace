@@ -29,15 +29,6 @@ export const nav = [
     ],
   },
   {
-    label: 'Page',
-    to: '/about',
-    children: [
-      { label: 'About Hotel', to: '/about' },
-      { label: 'Reservations', to: '/rooms' },
-      { label: 'Contact Us', to: '/contact' },
-    ],
-  },
-  {
     label: 'Blog',
     to: '/blog',
     children: [

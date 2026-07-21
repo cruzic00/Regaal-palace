@@ -2,6 +2,17 @@ import { Link } from 'react-router-dom'
 import { Reveal, SectionHeading } from '../components/ui'
 import { offers } from '../data/site'
 
+/**
+ * All four start stacked on the first card and fan out to their own column, so
+ * the row reads as dealing cards off a pile. One step is a card width + gap.
+ */
+const fan = [
+  '',
+  'lg:[--spread-x:-108%]',
+  'lg:[--spread-x:-216%]',
+  'lg:[--spread-x:-324%]',
+]
+
 export default function Offers() {
   return (
     <section className="py-24 lg:py-32">
@@ -12,7 +23,7 @@ export default function Offers() {
 
         <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {offers.map((offer, i) => (
-            <Reveal key={offer.name} variant="zoom" delay={i * 100}>
+            <Reveal key={offer.name} variant="emerge" delay={i * 150} className={fan[i]}>
               <Link to="/rooms" className="on-photo group relative block overflow-hidden">
                 <img
                   src={offer.image}
