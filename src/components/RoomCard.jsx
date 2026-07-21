@@ -31,7 +31,7 @@ export default function RoomCard({ room }) {
             {room.name}
           </Link>
         </h3>
-        <div className="mt-5 flex items-center gap-6 border-t border-white/10 pt-5 text-sm">
+        <div className="mt-5 flex items-center gap-6 border-t border-line pt-5 text-sm">
           <span className="flex items-center gap-2">
             <Maximize className="size-4 text-gold" />
             {room.size}

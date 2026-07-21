@@ -1,4 +1,4 @@
-﻿import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { ArrowRight, CalendarDays } from 'lucide-react'
 import { Reveal, SectionHeading } from '../components/ui'
 import { lead, posts } from '../data/site'
@@ -33,7 +33,7 @@ export default function Blog() {
                   </span>
                 </div>
                 <div className="p-7">
-                  <p className="flex items-center gap-2 text-sm text-white/50">
+                  <p className="flex items-center gap-2 text-sm text-muted">
                     <CalendarDays className="size-4 text-gold" />
                     {post.date}
                   </p>

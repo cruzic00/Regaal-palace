@@ -24,14 +24,44 @@
 /* Lets any utility be scoped to the light theme, e.g. `light:opacity-[0.04]`. */
 @custom-variant light (html.light &);
 
+/*
+ * Secondary text needs a different mix per theme: white at 45% over near-black
+ * still reads, but black at 45% over white washes out to grey. These three
+ * strengths let `text-muted` / `text-faint` / `border-line` stay legible in both
+ * without every component carrying a light: override.
+ */
+:root {
+  color-scheme: dark;
+  --tone-muted: 55%;
+  --tone-faint: 42%;
+  --tone-line: 12%;
+}
+
 /* The sun toggle in the header stamps .light on <html>. Flipping --color-white
    is what carries the theme: every `text-white` utility reads that variable. */
 html.light {
-  --color-ink: #ffffff;
-  --color-ink-soft: #f6f2ec;
-  --color-ink-line: #e3dcd2;
-  --color-white: #17120d;
-  --color-gold: #a97c50;
+  color-scheme: light;
+  --color-ink: #fdfbf7;
+  --color-ink-soft: #f2ece2;
+  --color-ink-line: #e0d7c9;
+  --color-white: #191410;
+  --color-gold: #a4753f;
+  --color-gold-light: #8a6033;
+  --tone-muted: 66%;
+  --tone-faint: 52%;
+  --tone-line: 18%;
+}
+
+@utility text-muted {
+  color: color-mix(in oklab, var(--color-white) var(--tone-muted), transparent);
+}
+
+@utility text-faint {
+  color: color-mix(in oklab, var(--color-white) var(--tone-faint), transparent);
+}
+
+@utility border-line {
+  border-color: color-mix(in oklab, var(--color-white) var(--tone-line), transparent);
 }
 
 @keyframes ken-burns {
@@ -97,6 +127,12 @@ html.light {
 @utility on-photo {
   --color-white: #ffffff;
   --color-gold: #c19977;
+  --color-gold-light: #d8b795;
+  /* Back to the dark-theme mixes: a scrimmed photo is always light-on-dark,
+     whichever theme the rest of the page is in. */
+  --tone-muted: 55%;
+  --tone-faint: 42%;
+  --tone-line: 12%;
   color: rgb(255 255 255 / 0.72);
 }
 

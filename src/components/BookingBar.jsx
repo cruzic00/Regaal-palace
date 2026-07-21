@@ -1,9 +1,10 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
-const labelCls = 'mb-2 block font-display text-base tracking-wide text-white/55'
-const inputCls =
-  'w-full bg-transparent font-display text-lg text-white [color-scheme:dark] focus:outline-none'
+const labelCls = 'mb-2 block font-display text-base tracking-wide text-muted'
+// No [color-scheme] here — :root sets it per theme, so the native date picker
+// follows the sun toggle instead of always rendering dark.
+const inputCls = 'w-full bg-transparent font-display text-lg text-white focus:outline-none'
 
 const today = new Date().toISOString().slice(0, 10)
 const tomorrow = new Date(Date.now() + 864e5).toISOString().slice(0, 10)

@@ -44,7 +44,7 @@ function NavItem({ item }) {
             <li key={`${child.label}-${i}`}>
               <Link
                 to={child.to}
-                className="block px-6 py-2.5 text-sm text-white/75 transition-colors duration-200 hover:bg-gold hover:text-scrim"
+                className="block px-6 py-2.5 text-sm text-muted transition-colors duration-200 hover:bg-gold hover:text-scrim"
               >
                 {child.label}
               </Link>
@@ -146,12 +146,12 @@ export default function Header() {
                 {item.label}
               </NavLink>
               {item.children && (
-                <ul className="mt-3 ml-4 space-y-2 border-l border-white/15 pl-4">
+                <ul className="mt-3 ml-4 space-y-2 border-l border-line pl-4">
                   {item.children.map((child, i) => (
                     <li key={`${child.label}-${i}`}>
                       <Link
                         to={child.to}
-                        className="text-sm text-white/60 transition-colors hover:text-gold"
+                        className="text-sm text-muted transition-colors hover:text-gold"
                       >
                         {child.label}
                       </Link>

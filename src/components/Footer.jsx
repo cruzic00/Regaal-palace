@@ -93,14 +93,14 @@ export default function Footer() {
           <p className="mb-5 text-sm">Subscribe our Newsletter</p>
           <form
             onSubmit={(e) => e.preventDefault()}
-            className="flex border border-white/15 focus-within:border-gold"
+            className="flex border border-line focus-within:border-gold"
           >
             <input
               type="email"
               required
               placeholder="Email address"
               aria-label="Email address"
-              className="w-full bg-transparent px-4 py-3 text-sm text-white placeholder:text-white/40 focus:outline-none"
+              className="w-full bg-transparent px-4 py-3 text-sm text-white placeholder:text-faint focus:outline-none"
             />
           </form>
           <button
@@ -115,7 +115,7 @@ export default function Footer() {
                 key={social.label}
                 href="#"
                 aria-label={social.label}
-                className="grid size-9 place-items-center border border-white/15 text-white/70 transition-colors duration-300 hover:border-gold hover:bg-gold hover:text-scrim"
+                className="grid size-9 place-items-center border border-line text-muted transition-colors duration-300 hover:border-gold hover:bg-gold hover:text-scrim"
               >
                 <svg viewBox="0 0 24 24" fill="currentColor" className="size-4">
                   <path d={social.path} />
@@ -126,10 +126,10 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="border-t border-white/10">
-        <div className="container-x py-6 text-center text-sm text-white/45">
+      <div className="border-t border-line">
+        <div className="container-x py-6 text-center text-sm text-muted">
           © {new Date().getFullYear()} {brand.name}. All Rights Reserved.
-          <span className="mt-1 block text-xs text-white/35">{brand.parent}</span>
+          <span className="mt-1 block text-xs text-faint">{brand.parent}</span>
         </div>
       </div>
     </footer>

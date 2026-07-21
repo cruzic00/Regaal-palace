@@ -5,7 +5,7 @@ import { Button, Reveal, SectionHeading } from '../components/ui'
 import { contact } from '../data/site'
 
 const fieldCls =
-  'w-full border border-white/15 bg-transparent px-5 py-4 text-sm text-white placeholder:text-white/35 focus:border-gold focus:outline-none'
+  'w-full border border-line bg-transparent px-5 py-4 text-sm text-white placeholder:text-faint focus:border-gold focus:outline-none'
 
 export default function ContactPage() {
   const [sent, setSent] = useState(false)
@@ -37,9 +37,9 @@ export default function ContactPage() {
           <div className="mt-10 grid gap-6 md:grid-cols-3 lg:mt-14">
             {cards.map((card, i) => (
               <Reveal key={card.label} delay={i * 110}>
-                <div className="h-full border border-white/10 bg-ink-soft px-7 py-9 text-center">
+                <div className="h-full border border-line bg-ink-soft px-7 py-9 text-center">
                   <card.icon className="mx-auto mb-4 size-7 text-gold" />
-                  <p className="text-xs tracking-[0.25em] text-white/45 uppercase">{card.label}</p>
+                  <p className="text-xs tracking-[0.25em] text-faint uppercase">{card.label}</p>
                   {card.lines.map((line) => (
                     <p key={line} className="mt-1 text-white">
                       {line}

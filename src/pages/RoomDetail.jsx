@@ -41,9 +41,9 @@ export default function RoomDetail() {
 
             <div className="mt-10 grid gap-6 sm:grid-cols-3">
               {specs.map((spec) => (
-                <div key={spec.label} className="border border-white/10 px-5 py-5">
+                <div key={spec.label} className="border border-line px-5 py-5">
                   <spec.icon className="mb-3 size-5 text-gold" />
-                  <p className="text-xs tracking-[0.2em] text-white/45 uppercase">{spec.label}</p>
+                  <p className="text-xs tracking-[0.2em] text-faint uppercase">{spec.label}</p>
                   <p className="mt-1 text-white">{spec.value}</p>
                 </div>
               ))}
@@ -68,11 +68,11 @@ export default function RoomDetail() {
             </ul>
           </div>
 
-          <aside className="h-fit border border-white/10 bg-ink-soft p-8 lg:sticky lg:top-28">
-            <p className="text-sm text-white/50">Starting from</p>
+          <aside className="h-fit border border-line bg-ink-soft p-8 lg:sticky lg:top-28">
+            <p className="text-sm text-muted">Starting from</p>
             <p className="mt-1">
               <span className="font-display text-5xl font-semibold text-gold">${room.price}</span>
-              <span className="ml-2 text-sm text-white/50">/ Night</span>
+              <span className="ml-2 text-sm text-muted">/ Night</span>
             </p>
 
             <form onSubmit={(e) => e.preventDefault()} className="mt-8 space-y-4">
@@ -83,21 +83,21 @@ export default function RoomDetail() {
                 <div key={field.id}>
                   <label
                     htmlFor={field.id}
-                    className="mb-2 block text-[11px] tracking-[0.2em] text-white/45 uppercase"
+                    className="mb-2 block text-[11px] tracking-[0.2em] text-faint uppercase"
                   >
                     {field.label}
                   </label>
                   <input
                     id={field.id}
                     type={field.type}
-                    className="w-full border border-white/15 bg-transparent px-4 py-3 text-sm text-white [color-scheme:dark] focus:border-gold focus:outline-none"
+                    className="w-full border border-line bg-transparent px-4 py-3 text-sm text-white focus:border-gold focus:outline-none"
                   />
                 </div>
               ))}
               <Button className="w-full">Book This Room</Button>
             </form>
 
-            <p className="mt-5 text-center text-xs text-white/40">
+            <p className="mt-5 text-center text-xs text-faint">
               No prepayment needed — pay at the property.
             </p>
           </aside>

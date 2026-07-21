@@ -111,7 +111,7 @@ export function SectionHeading({ eyebrow, title, blurb, align = 'center', waterm
         {centered && <Ornament className="mb-5" />}
         {eyebrow && <p className="eyebrow mb-3">{eyebrow}</p>}
         <h2 className="text-3xl leading-[1.15] font-medium sm:text-4xl lg:text-[44px]">{title}</h2>
-        {blurb && <p className="mt-4 text-white/55">{blurb}</p>}
+        {blurb && <p className="mt-4 text-muted">{blurb}</p>}
       </div>
     </div>
   )
