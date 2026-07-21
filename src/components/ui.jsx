@@ -1,23 +1,29 @@
 import { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 
-const variantAnimation = {
-  up: 'animate-rise',
-  'up-far': 'animate-rise-far',
-  left: 'animate-slide-left',
-  right: 'animate-slide-right',
-  zoom: 'animate-zoom-in',
-  emerge: 'animate-emerge',
-  blur: 'animate-blur-in',
+/** Where each variant sits before it has arrived — and returns to on the way out. */
+const restingState = {
+  up: { transform: 'translateY(38px)', filter: 'blur(12px)' },
+  'up-far': { transform: 'translateY(120px)', filter: 'blur(14px)' },
+  left: { transform: 'translateX(-56px)', filter: 'blur(12px)' },
+  right: { transform: 'translateX(56px)', filter: 'blur(12px)' },
+  zoom: { transform: 'scale(1.1)', filter: 'blur(16px)' },
+  emerge: { transform: 'translateX(var(--spread-x, 0px)) scale(0.82)', filter: 'blur(14px)' },
+  blur: { transform: 'none', filter: 'blur(20px)' },
 }
 
+const arrivedState = { transform: 'none', filter: 'blur(0px)' }
+
 /**
- * Animates a block in the first time it scrolls into view. Every variant lands
- * from a blurred state, which is what makes the motion read as depth.
+ * Animates a block whenever it enters the viewport, and plays the same motion
+ * backwards when it leaves — scroll up and it retreats, scroll down and it
+ * arrives again. Transitions rather than keyframes, because a transition
+ * reverses from wherever it currently is instead of restarting.
  */
-export function Reveal({ children, delay = 0, variant = 'up', className = '' }) {
+export function Reveal({ children, delay = 0, duration = 1000, variant = 'up', className = '' }) {
   const ref = useRef(null)
   const [shown, setShown] = useState(false)
+  const [reduced, setReduced] = useState(false)
 
   useEffect(() => {
     const el = ref.current
@@ -26,28 +32,32 @@ export function Reveal({ children, delay = 0, variant = 'up', className = '' }) 
     // Respect the OS setting rather than blurring the page for someone who
     // asked for less motion.
     if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-      setShown(true)
+      setReduced(true)
       return
     }
 
-    const io = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setShown(true)
-          io.disconnect()
-        }
-      },
-      { rootMargin: '0px 0px -12% 0px' },
-    )
+    const io = new IntersectionObserver(([entry]) => setShown(entry.isIntersecting), {
+      rootMargin: '0px 0px -12% 0px',
+    })
     io.observe(el)
     return () => io.disconnect()
   }, [])
 
+  if (reduced) return <div className={className}>{children}</div>
+
   return (
     <div
       ref={ref}
-      className={`${shown ? variantAnimation[variant] : 'opacity-0'} ${className}`}
-      style={{ animationDelay: `${delay}ms` }}
+      className={className}
+      style={{
+        opacity: shown ? 1 : 0,
+        transitionProperty: 'opacity, transform, filter',
+        transitionDuration: `${duration}ms`,
+        transitionTimingFunction: 'cubic-bezier(0.16, 1, 0.3, 1)',
+        // Stagger only on the way in; retreating all at once looks deliberate.
+        transitionDelay: `${shown ? delay : 0}ms`,
+        ...(shown ? arrivedState : restingState[variant]),
+      }}
     >
       {children}
     </div>
