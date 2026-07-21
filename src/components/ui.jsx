@@ -7,6 +7,7 @@ const variantAnimation = {
   left: 'animate-slide-left',
   right: 'animate-slide-right',
   zoom: 'animate-zoom-in',
+  emerge: 'animate-emerge',
   blur: 'animate-blur-in',
 }
 
