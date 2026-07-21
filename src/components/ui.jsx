@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 
 const variantAnimation = {
   up: 'animate-rise',
+  'up-far': 'animate-rise-far',
   left: 'animate-slide-left',
   right: 'animate-slide-right',
   zoom: 'animate-zoom-in',

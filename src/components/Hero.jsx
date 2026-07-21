@@ -30,16 +30,20 @@ export default function Hero() {
       {/* One wide track that rolls sideways. The track's own box is the section
           width, so each step is exactly -100%. */}
       <div
-        className="absolute inset-0 flex transition-transform duration-[1100ms] ease-[cubic-bezier(0.65,0,0.35,1)]"
+        className="absolute inset-0 flex will-change-transform transition-transform duration-[1100ms] ease-[cubic-bezier(0.65,0,0.35,1)]"
         style={{ transform: `translateX(-${index * 100}%)` }}
       >
         {slides.map((slide, i) => (
-          <div key={slide.place} className="relative h-full w-full shrink-0">
+          // overflow-hidden is load-bearing: a blurred child fades out over its
+          // own edge and bleeds past it, which showed up as a seam between
+          // slides mid-roll. Clipping it, with the image scaled past the clip,
+          // keeps every visible pixel fully covered.
+          <div key={slide.place} className="relative h-full w-full shrink-0 overflow-hidden">
             <img
               src={slide.image}
               alt=""
-              className={`size-full object-cover transition-[filter,scale] duration-700 ${
-                sliding ? 'scale-105 blur-[6px]' : 'blur-0'
+              className={`size-full scale-110 object-cover transition-[filter] duration-700 ${
+                sliding ? 'blur-[6px]' : 'blur-0'
               } ${i === index && !sliding ? 'animate-ken-burns' : ''}`}
             />
             <div className="absolute inset-0 bg-scrim/55" />

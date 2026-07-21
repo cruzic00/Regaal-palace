@@ -9,7 +9,7 @@ export default function BookingSection() {
   return (
     <section className="pt-16 lg:pt-20">
       <div className="container-x">
-        <Reveal variant="blur">
+        <Reveal variant="up-far">
           <div className="border-t-2 border-gold shadow-2xl">
             <BookingBar />
           </div>
