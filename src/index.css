@@ -1,0 +1,154 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-gold: #c19977;
+  --color-gold-light: #d8b795;
+  --color-ink: #0d0d0d;
+  --color-ink-soft: #161616;
+  --color-ink-line: #2a2a2a;
+  --color-cream: #f7f4f0;
+
+  /* Never flips with the theme: scrims sit on photos, and gold buttons always
+     want dark text on them. */
+  --color-scrim: #0d0d0d;
+
+  --font-display: 'Cormorant Garamond', Georgia, serif;
+  --font-sans: 'Jost', system-ui, sans-serif;
+
+  --animate-ken-burns: ken-burns 9s ease-out both;
+  --animate-rise: rise 1s cubic-bezier(0.16, 1, 0.3, 1) both;
+  --animate-slide-left: slide-left 1s cubic-bezier(0.16, 1, 0.3, 1) both;
+  --animate-slide-right: slide-right 1s cubic-bezier(0.16, 1, 0.3, 1) both;
+  --animate-zoom-in: zoom-in 1.1s cubic-bezier(0.16, 1, 0.3, 1) both;
+  --animate-blur-in: blur-in 1.2s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+/* The sun toggle in the header stamps .light on <html>. Flipping --color-white
+   is what carries the theme: every `text-white` utility reads that variable. */
+html.light {
+  --color-ink: #ffffff;
+  --color-ink-soft: #f6f2ec;
+  --color-ink-line: #e3dcd2;
+  --color-white: #17120d;
+  --color-gold: #a97c50;
+}
+
+@keyframes ken-burns {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.12);
+  }
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(38px);
+    filter: blur(12px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+    filter: blur(0);
+  }
+}
+
+@keyframes slide-left {
+  from {
+    opacity: 0;
+    transform: translateX(-56px);
+    filter: blur(12px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+    filter: blur(0);
+  }
+}
+
+@keyframes slide-right {
+  from {
+    opacity: 0;
+    transform: translateX(56px);
+    filter: blur(12px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+    filter: blur(0);
+  }
+}
+
+@keyframes zoom-in {
+  from {
+    opacity: 0;
+    transform: scale(1.1);
+    filter: blur(16px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+    filter: blur(0);
+  }
+}
+
+@keyframes blur-in {
+  from {
+    opacity: 0;
+    filter: blur(20px);
+  }
+  to {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+@layer base {
+  /* No `scroll-behavior: smooth` here — Lenis drives scrolling and the two
+     fight each other. */
+  html.lenis,
+  html.lenis body {
+    height: auto;
+  }
+
+  .lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+  }
+
+  .lenis.lenis-stopped {
+    overflow: hidden;
+  }
+
+  body {
+    @apply bg-ink font-sans text-[15px] leading-relaxed text-white/65 antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-display text-white;
+  }
+
+  ::selection {
+    @apply bg-gold text-scrim;
+  }
+}
+
+/* Anything sitting on a photograph stays light-on-dark in both themes. Pinning
+   --color-white locally makes every `text-white` descendant ignore the flip. */
+@utility on-photo {
+  --color-white: #ffffff;
+  --color-gold: #c19977;
+  color: rgb(255 255 255 / 0.72);
+}
+
+@utility eyebrow {
+  @apply font-sans text-xs font-medium tracking-[0.35em] text-gold uppercase;
+}
+
+@utility container-x {
+  @apply mx-auto w-full max-w-[1280px] px-5 sm:px-8;
+}
