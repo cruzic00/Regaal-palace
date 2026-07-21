@@ -75,6 +75,13 @@ export default function Hero() {
         ))}
       </div>
 
+      {/* Sits outside the sliding track so it stays put while slides roll past,
+          dissolving the hard bottom edge into the section below. */}
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-x-0 bottom-0 h-56 bg-gradient-to-b from-transparent to-ink lg:h-72"
+      />
+
       {/* Prev / next, bottom-right like the template */}
       <div className="absolute right-6 bottom-8 z-10 flex lg:right-10">
         {[
