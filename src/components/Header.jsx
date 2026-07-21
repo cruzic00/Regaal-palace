@@ -102,7 +102,7 @@ export default function Header() {
 
           <Link
             to="/rooms"
-            className="relative hidden border border-white/40 px-8 py-4 font-display text-sm tracking-[0.16em] text-white uppercase transition-colors duration-300 after:absolute after:-bottom-px after:left-1/2 after:h-0.5 after:w-10 after:-translate-x-1/2 after:bg-gold hover:border-gold hover:text-gold sm:inline-block"
+            className="relative hidden border border-white/40 px-5 py-3 font-display text-xs tracking-[0.14em] text-white uppercase transition-colors duration-300 after:absolute after:-bottom-px after:left-1/2 after:h-0.5 after:w-10 after:-translate-x-1/2 after:bg-gold hover:border-gold hover:text-gold sm:inline-block xl:px-8 xl:py-4 xl:text-sm xl:tracking-[0.16em]"
           >
             Booking Online
           </Link>
