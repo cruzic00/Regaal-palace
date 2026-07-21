@@ -1,4 +1,4 @@
-import { useSearchParams } from 'react-router-dom'
+﻿import { useSearchParams } from 'react-router-dom'
 import PageHero from '../components/PageHero'
 import RoomCard from '../components/RoomCard'
 import { Reveal } from '../components/ui'
@@ -18,13 +18,13 @@ export default function RoomsPage() {
         image="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1600&q=80"
       />
 
-      <section className="py-24 lg:py-32">
+      <section className="py-16 sm:py-20 lg:py-32">
         <div className="container-x">
           {hasSearch && (
             <div className="mb-12 border border-gold/30 bg-ink-soft px-6 py-5 text-sm">
               Showing availability for{' '}
-              <strong className="text-gold">{checkIn}</strong> →{' '}
-              <strong className="text-gold">{checkOut}</strong> · {params.get('rooms')} ·{' '}
+              <strong className="text-gold">{checkIn}</strong> â†’{' '}
+              <strong className="text-gold">{checkOut}</strong> Â· {params.get('rooms')} Â·{' '}
               {params.get('guests')}
             </div>
           )}

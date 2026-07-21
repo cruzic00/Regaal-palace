@@ -1,11 +1,11 @@
-import { Quote } from 'lucide-react'
+﻿import { Quote } from 'lucide-react'
 import FixedBackdrop from '../components/FixedBackdrop'
 import { Reveal } from '../components/ui'
 import { manager } from '../data/site'
 
 export default function Manager() {
   return (
-    <section className="on-photo relative overflow-hidden py-24 lg:py-32">
+    <section className="on-photo relative overflow-hidden py-16 sm:py-20 lg:py-32">
       <FixedBackdrop image={manager.image} scrim="bg-scrim/85" />
 
       <div className="relative container-x">
@@ -19,7 +19,7 @@ export default function Manager() {
           <blockquote className="mt-10 border-l-2 border-gold pl-6">
             <Quote className="mb-4 size-7 text-gold" />
             <p className="font-display text-2xl leading-snug text-white italic lg:text-3xl">
-              “{manager.quote}”
+              â€œ{manager.quote}â€
             </p>
           </blockquote>
 

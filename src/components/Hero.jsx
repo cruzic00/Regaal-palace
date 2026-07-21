@@ -83,7 +83,7 @@ export default function Hero() {
       />
 
       {/* Prev / next, bottom-right like the template */}
-      <div className="absolute right-6 bottom-8 z-10 flex lg:right-10">
+      <div className="absolute right-4 bottom-6 z-10 flex sm:right-6 sm:bottom-8 lg:right-10">
         {[
           { icon: ChevronLeft, step: index - 1, label: 'Previous slide' },
           { icon: ChevronRight, step: index + 1, label: 'Next slide' },
@@ -93,14 +93,14 @@ export default function Hero() {
             type="button"
             onClick={() => go(step)}
             aria-label={label}
-            className="grid size-14 place-items-center border border-white/35 text-white transition-colors duration-300 hover:border-gold hover:bg-gold hover:text-scrim"
+            className="grid size-11 place-items-center border border-white/35 text-white transition-colors duration-300 hover:border-gold hover:bg-gold hover:text-scrim sm:size-14"
           >
             <Icon className="size-5" />
           </button>
         ))}
       </div>
 
-      <div className="absolute bottom-8 left-6 z-10 flex gap-3 lg:left-10">
+      <div className="absolute bottom-6 left-4 z-10 flex gap-2 sm:bottom-8 sm:left-6 sm:gap-3 lg:left-10">
         {slides.map((slide, i) => (
           <button
             key={slide.place}

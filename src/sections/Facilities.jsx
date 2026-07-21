@@ -1,4 +1,4 @@
-import { ArrowUpRight } from 'lucide-react'
+﻿import { ArrowUpRight } from 'lucide-react'
 import { Button, Reveal } from '../components/ui'
 import { facilities, facilityBlurb } from '../data/site'
 
@@ -16,7 +16,7 @@ const chain = [
 
 export default function Facilities() {
   return (
-    <section className="bg-ink-soft py-24 lg:py-32">
+    <section className="bg-ink-soft py-16 sm:py-20 lg:py-32">
       <div className="container-x">
         <Reveal className="flex flex-wrap items-end justify-between gap-8">
           <div className="max-w-xl">
@@ -30,7 +30,7 @@ export default function Facilities() {
           </Button>
         </Reveal>
 
-        <div className="mt-14 grid gap-8 sm:grid-cols-2">
+        <div className="mt-10 grid lg:mt-14 gap-8 sm:grid-cols-2">
           {facilities.map((item, i) => (
             <Reveal key={item.no} variant="emerge" delay={i * 200} className={chain[i]}>
               <article className="on-photo group relative h-full overflow-hidden">

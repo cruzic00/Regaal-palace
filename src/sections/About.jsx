@@ -1,4 +1,4 @@
-import { Button, Reveal } from '../components/ui'
+﻿import { Button, Reveal } from '../components/ui'
 
 const stats = [
   { value: '250 +', label: 'Luxury Rooms' },
@@ -7,7 +7,7 @@ const stats = [
 
 export default function About() {
   return (
-    <section className="bg-ink-soft py-24 lg:py-32">
+    <section className="bg-ink-soft py-16 sm:py-20 lg:py-32">
       <div className="container-x grid items-center gap-14 lg:grid-cols-2 lg:gap-20">
         <div className="relative">
           <Reveal variant="left">

@@ -1,4 +1,4 @@
-import { useState } from 'react'
+﻿import { useState } from 'react'
 import { Mail, MapPin, Phone } from 'lucide-react'
 import PageHero from '../components/PageHero'
 import { Button, Reveal, SectionHeading } from '../components/ui'
@@ -24,17 +24,17 @@ export default function ContactPage() {
         image="https://images.unsplash.com/photo-1445019980597-93fa8acb246c?auto=format&fit=crop&w=1600&q=80"
       />
 
-      <section className="py-24 lg:py-32">
+      <section className="py-16 sm:py-20 lg:py-32">
         <div className="container-x">
           <Reveal>
             <SectionHeading
               eyebrow="Contact Info"
-              title="We’d love to hear from you"
-              blurb="Reservations, private events or a question about your stay — the front desk answers every message."
+              title="Weâ€™d love to hear from you"
+              blurb="Reservations, private events or a question about your stay â€” the front desk answers every message."
             />
           </Reveal>
 
-          <div className="mt-14 grid gap-6 md:grid-cols-3">
+          <div className="mt-10 grid lg:mt-14 gap-6 md:grid-cols-3">
             {cards.map((card, i) => (
               <Reveal key={card.label} delay={i * 110}>
                 <div className="h-full border border-white/10 bg-ink-soft px-7 py-9 text-center">
@@ -79,10 +79,10 @@ export default function ContactPage() {
                 className={`${fieldCls} sm:col-span-2`}
               />
               <div className="sm:col-span-2">
-                <Button type="submit">{sent ? 'Message Sent ✓' : 'Send Message'}</Button>
+                <Button type="submit">{sent ? 'Message Sent âœ“' : 'Send Message'}</Button>
                 {sent && (
                   <p className="mt-4 text-sm text-gold">
-                    Thanks — the front desk will reply within one business day.
+                    Thanks â€” the front desk will reply within one business day.
                   </p>
                 )}
               </div>

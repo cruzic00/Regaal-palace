@@ -1,4 +1,4 @@
-import { Link, useParams } from 'react-router-dom'
+﻿import { Link, useParams } from 'react-router-dom'
 import { BedDouble, Check, Maximize, Users } from 'lucide-react'
 import PageHero from '../components/PageHero'
 import RoomCard from '../components/RoomCard'
@@ -30,7 +30,7 @@ export default function RoomDetail() {
     <>
       <PageHero title={room.name} crumb="Room Details" image={room.image} />
 
-      <section className="py-24 lg:py-32">
+      <section className="py-16 sm:py-20 lg:py-32">
         <div className="container-x grid gap-12 lg:grid-cols-[1fr_360px]">
           <div>
             <img
@@ -98,13 +98,13 @@ export default function RoomDetail() {
             </form>
 
             <p className="mt-5 text-center text-xs text-white/40">
-              No prepayment needed — pay at the property.
+              No prepayment needed â€” pay at the property.
             </p>
           </aside>
         </div>
       </section>
 
-      <section className="bg-ink-soft py-24">
+      <section className="bg-ink-soft py-16 sm:py-20 lg:py-24">
         <div className="container-x">
           <div className="mb-12 flex items-end justify-between gap-6">
             <h2 className="text-3xl font-medium">You may also like</h2>

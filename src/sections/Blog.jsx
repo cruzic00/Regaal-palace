@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+﻿import { Link } from 'react-router-dom'
 import { ArrowRight, CalendarDays } from 'lucide-react'
 import { Reveal, SectionHeading } from '../components/ui'
 import { lead, posts } from '../data/site'
@@ -11,13 +11,13 @@ const fan = ['', 'lg:[--spread-x:-108%]', 'lg:[--spread-x:-216%]']
 
 export default function Blog() {
   return (
-    <section className="py-24 lg:py-32">
+    <section className="py-16 sm:py-20 lg:py-32">
       <div className="container-x">
         <Reveal>
           <SectionHeading title="Latest Post from Blog" blurb={lead} />
         </Reveal>
 
-        <div className="mt-14 grid gap-8 md:grid-cols-3">
+        <div className="mt-10 grid lg:mt-14 gap-8 md:grid-cols-3">
           {posts.map((post, i) => (
             <Reveal key={i} variant="emerge" delay={i * 180} className={fan[i]}>
               <article className="group h-full bg-ink-soft">
