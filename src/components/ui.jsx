@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
+import Crest from './Crest'
 
 /** Where each variant sits before it has arrived — and returns to on the way out. */
 const restingState = {
@@ -83,22 +84,30 @@ export function Reveal({ children, delay = 0, duration = 1000, variant = 'up', c
 /** The gold diamond that sits above every section title in the design. */
 export function Ornament({ className = '' }) {
   return (
-    <span className={`inline-flex items-center gap-2 ${className}`}>
-      <span className="h-px w-8 bg-gold/50" />
-      <span className="size-1.5 rotate-45 bg-gold" />
-      <span className="h-px w-8 bg-gold/50" />
+    <span className={`inline-flex items-center gap-3 ${className}`}>
+      <span className="h-px w-14 bg-gold/40" />
+      <Crest className="size-9 text-gold" />
+      <span className="h-px w-14 bg-gold/40" />
     </span>
   )
 }
 
-export function SectionHeading({ eyebrow, title, blurb, align = 'center' }) {
+export function SectionHeading({ eyebrow, title, blurb, align = 'center', watermark = true }) {
   const centered = align === 'center'
   return (
-    <div className={`max-w-2xl ${centered ? 'mx-auto text-center' : ''}`}>
-      {centered && <Ornament className="mb-5" />}
-      {eyebrow && <p className="eyebrow mb-3">{eyebrow}</p>}
-      <h2 className="text-3xl leading-[1.15] font-medium sm:text-4xl lg:text-[44px]">{title}</h2>
-      {blurb && <p className="mt-4 text-white/55">{blurb}</p>}
+    <div className={`relative max-w-2xl ${centered ? 'mx-auto text-center' : ''}`}>
+      {centered && watermark && (
+        // Oversized crest washed into the background, the way the reference
+        // stamps its monogram behind a section title.
+        <Crest className="pointer-events-none absolute top-1/2 left-1/2 size-[360px] -translate-x-1/2 -translate-y-1/2 text-gold/[0.045] lg:size-[460px]" />
+      )}
+
+      <div className="relative">
+        {centered && <Ornament className="mb-5" />}
+        {eyebrow && <p className="eyebrow mb-3">{eyebrow}</p>}
+        <h2 className="text-3xl leading-[1.15] font-medium sm:text-4xl lg:text-[44px]">{title}</h2>
+        {blurb && <p className="mt-4 text-white/55">{blurb}</p>}
+      </div>
     </div>
   )
 }
