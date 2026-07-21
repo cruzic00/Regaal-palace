@@ -12,10 +12,7 @@ export const nav = [
   {
     label: 'Home',
     to: '/',
-    children: [
-      { label: 'Home 01', to: '/' },
-      { label: 'Home 02', to: '/' },
-    ],
+    
   },
   { label: 'About', to: '/about' },
   {
@@ -28,14 +25,7 @@ export const nav = [
       { label: 'Presidential Villa', to: '/rooms/presidential-villa' },
     ],
   },
-  {
-    label: 'Blog',
-    to: '/blog',
-    children: [
-      { label: 'Blog Grid', to: '/blog' },
-      { label: 'Blog Details', to: '/blog' },
-    ],
-  },
+  { label: 'Blog', to: '/blog' },
   { label: 'Contact', to: '/contact' },
 ]
 
