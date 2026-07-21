@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { Reveal, SectionHeading } from '../components/ui'
-import { offers } from '../data/site'
+import { brand, offers } from '../data/site'
 
 /**
  * All four start stacked on the first card and fan out to their own column, so
@@ -18,7 +18,10 @@ export default function Offers() {
     <section className="py-16 sm:py-20 lg:py-32">
       <div className="container-x">
         <Reveal>
-          <SectionHeading eyebrow="Offers" title="Royella’s Limited Period Best Offers" />
+          <SectionHeading
+            eyebrow="Offers"
+            title={`${brand.possessive} Limited Period Best Offers`}
+          />
         </Reveal>
 
         <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:mt-14 lg:grid-cols-4">

@@ -21,6 +21,9 @@
   --animate-rise: rise 1s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
+/* Lets any utility be scoped to the light theme, e.g. `light:opacity-[0.04]`. */
+@custom-variant light (html.light &);
+
 /* The sun toggle in the header stamps .light on <html>. Flipping --color-white
    is what carries the theme: every `text-white` utility reads that variable. */
 html.light {

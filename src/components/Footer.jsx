@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { Mail, MapPin, Phone } from 'lucide-react'
-import { contact, gallery, usefulLinks } from '../data/site'
+import { brand, contact, gallery, usefulLinks } from '../data/site'
 
 // lucide dropped brand marks, so the social glyphs are inlined.
 const socials = [
@@ -24,7 +24,7 @@ export default function Footer() {
       <div className="container-x grid gap-10 pb-14 sm:grid-cols-2 sm:gap-12 sm:pb-16 lg:grid-cols-4">
         <div>
           <Link to="/" className="font-display text-3xl font-semibold text-white">
-            Royella<span className="text-gold">.</span>
+            {brand.name}<span className="text-gold">.</span>
           </Link>
           <h4 className="mt-8 mb-5 text-xs font-medium tracking-[0.3em] text-white uppercase">
             Contact Info
@@ -128,7 +128,8 @@ export default function Footer() {
 
       <div className="border-t border-white/10">
         <div className="container-x py-6 text-center text-sm text-white/45">
-          © {new Date().getFullYear()} , Royella. All Rights Reserved.
+          © {new Date().getFullYear()} {brand.name}. All Rights Reserved.
+          <span className="mt-1 block text-xs text-white/35">{brand.parent}</span>
         </div>
       </div>
     </footer>

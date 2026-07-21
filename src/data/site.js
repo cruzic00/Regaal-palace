@@ -1,3 +1,10 @@
+export const brand = {
+  name: 'Regaal Palace',
+  possessive: 'Regaal Palace’s',
+  tagline: 'Feel the Regal Touch',
+  parent: 'A unit of Chaudhari Hotels & Hospitality',
+}
+
 const img = (id, w = 1600) =>
   `https://images.unsplash.com/photo-${id}?auto=format&fit=crop&w=${w}&q=80`
 

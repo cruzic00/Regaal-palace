@@ -6,12 +6,12 @@ import Logo from './Logo'
 
 function useTheme() {
   const [light, setLight] = useState(
-    () => localStorage.getItem('royella-theme') === 'light',
+    () => localStorage.getItem('regaal-theme') === 'light',
   )
 
   useEffect(() => {
     document.documentElement.classList.toggle('light', light)
-    localStorage.setItem('royella-theme', light ? 'light' : 'dark')
+    localStorage.setItem('regaal-theme', light ? 'light' : 'dark')
   }, [light])
 
   return [light, () => setLight((v) => !v)]

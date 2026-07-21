@@ -1,6 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
-import Crest from './Crest'
 
 /** Where each variant sits before it has arrived — and returns to on the way out. */
 const restingState = {
@@ -86,7 +85,7 @@ export function Ornament({ className = '' }) {
   return (
     <span className={`inline-flex items-center gap-3 ${className}`}>
       <span className="h-px w-14 bg-gold/40" />
-      <Crest className="size-9 text-gold" />
+      <span className="size-1.5 rotate-45 bg-gold" />
       <span className="h-px w-14 bg-gold/40" />
     </span>
   )
@@ -97,9 +96,15 @@ export function SectionHeading({ eyebrow, title, blurb, align = 'center', waterm
   return (
     <div className={`relative max-w-2xl ${centered ? 'mx-auto text-center' : ''}`}>
       {centered && watermark && (
-        // Oversized crest washed into the background, the way the reference
-        // stamps its monogram behind a section title.
-        <Crest className="pointer-events-none absolute top-1/2 left-1/2 size-[360px] -translate-x-1/2 -translate-y-1/2 text-gold/[0.045] lg:size-[460px]" />
+        // The logo washed into the background behind the title. Its navy plate
+        // is so close to --color-ink that at this opacity only the gold artwork
+        // reads; on the light theme it needs to go fainter still.
+        <img
+          src="/logo.png"
+          alt=""
+          aria-hidden="true"
+          className="pointer-events-none absolute top-1/2 left-1/2 w-[300px] -translate-x-1/2 -translate-y-1/2 opacity-[0.09] light:opacity-[0.035] lg:w-[400px]"
+        />
       )}
 
       <div className="relative">
