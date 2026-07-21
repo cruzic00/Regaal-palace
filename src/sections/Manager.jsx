@@ -1,4 +1,4 @@
-﻿import { Quote } from 'lucide-react'
+import { Quote } from 'lucide-react'
 import FixedBackdrop from '../components/FixedBackdrop'
 import { Reveal } from '../components/ui'
 import { manager } from '../data/site'
@@ -19,7 +19,7 @@ export default function Manager() {
           <blockquote className="mt-10 border-l-2 border-gold pl-6">
             <Quote className="mb-4 size-7 text-gold" />
             <p className="font-display text-2xl leading-snug text-white italic lg:text-3xl">
-              â€œ{manager.quote}â€
+              “{manager.quote}”
             </p>
           </blockquote>
 

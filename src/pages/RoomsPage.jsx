@@ -1,4 +1,4 @@
-﻿import { useSearchParams } from 'react-router-dom'
+import { useSearchParams } from 'react-router-dom'
 import PageHero from '../components/PageHero'
 import RoomCard from '../components/RoomCard'
 import { Reveal } from '../components/ui'
@@ -23,8 +23,8 @@ export default function RoomsPage() {
           {hasSearch && (
             <div className="mb-12 border border-gold/30 bg-ink-soft px-6 py-5 text-sm">
               Showing availability for{' '}
-              <strong className="text-gold">{checkIn}</strong> â†’{' '}
-              <strong className="text-gold">{checkOut}</strong> Â· {params.get('rooms')} Â·{' '}
+              <strong className="text-gold">{checkIn}</strong> →{' '}
+              <strong className="text-gold">{checkOut}</strong> · {params.get('rooms')} ·{' '}
               {params.get('guests')}
             </div>
           )}

@@ -21,7 +21,7 @@ const socials = [
 export default function Footer() {
   return (
     <footer className="bg-ink-soft pt-20">
-      <div className="container-x grid gap-12 pb-16 md:grid-cols-2 lg:grid-cols-4">
+      <div className="container-x grid gap-10 pb-14 sm:grid-cols-2 sm:gap-12 sm:pb-16 lg:grid-cols-4">
         <div>
           <Link to="/" className="font-display text-3xl font-semibold text-white">
             Royella<span className="text-gold">.</span>

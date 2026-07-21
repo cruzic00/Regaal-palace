@@ -27,7 +27,7 @@ export default function BookingBar() {
   return (
     <form
       onSubmit={submit}
-      className="grid items-end gap-8 bg-ink-soft/95 px-8 py-8 backdrop-blur-md sm:grid-cols-2 lg:grid-cols-[repeat(4,1fr)_auto] lg:gap-10 lg:px-10"
+      className="grid items-end gap-6 bg-ink-soft/95 px-6 py-7 backdrop-blur-md sm:grid-cols-2 sm:gap-8 sm:px-8 sm:py-8 lg:grid-cols-[repeat(4,1fr)_auto] lg:gap-10 lg:px-10"
     >
       <div>
         <label className={labelCls} htmlFor="checkIn">

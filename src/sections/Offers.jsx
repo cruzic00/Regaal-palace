@@ -1,4 +1,4 @@
-﻿import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { Reveal, SectionHeading } from '../components/ui'
 import { offers } from '../data/site'
 
@@ -18,10 +18,10 @@ export default function Offers() {
     <section className="py-16 sm:py-20 lg:py-32">
       <div className="container-x">
         <Reveal>
-          <SectionHeading eyebrow="Offers" title="Royellaâ€™s Limited Period Best Offers" />
+          <SectionHeading eyebrow="Offers" title="Royella’s Limited Period Best Offers" />
         </Reveal>
 
-        <div className="mt-10 grid lg:mt-14 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:mt-14 lg:grid-cols-4">
           {offers.map((offer, i) => (
             <Reveal key={offer.name} variant="emerge" delay={i * 150} className={fan[i]}>
               <Link to="/rooms" className="on-photo group relative block overflow-hidden">

@@ -1,4 +1,4 @@
-﻿import { Link, useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import { BedDouble, Check, Maximize, Users } from 'lucide-react'
 import PageHero from '../components/PageHero'
 import RoomCard from '../components/RoomCard'
@@ -98,7 +98,7 @@ export default function RoomDetail() {
             </form>
 
             <p className="mt-5 text-center text-xs text-white/40">
-              No prepayment needed â€” pay at the property.
+              No prepayment needed — pay at the property.
             </p>
           </aside>
         </div>

@@ -1,4 +1,4 @@
-﻿import RoomCard from '../components/RoomCard'
+import RoomCard from '../components/RoomCard'
 import { Reveal, SectionHeading, spreadFromCentre, spreadFromCentreDelays } from '../components/ui'
 import { lead, rooms } from '../data/site'
 
@@ -7,9 +7,9 @@ export default function Rooms() {
     <section className="py-16 sm:py-20 lg:py-32">
       <div className="container-x">
         <Reveal>
-          <SectionHeading title="Royellaâ€™s Rooms & Suites" blurb={lead} />
+          <SectionHeading title="Royella’s Rooms & Suites" blurb={lead} />
         </Reveal>
-        <div className="mt-10 grid lg:mt-14 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-10 grid gap-8 sm:grid-cols-2 lg:mt-14 lg:grid-cols-3">
           {rooms.slice(0, 3).map((room, i) => (
             <Reveal
               key={room.slug}

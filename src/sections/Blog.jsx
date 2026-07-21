@@ -17,7 +17,7 @@ export default function Blog() {
           <SectionHeading title="Latest Post from Blog" blurb={lead} />
         </Reveal>
 
-        <div className="mt-10 grid lg:mt-14 gap-8 md:grid-cols-3">
+        <div className="mt-10 grid gap-8 sm:grid-cols-2 lg:mt-14 lg:grid-cols-3">
           {posts.map((post, i) => (
             <Reveal key={i} variant="emerge" delay={i * 180} className={fan[i]}>
               <article className="group h-full bg-ink-soft">

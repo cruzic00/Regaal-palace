@@ -1,4 +1,4 @@
-﻿import { useState } from 'react'
+import { useState } from 'react'
 import { Mail, MapPin, Phone } from 'lucide-react'
 import PageHero from '../components/PageHero'
 import { Button, Reveal, SectionHeading } from '../components/ui'
@@ -29,12 +29,12 @@ export default function ContactPage() {
           <Reveal>
             <SectionHeading
               eyebrow="Contact Info"
-              title="Weâ€™d love to hear from you"
-              blurb="Reservations, private events or a question about your stay â€” the front desk answers every message."
+              title="We’d love to hear from you"
+              blurb="Reservations, private events or a question about your stay — the front desk answers every message."
             />
           </Reveal>
 
-          <div className="mt-10 grid lg:mt-14 gap-6 md:grid-cols-3">
+          <div className="mt-10 grid gap-6 md:grid-cols-3 lg:mt-14">
             {cards.map((card, i) => (
               <Reveal key={card.label} delay={i * 110}>
                 <div className="h-full border border-white/10 bg-ink-soft px-7 py-9 text-center">
@@ -79,10 +79,10 @@ export default function ContactPage() {
                 className={`${fieldCls} sm:col-span-2`}
               />
               <div className="sm:col-span-2">
-                <Button type="submit">{sent ? 'Message Sent âœ“' : 'Send Message'}</Button>
+                <Button type="submit">{sent ? 'Message Sent ✓' : 'Send Message'}</Button>
                 {sent && (
                   <p className="mt-4 text-sm text-gold">
-                    Thanks â€” the front desk will reply within one business day.
+                    Thanks — the front desk will reply within one business day.
                   </p>
                 )}
               </div>

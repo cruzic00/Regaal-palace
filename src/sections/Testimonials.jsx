@@ -1,4 +1,4 @@
-﻿import { Quote, Star } from 'lucide-react'
+import { Quote, Star } from 'lucide-react'
 import {
   Reveal,
   SectionHeading,
@@ -12,10 +12,10 @@ export default function Testimonials() {
     <section className="bg-ink-soft py-16 sm:py-20 lg:py-32">
       <div className="container-x">
         <Reveal>
-          <SectionHeading title="Customerâ€™s Testimonial" blurb={lead} />
+          <SectionHeading title="Customer’s Testimonial" blurb={lead} />
         </Reveal>
 
-        <div className="mt-10 grid lg:mt-14 gap-8 lg:grid-cols-3">
+        <div className="mt-10 grid gap-8 md:grid-cols-2 lg:mt-14 lg:grid-cols-3">
           {testimonials.map((item, i) => (
             <Reveal
               key={item.name}
@@ -30,7 +30,7 @@ export default function Testimonials() {
                     <Star key={s} className="size-4 fill-gold text-gold" />
                   ))}
                 </div>
-                <blockquote className="text-sm leading-relaxed">â€œ{item.quote}â€</blockquote>
+                <blockquote className="text-sm leading-relaxed">“{item.quote}”</blockquote>
                 <figcaption className="mt-7 flex items-center gap-4 border-t border-white/10 pt-6">
                   <img
                     src={item.avatar}

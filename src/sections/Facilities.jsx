@@ -30,7 +30,7 @@ export default function Facilities() {
           </Button>
         </Reveal>
 
-        <div className="mt-10 grid lg:mt-14 gap-8 sm:grid-cols-2">
+        <div className="mt-10 grid gap-8 sm:grid-cols-2 lg:mt-14">
           {facilities.map((item, i) => (
             <Reveal key={item.no} variant="emerge" delay={i * 200} className={chain[i]}>
               <article className="on-photo group relative h-full overflow-hidden">
