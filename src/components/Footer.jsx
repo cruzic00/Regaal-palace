@@ -105,7 +105,7 @@ export default function Footer() {
           </form>
           <button
             type="button"
-            className="mt-4 w-full bg-gold px-6 py-3 text-xs font-medium tracking-[0.2em] text-scrim uppercase transition-colors duration-300 hover:bg-gold-light"
+            className="mt-4 w-full bg-gold px-6 py-3 text-xs font-medium tracking-[0.2em] text-on-gold uppercase transition-colors duration-300 hover:bg-gold-light"
           >
             Subscribe Now
           </button>
@@ -115,7 +115,7 @@ export default function Footer() {
                 key={social.label}
                 href="#"
                 aria-label={social.label}
-                className="grid size-9 place-items-center border border-line text-muted transition-colors duration-300 hover:border-gold hover:bg-gold hover:text-scrim"
+                className="grid size-9 place-items-center border border-line text-muted transition-colors duration-300 hover:border-gold hover:bg-gold hover:text-on-gold"
               >
                 <svg viewBox="0 0 24 24" fill="currentColor" className="size-4">
                   <path d={social.path} />

@@ -18,8 +18,8 @@ export default function Amenities() {
             return (
               <Reveal key={`${name}-${i}`} variant="drop" duration={800} delay={i * 90}>
                 <div className="group flex h-full flex-col items-center gap-4 bg-ink px-4 py-10 text-center transition-colors duration-500 hover:bg-gold">
-                  <Icon className="size-8 text-gold transition-colors duration-500 group-hover:text-scrim" />
-                  <p className="text-sm tracking-wide text-white transition-colors duration-500 group-hover:text-scrim">
+                  <Icon className="size-8 text-gold transition-colors duration-500 group-hover:text-on-gold" />
+                  <p className="text-sm tracking-wide text-white transition-colors duration-500 group-hover:text-on-gold">
                     {name}
                   </p>
                 </div>

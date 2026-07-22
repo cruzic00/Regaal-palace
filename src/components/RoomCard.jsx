@@ -14,7 +14,7 @@ export default function RoomCard({ room }) {
         <div className="absolute inset-0 bg-scrim/60 opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
         <Link
           to={`/rooms/${room.slug}`}
-          className="absolute inset-x-0 bottom-0 translate-y-4 bg-gold py-3.5 text-center text-xs font-medium tracking-[0.2em] text-scrim uppercase opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100"
+          className="absolute inset-x-0 bottom-0 translate-y-4 bg-gold py-3.5 text-center text-xs font-medium tracking-[0.2em] text-on-gold uppercase opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100"
         >
           View Details
         </Link>

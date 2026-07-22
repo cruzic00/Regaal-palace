@@ -35,7 +35,7 @@ export default function Offers() {
                   className="h-72 w-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-scrim/95 via-scrim/25 to-transparent" />
-                <span className="absolute top-5 left-5 bg-gold px-3 py-1.5 text-xs font-medium tracking-[0.15em] text-scrim uppercase">
+                <span className="absolute top-5 left-5 bg-gold px-3 py-1.5 text-xs font-medium tracking-[0.15em] text-on-gold uppercase">
                   {offer.discount}
                 </span>
                 <h3 className="absolute inset-x-0 bottom-0 p-6 text-xl font-medium transition-colors duration-300 group-hover:text-gold">

@@ -121,9 +121,8 @@ const base =
   'inline-flex items-center justify-center gap-2 px-7 py-3.5 text-xs font-medium tracking-[0.2em] uppercase transition-all duration-300'
 
 const variants = {
-  solid: 'bg-gold text-scrim hover:bg-gold-light',
-  outline: 'border border-white/25 text-white hover:border-gold hover:text-gold',
-  dark: 'bg-ink text-white hover:bg-gold hover:text-scrim',
+  solid: 'bg-gold text-on-gold hover:bg-gold-light',
+  outline: 'border border-gold text-gold hover:bg-gold hover:text-on-gold',
 }
 
 export function Button({ to, href, variant = 'solid', className = '', children, ...rest }) {

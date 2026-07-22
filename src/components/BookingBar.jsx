@@ -91,7 +91,7 @@ export default function BookingBar() {
 
       <button
         type="submit"
-        className="bg-gold px-10 py-4 font-display text-lg tracking-wide text-scrim transition-colors duration-300 hover:bg-gold-light sm:col-span-2 lg:col-span-1"
+        className="bg-gold px-10 py-4 font-display text-lg tracking-wide text-on-gold transition-colors duration-300 hover:bg-gold-light sm:col-span-2 lg:col-span-1"
       >
         Checkout Now
       </button>

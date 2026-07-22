@@ -28,7 +28,7 @@ export default function Blog() {
                     loading="lazy"
                     className="h-56 w-full object-cover transition-transform duration-700 group-hover:scale-110"
                   />
-                  <span className="absolute bottom-0 left-0 bg-gold px-4 py-2 text-xs font-medium tracking-[0.15em] text-scrim uppercase">
+                  <span className="absolute bottom-0 left-0 bg-gold px-4 py-2 text-xs font-medium tracking-[0.15em] text-on-gold uppercase">
                     {post.category}
                   </span>
                 </div>

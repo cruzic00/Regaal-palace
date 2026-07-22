@@ -93,7 +93,7 @@ export default function Hero() {
             type="button"
             onClick={() => go(step)}
             aria-label={label}
-            className="grid size-11 place-items-center border border-white/35 text-white transition-colors duration-300 hover:border-gold hover:bg-gold hover:text-scrim sm:size-14"
+            className="grid size-11 place-items-center border border-gold text-gold transition-colors duration-300 hover:bg-gold hover:text-on-gold sm:size-14"
           >
             <Icon className="size-5" />
           </button>
