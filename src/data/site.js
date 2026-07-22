@@ -37,22 +37,10 @@ export const nav = [
 ]
 
 export const slides = [
-  {
-    place: 'IN CALIFORNIA',
-    image: img('1566073771259-6a8506099945'),
-  },
-  {
-    place: 'IN KASHMIR',
-    image: img('1540541338287-41700207dee6'),
-  },
-  {
-    place: 'IN COLOSSEUM',
-    image: img('1584132967334-10e028bd69f7'),
-  },
-  {
-    place: 'IN SRILANKA',
-    image: img('1582719478250-c89cae4dc85b'),
-  },
+  { place: 'IN CALIFORNIA', image: '/images/banner-1.jpeg' },
+  { place: 'IN KASHMIR', image: '/images/banner-2.jpeg' },
+  { place: 'IN COLOSSEUM', image: '/images/banner-3.jpeg' },
+  { place: 'IN SRILANKA', image: '/images/banner-4.jpeg' },
 ]
 
 export const rooms = [
