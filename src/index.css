@@ -102,11 +102,17 @@ html.light {
     overflow: hidden;
   }
 
+  /* Both the root and body clip horizontally. Body alone isn't enough: the
+     off-canvas mobile drawer is position: fixed, so it's clipped by the root's
+     overflow, not the body's — without this it juts 20rem past the right edge
+     and mobile browsers zoom out to fit it, leaving a gap. `clip` (not `hidden`)
+     avoids making a scroll container, so Lenis and the sticky sidebar survive. */
+  html {
+    overflow-x: clip;
+  }
+
   body {
     @apply bg-ink font-sans text-[15px] leading-relaxed text-white/65 antialiased;
-    /* Reveal animations start translated past the edge. `clip` contains them
-       without creating a scroll container, so position: sticky still works —
-       `hidden` would break the room-detail sidebar. */
     overflow-x: clip;
   }
 
