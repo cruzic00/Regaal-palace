@@ -3,6 +3,21 @@ import { Mail, MapPin, Phone } from 'lucide-react'
 import { brand, contact, departmentEmails, gallery, usefulLinks } from '../data/site'
 import GalleryGrid from './GalleryGrid'
 
+// lucide dropped brand marks, so the social glyphs are inlined. Swap href='#'
+// for the real profile URLs.
+const socials = [
+  {
+    label: 'Facebook',
+    href: 'https://www.facebook.com/share/14hJj39Sbks/',
+    path: 'M14 9h3V6h-3c-2.2 0-4 1.8-4 4v2H8v3h2v7h3v-7h3l1-3h-4v-2c0-.6.4-1 1-1Z',
+  },
+  {
+    label: 'Instagram',
+    href: 'https://www.instagram.com/newregalpalace?igsh=cTVsbGI0MHk3amls',
+    path: 'M12 7.4a4.6 4.6 0 1 0 0 9.2 4.6 4.6 0 0 0 0-9.2Zm0 7.6a3 3 0 1 1 0-6 3 3 0 0 1 0 6Zm5.9-7.8a1.1 1.1 0 1 1-2.2 0 1.1 1.1 0 0 1 2.2 0ZM8 3h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8a5 5 0 0 1 5-5Zm0 1.8A3.2 3.2 0 0 0 4.8 8v8A3.2 3.2 0 0 0 8 19.2h8a3.2 3.2 0 0 0 3.2-3.2V8A3.2 3.2 0 0 0 16 4.8H8Z',
+  },
+]
+
 export default function Footer() {
   return (
     <footer className="bg-ink-soft pt-20">
@@ -15,25 +30,61 @@ export default function Footer() {
             Contact Info
           </h4>
           <ul className="space-y-3 text-sm">
-            <li className="flex items-center gap-3">
-              <Phone className="size-4 shrink-0 text-gold" />
-              {contact.phone}
+            <li>
+              <a
+                href={`tel:${contact.phone.replace(/\s+/g, '')}`}
+                className="flex items-center gap-3 transition-colors duration-300 hover:text-gold"
+              >
+                <Phone className="size-4 shrink-0 text-gold" />
+                {contact.phone}
+              </a>
             </li>
-            <li className="flex items-center gap-3">
-              <Mail className="size-4 shrink-0 text-gold" />
-              {contact.email}
+            <li>
+              <a
+                href={`mailto:${contact.email.trim()}`}
+                className="flex items-center gap-3 transition-colors duration-300 hover:text-gold"
+              >
+                <Mail className="size-4 shrink-0 text-gold" />
+                {contact.email.trim()}
+              </a>
             </li>
-            <li className="flex items-start gap-3">
-              <MapPin className="mt-1 size-4 shrink-0 text-gold" />
-              <span>
-                {contact.addressLines.map((line) => (
-                  <span key={line} className="block">
-                    {line}
-                  </span>
-                ))}
-              </span>
+            <li>
+              <a
+                href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
+                  contact.addressLines.join(' '),
+                )}`}
+                target="_blank"
+                rel="noreferrer"
+                className="flex items-start gap-3 transition-colors duration-300 hover:text-gold"
+              >
+                <MapPin className="mt-1 size-4 shrink-0 text-gold" />
+                <span>
+                  {contact.addressLines.map((line) => (
+                    <span key={line} className="block">
+                      {line}
+                    </span>
+                  ))}
+                </span>
+              </a>
             </li>
           </ul>
+
+          <div className="mt-7 flex gap-3">
+            {socials.map((social) => (
+              <a
+                key={social.label}
+                href={social.href}
+                target="_blank"
+                rel="noreferrer"
+                aria-label={social.label}
+                className="grid size-9 place-items-center border border-line text-muted transition-colors duration-300 hover:border-gold hover:bg-gold hover:text-on-gold"
+              >
+                <svg viewBox="0 0 24 24" fill="currentColor" className="size-4">
+                  <path d={social.path} />
+                </svg>
+              </a>
+            ))}
+          </div>
         </div>
 
         <div>
