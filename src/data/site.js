@@ -81,7 +81,7 @@ export const rooms = [
     price: 2799,
     size: '336 SQ.FT/Rooms',
     beds: '1 King Bed',
-    guests: '4 Adults, 2 Children',
+    guests: '3 Adults, 1 Children',
     image: '/images/executive-class.jpeg',
     blurb:
       '',
