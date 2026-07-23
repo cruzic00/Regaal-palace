@@ -5,14 +5,14 @@ import {
   spreadFromCentre,
   spreadFromCentreDelays,
 } from '../components/ui'
-import { lead, testimonials } from '../data/site'
+import { testimonials } from '../data/site'
 
 export default function Testimonials() {
   return (
     <section className="bg-ink-soft py-16 sm:py-20 lg:py-32">
       <div className="container-x">
         <Reveal>
-          <SectionHeading title="Customer’s Testimonial" blurb={lead} />
+          <SectionHeading title="Customers’ Testimonial" />
         </Reveal>
 
         <div className="mt-10 grid gap-8 md:grid-cols-2 lg:mt-14 lg:grid-cols-3">
