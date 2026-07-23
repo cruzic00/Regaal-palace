@@ -65,8 +65,8 @@ export const rooms = [
     name: 'Business Class',
     category: 'Premium room',
     price: 560,
-    size: '1500 SQ.FT/Rooms',
-    beds: '2 King Bed',
+    size: '284 SQ.FT/Rooms',
+    beds: '1 King Bed',
     guests: '3 Adults, 1 Child',
     image: '/images/business-class.jpeg',
     blurb:
@@ -77,8 +77,8 @@ export const rooms = [
     name: 'Executive Class',
     category: 'Luxury room',
     price: 560,
-    size: '1500 SQ.FT/Rooms',
-    beds: '2 King Bed',
+    size: '336 SQ.FT/Rooms',
+    beds: '1 King Bed',
     guests: '4 Adults, 2 Children',
     image: '/images/executive-class.jpeg',
     blurb:
@@ -89,8 +89,8 @@ export const rooms = [
     name: 'Family Rooms',
     category: 'Deluxe Room',
     price: 560,
-    size: '1500 SQ.FT/Rooms',
-    beds: '2 King Bed',
+    size: '350 SQ.FT/Rooms',
+    beds: '1 King Bed',
     guests: '2 Adults',
     image: '/images/family-rooms.jpeg',
     blurb:
