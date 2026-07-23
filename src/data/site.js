@@ -248,23 +248,39 @@ export const lead =
 // `photo` at them, e.g. '/images/gm.jpeg'.
 export const team = [
   {
-    name: 'Rajesh Chaudhari',
+    name: 'Tushar Chaudhari',
     role: 'General Manager',
     photo: '/images/unkownicon.jpg',
   },
   {
-    name: 'Priya Sharma',
+    name: 'Jayesh Chaudhari',
     role: 'Front Office Manager',
     photo: '/images/unkownicon.jpg',
   },
   {
-    name: 'Amit Verma',
+    name: 'Nandu Chaudhari',
     role: 'Executive Chef',
     photo: '/images/unkownicon.jpg',
   },
   {
-    name: 'Sneha Patil',
+    name: 'Sunil Chaudhari',
     role: 'Guest Relations Manager',
     photo: '/images/unkownicon.jpg',
   },
+  {
+    name: 'Vinod Chaudhari',
+    role: 'General Manager',
+    photo: '/images/unkownicon.jpg',
+  },
+  {
+    name: 'Arindam Roy Chowdhury',
+    role: 'Front Office Manager',
+    photo: '/images/unkownicon.jpg',
+  },
+  {
+    name: 'Dipak Mandal',
+    role: 'Executive Chef',
+    photo: '/images/unkownicon.jpg',
+  },
+  
 ]

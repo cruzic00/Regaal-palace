@@ -6,6 +6,7 @@ import {
   KeyRound,
   Sparkles,
   Utensils,
+  WashingMachine,
   WavesLadder,
   Wifi,
 } from 'lucide-react'
@@ -19,6 +20,7 @@ function iconFor(name) {
   if (n.includes('wi-fi') || n.includes('wifi') || n.includes('internet')) return Wifi
   if (n.includes('gym') || n.includes('fitness')) return Dumbbell
   if (n.includes('breakfast')) return Coffee
+  if (n.includes('laundry') || n.includes('washing')) return WashingMachine
   if (n.includes('restaurant') || n.includes('dining') || n.includes('food')) return Utensils
   if (n.includes('pool') || n.includes('swim')) return WavesLadder
   if (n.includes('key') || n.includes('smart')) return KeyRound

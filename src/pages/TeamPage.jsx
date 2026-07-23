@@ -16,8 +16,8 @@ export default function TeamPage() {
           <Reveal>
             <SectionHeading
               eyebrow="Our Team"
-              title="The people behind the regal touch"
-              blurb="From the front desk to the kitchen, a team built around one idea — every guest leaves as a returning one."
+              title="The people behind the Regaal touch"
+              blurb="Meet the *core team of Regaal Palace*—a dedicated group of experienced professionals committed to delivering exceptional hospitality and memorable guest experiences."
             />
           </Reveal>
 
