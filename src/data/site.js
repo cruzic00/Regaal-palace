@@ -93,39 +93,8 @@ export const rooms = [
     blurb:
       'Warm oak, linen drapes and a writing desk facing the garden — our quietest rooms, tucked into the east wing.',
   },
-  {
-    slug: 'junior-suite-room',
-    name: 'Junior Suite Room',
-    price: 480,
-    size: '1200 SQ.FT/Rooms',
-    beds: '1 King Bed',
-    guests: '2 Adults',
-    image: img('1631049307264-da0ec9d70304'),
-    blurb:
-      'Compact luxury for the short stay — everything you need, nothing you do not, finished to the same standard.',
-  },
-  {
-    slug: 'presidential-villa',
-    name: 'Presidential Villa',
-    price: 1240,
-    size: '2600 SQ.FT/Rooms',
-    beds: '2 King Bed',
-    guests: '6 Adults',
-    image: img('1596394516093-501ba68a0ba6'),
-    blurb:
-      'Private pool, dedicated butler and a terrace that catches both the sunrise and the last of the evening light.',
-  },
-  {
-    slug: 'garden-terrace-room',
-    name: 'Garden Terrace Room',
-    price: 620,
-    size: '1400 SQ.FT/Rooms',
-    beds: '1 King Bed',
-    guests: '2 Adults, 1 Child',
-    image: img('1571896349842-33c89424de2d'),
-    blurb:
-      'Ground floor, opening straight onto the walled garden — step out of bed and into the frangipani.',
-  },
+  
+  
 ]
 
 export const amenities = [
