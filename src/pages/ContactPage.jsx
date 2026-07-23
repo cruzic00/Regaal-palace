@@ -39,7 +39,7 @@ export default function ContactPage() {
       <PageHero
         title="Contact Us"
         crumb="Contact"
-        image="https://images.unsplash.com/photo-1445019980597-93fa8acb246c?auto=format&fit=crop&w=1600&q=80"
+        image="/images/aboutus1.jpeg"
       />
 
       <section className="py-16 sm:py-20 lg:py-32">

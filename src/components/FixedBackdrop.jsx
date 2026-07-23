@@ -6,13 +6,13 @@
  * iOS Safari ignores fixed attachment and stretches the image badly, so it only
  * engages from md up; below that the photo scrolls normally.
  */
-export default function FixedBackdrop({ image, scrim = 'bg-scrim/75' }) {
+export default function FixedBackdrop({ image, scrim = 'bg-scrim/75', position = 'center' }) {
   return (
     <>
       <div
         aria-hidden="true"
-        className="absolute inset-0 bg-scroll bg-cover bg-center md:bg-fixed"
-        style={{ backgroundImage: `url("${image}")` }}
+        className="absolute inset-0 bg-scroll bg-cover md:bg-fixed"
+        style={{ backgroundImage: `url("${image}")`, backgroundPosition: position }}
       />
       <div aria-hidden="true" className={`absolute inset-0 ${scrim}`} />
     </>

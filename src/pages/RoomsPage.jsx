@@ -15,7 +15,7 @@ export default function RoomsPage() {
       <PageHero
         title="Rooms & Suites"
         crumb="Rooms"
-        image="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1600&q=80"
+        image="/images/room-1.jpeg"
       />
 
       <section className="py-16 sm:py-20 lg:py-32">

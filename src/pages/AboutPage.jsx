@@ -8,7 +8,7 @@ import Testimonials from '../sections/Testimonials'
 export default function AboutPage() {
   return (
     <>
-      <PageHero title="About Us" />
+      <PageHero title="About Us" image="/images/aboutus.jpeg" />
       <About />
       <Amenities />
       <Manager />
