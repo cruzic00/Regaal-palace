@@ -13,7 +13,7 @@ export default function About() {
           <Reveal variant="left">
             <div className="group overflow-hidden">
               <img
-                src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=80"
+                src="/images/business-class.jpeg"
                 alt="Poolside at the resort"
                 loading="lazy"
                 className="aspect-4/5 w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
@@ -28,7 +28,7 @@ export default function About() {
           >
             <div className="group overflow-hidden border-8 border-ink-soft">
               <img
-                src="https://images.unsplash.com/photo-1445019980597-93fa8acb246c?auto=format&fit=crop&w=800&q=80"
+                src=""
                 alt="Hotel lobby"
                 loading="lazy"
                 className="aspect-square w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
@@ -40,7 +40,7 @@ export default function About() {
         <Reveal variant="right" delay={120}>
           <p className="eyebrow mb-4">Luxury Hotel and Resort</p>
           <h2 className="text-3xl leading-[1.15] font-medium sm:text-4xl lg:text-[44px]">
-            Luxury Best Hotel in City California, USA
+            Luxury Best Hotel in City 
           </h2>
           <p className="mt-6">
             Rapidiously myocardinate cross-platform intellectual capital after marketing model.
