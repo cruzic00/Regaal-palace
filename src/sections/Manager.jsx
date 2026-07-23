@@ -11,8 +11,8 @@ export default function Manager() {
       <div className="relative container-x">
         <Reveal variant="left" className="max-w-3xl">
           <p className="eyebrow mb-4">Manager</p>
-          <h2 className="text-3xl leading-[1.15] font-medium sm:text-4xl lg:text-[44px]">
-            Luxury Best Hotel in City California, USA
+          <h2 className="text-3xl leading-[1.15] font-medium sm:text-4xl lg:text-[44px]">   
+            Luxury Best Hotel in City 
           </h2>
           <p className="mt-6">{manager.body}</p>
 
