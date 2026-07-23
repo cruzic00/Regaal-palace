@@ -249,37 +249,37 @@ export const lead =
 export const team = [
   {
     name: 'Tushar Chaudhari',
-    role: 'General Manager',
+    role: 'Managing Director',
     photo: '/images/unkownicon.jpg',
   },
   {
     name: 'Jayesh Chaudhari',
-    role: 'Front Office Manager',
+    role: 'Managing Director',
     photo: '/images/unkownicon.jpg',
   },
   {
     name: 'Nandu Chaudhari',
-    role: 'Executive Chef',
+    role: 'Managing Director',
     photo: '/images/unkownicon.jpg',
   },
   {
     name: 'Sunil Chaudhari',
-    role: 'Guest Relations Manager',
+    role: 'Head of Operations',
     photo: '/images/unkownicon.jpg',
   },
   {
     name: 'Vinod Chaudhari',
-    role: 'General Manager',
+    role: 'Managing Director',
     photo: '/images/unkownicon.jpg',
   },
   {
     name: 'Arindam Roy Chowdhury',
-    role: 'Front Office Manager',
+    role: 'Group General Manager',
     photo: '/images/unkownicon.jpg',
   },
   {
     name: 'Dipak Mandal',
-    role: 'Executive Chef',
+    role: 'Head of Sales',
     photo: '/images/unkownicon.jpg',
   },
   
