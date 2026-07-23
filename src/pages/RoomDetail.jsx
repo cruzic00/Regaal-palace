@@ -50,12 +50,7 @@ export default function RoomDetail() {
             </div>
 
             <h2 className="mt-14 text-3xl font-medium">About this room</h2>
-            <p className="mt-4">{room.blurb}</p>
-            <p className="mt-4">
-              Rapidiously myocardinate cross-platform intellectual capital after marketing model.
-              Appropriately create interactive infrastructures after maintainable are Holisticly
-              facilitate stand-alone inframe compellingly create premier open data.
-            </p>
+            <p className="mt-4">{room.details ?? room.blurb}</p>
 
             <h2 className="mt-14 text-3xl font-medium">Room amenities</h2>
             <ul className="mt-6 grid gap-3 sm:grid-cols-2">

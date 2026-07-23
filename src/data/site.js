@@ -65,12 +65,14 @@ export const rooms = [
     name: 'Business Class',
     category: 'Premium room',
     price: 2499,
-    size: '284 SQ.FT/Rooms',
-    beds: '1 King Bed',
+    size: '264 SQ.FT/Rooms',
+    beds: '2 Single Beds',
     guests: '3 Adults, 1 Child',
     image: '/images/business-class2.jpeg',
     blurb:
       'A softly lit corner suite with a private balcony, deep soaking tub and a view that runs all the way to the water line.',
+    details:
+      'The room measures 264 sq. ft. (25 sq. mt.) and features 2 Single Beds, City View, and 1 Bathroom. Room amenities include Laundry Service, Air Conditioning, Housekeeping, Wi-Fi, and Bathroom. Room features include a Telephone, Charging Points, Closet, Chair, and Centre Table. Beds and blankets include a Blanket. Media and entertainment facilities include a TV. Bathroom amenities include Towels, Geyser/Water Heater, Western Toilet Seat, Hot & Cold Water, and Toiletries. Other facilities include a Fan.',
   },
   {
     slug: 'delux-family-rooms',
@@ -82,7 +84,9 @@ export const rooms = [
     guests: '4 Adults, 2 Children',
     image: '/images/executive-class.jpeg',
     blurb:
-      'Two connected chambers built for families who travel together but still want a door between them at night.',
+      '',
+    details:
+      'The room measures 336 sq. ft. (31 sq. mt.) and features 1 King Bed, City View, and 1 Bathroom. Room amenities include Mineral Water, Laundry Service, Air Conditioning, Housekeeping, Wi-Fi, Bathroom, Room Service, and Smoking Room. Room features include a Telephone. Beds and blankets include a Blanket. Media and entertainment facilities include a TV. Bathroom amenities include a Dental Kit, Towels, Geyser/Water Heater, Toiletries, Western Toilet Seat, and Hot & Cold Water. Other facilities include a Newspaper.',
   },
   {
     slug: 'suprior-bed-rooms',
@@ -91,10 +95,12 @@ export const rooms = [
     price: 3099,
     size: '350 SQ.FT/Rooms',
     beds: '1 King Bed',
-    guests: '2 Adults',
+    guests: '4 Adults, 1 Child',
     image: '/images/family-rooms.jpeg',
     blurb:
-      'Warm oak, linen drapes and a writing desk facing the garden — our quietest rooms, tucked into the east wing.',
+      '',
+      details:
+        'The room measures *350 sq. ft. (33 sq. mt.)* and features *1 King Bed, City View, and 1 Bathroom. Room amenities include **Mineral Water, Laundry Service, Air Conditioning, Housekeeping, and Wi-Fi. Room features include a **Telephone and Sofa. Beds and blankets include a **Blanket. Media and entertainment facilities include a **TV. Bathroom amenities include a **Dental Kit, Towels, Geyser/Water Heater, Toiletries, and Hot & Cold Water. Other facilities include a **Newspaper*.'
   },
   
   
