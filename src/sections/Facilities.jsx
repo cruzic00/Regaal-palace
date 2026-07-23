@@ -38,6 +38,7 @@ export default function Facilities() {
                   src={item.image}
                   alt={item.title}
                   loading="lazy"
+                  style={{ objectPosition: item.focus ?? 'center' }}
                   className="h-80 w-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-scrim via-scrim/40 to-transparent" />
