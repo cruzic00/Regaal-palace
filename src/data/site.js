@@ -129,9 +129,9 @@ export const facilityBlurb =
   'Rapidiously myocardinate cross-platform intellectual capital after model. Appropriately create interactive infrastructures after are Holisticly facilitate stand-alone'
 
 export const offers = [
-  { discount: '25% off', name: 'Premium room', image: img('1611892440504-42a792e24d32', 900) },
-  { discount: '24% off', name: 'Luxury room', image: img('1590490360182-c33d57733427', 900) },
-  { discount: '26% off', name: 'Deluxe Room', image: img('1618773928121-c32242e63f39', 900) },
+  { discount: '25% off', name: 'Premium room', image: '/images/business-class.jpeg',  },
+  { discount: '24% off', name: 'Luxury room', image: '/images/executive-class.jpeg', },
+  { discount: '26% off', name: 'Deluxe Room', image: '/images/family-rooms.jpeg',  },
   
 ]
 
