@@ -40,7 +40,7 @@ export default function About() {
         <Reveal variant="right" delay={120}>
           <p className="eyebrow mb-4"> Hotel Regaal Palace</p>
           <h2 className="text-3xl leading-[1.15] font-medium sm:text-4xl lg:text-[44px]">
-             Best Business Hotel in Jalgaon  
+            Best Business Hotel in Jalgaon  
           </h2>
           <p className="mt-6">
             Rapidiously myocardinate cross-platform intellectual capital after marketing model.
