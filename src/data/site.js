@@ -113,16 +113,28 @@ export const amenities = [
 export const facilities = [
   
   {
-    no: '03',
+    no: '01',
     tag: 'Foods',
     title: 'The Restaurant Center',
     image: '/images/resturent1.jpeg',
   },
   {
+    no: '02',
+    tag: 'Experience',
+    title: 'Rooftop Family Restaurant  ',
+    image: '/images/skyroof.jpeg',
+  },
+  {
+    no: '03',
+    tag: 'Experience',
+    title: 'Corporate Meetings  ',
+    image: '/images/meeting.jpeg',
+  },
+  {
     no: '04',
     tag: 'Experience',
-    title: 'Rooftop Sunset Lounge',
-    image: img('1445019980597-93fa8acb246c'),
+    title: 'Weddings ',
+    image: '/images/weddings.jpeg',
   },
 ]
 

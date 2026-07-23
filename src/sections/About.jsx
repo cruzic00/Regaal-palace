@@ -1,7 +1,7 @@
 ﻿import { Button, Reveal } from '../components/ui'
 
 const stats = [
-  { value: '250 +', label: 'Luxury Rooms' },
+  { value: '40 +', label: 'Luxury Rooms' },
   { value: '4.9', label: 'Customer Ratings' },
 ]
 
@@ -13,7 +13,7 @@ export default function About() {
           <Reveal variant="left">
             <div className="group overflow-hidden">
               <img
-                src="/images/business-class.jpeg"
+                src="/images/sofa1.jpeg"
                 alt="Poolside at the resort"
                 loading="lazy"
                 className="aspect-4/5 w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
@@ -28,7 +28,7 @@ export default function About() {
           >
             <div className="group overflow-hidden border-8 border-ink-soft">
               <img
-                src="/images/sofa1.jpeg"
+                src="/images/business-class.jpeg"
                 alt="Hotel lobby"
                 loading="lazy"
                 className="aspect-square w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
@@ -38,9 +38,9 @@ export default function About() {
         </div>
 
         <Reveal variant="right" delay={120}>
-          <p className="eyebrow mb-4">Luxury Hotel and Resort</p>
+          <p className="eyebrow mb-4"> Hotel Regaal Palace</p>
           <h2 className="text-3xl leading-[1.15] font-medium sm:text-4xl lg:text-[44px]">
-            Luxury Best Hotel in City 
+             Best Business Hotel in Jalgaon  
           </h2>
           <p className="mt-6">
             Rapidiously myocardinate cross-platform intellectual capital after marketing model.
