@@ -216,11 +216,11 @@ export const gallery = [
 ]
 
 export const usefulLinks = [
-  'About Hotel',
-  'Rooms & Suites',
-  'Reservations',
-  'News & Blogs',
-  'Contact Us',
+  { label: 'About Hotel', to: '/about' },
+  { label: 'Rooms & Suites', to: '/rooms' },
+  { label: 'Reservations', to: '/rooms' },
+  { label: 'Our Team', to: '/team' },
+  { label: 'Contact Us', to: '/contact' },
 ]
 
 export const departmentEmails = [

@@ -112,12 +112,12 @@ export default function Footer() {
           </h4>
           <ul className="space-y-3 text-sm">
             {usefulLinks.map((link) => (
-              <li key={link}>
+              <li key={link.label}>
                 <Link
-                  to="/"
+                  to={link.to}
                   className="transition-colors duration-300 hover:text-gold"
                 >
-                  {link}
+                  {link.label}
                 </Link>
               </li>
             ))}
