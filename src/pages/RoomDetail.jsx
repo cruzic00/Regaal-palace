@@ -71,7 +71,9 @@ export default function RoomDetail() {
           <aside className="h-fit border border-line bg-ink-soft p-8 lg:sticky lg:top-28">
             <p className="text-sm text-muted">Starting from</p>
             <p className="mt-1">
-              <span className="font-display text-5xl font-semibold text-gold">${room.price}</span>
+              <span className="font-display text-5xl font-semibold text-gold">
+                ₹{room.price.toLocaleString('en-IN')}
+              </span>
               <span className="ml-2 text-sm text-muted">/ Night</span>
             </p>
 

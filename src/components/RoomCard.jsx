@@ -19,7 +19,9 @@ export default function RoomCard({ room }) {
           View Details
         </Link>
         <div className="absolute top-5 left-5 bg-scrim/85 px-4 py-2 backdrop-blur">
-          <span className="font-display text-xl font-semibold text-gold">${room.price}</span>
+          <span className="font-display text-xl font-semibold text-gold">
+            ₹{room.price.toLocaleString('en-IN')}
+          </span>
           <span className="ml-1 text-xs text-white/55">| Night</span>
         </div>
       </div>
