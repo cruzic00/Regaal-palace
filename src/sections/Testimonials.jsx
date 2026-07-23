@@ -21,9 +21,9 @@ export default function Testimonials() {
               key={item.name}
               variant="emerge"
               delay={spreadFromCentreDelays[i]}
-              className={spreadFromCentre[i]}
+              className={`h-full ${spreadFromCentre[i]}`}
             >
-              <figure className="relative h-full border border-line bg-ink p-8 transition-colors duration-500 hover:border-gold/40">
+              <figure className="relative flex h-full flex-col border border-line bg-ink p-8 transition-colors duration-500 hover:border-gold/40">
                 <Quote className="absolute top-6 right-7 size-9 text-gold/25" />
                 <div className="mb-5 flex gap-1">
                   {Array.from({ length: 5 }).map((_, s) => (
@@ -31,7 +31,7 @@ export default function Testimonials() {
                   ))}
                 </div>
                 <blockquote className="text-sm leading-relaxed">“{item.quote}”</blockquote>
-                <figcaption className="mt-7 flex items-center gap-4 border-t border-line pt-6">
+                <figcaption className="mt-auto flex items-center gap-4 border-t border-line pt-6">
                   <img
                     src={item.avatar}
                     alt={item.name}

@@ -151,23 +151,23 @@ export const offers = [
 export const testimonials = [
   {
     quote:
-      'Professionally repurpose flexible testing procedures via molla in customer service. Dynamically reconceptualize value-added the systems before manufactured products. Enthusiastically envisioneer emerging best',
-    name: 'Marina Trange',
-    role: 'Manger',
+      'I must say it was a great experience. The hotel is centrally located, making it convenient for exploring the city. The staff was incredibly helpful, and I was particularly impressed by the cooperation of the hotel manager, Mr. Dipak Mandal Ji. The property itself is well-maintained and provides a comfortable and pleasant stay. I would highly recommend this hotel to anyone visiting Jalgaon.',
+    name: 'Vaibhav Khande',
+    role: '',
     avatar: img('1494790108377-be9c29b29330', 200),
   },
   {
     quote:
-      'Professionally repurpose flexible testing procedures via molla in customer service. Dynamically reconceptualize value-added the systems before manufactured products. Enthusiastically envisioneer emerging best',
-    name: 'John D. Alexon',
-    role: 'Manger',
+      'New Regal Palace is a very good hotel in Jalgaon. Room service is excellent. Food is also tasty. The staff behavior is friendly and they are quick in their service. Highly recommended.',
+    name: 'SHIVAPRASAD REWALE',
+    role: '',
     avatar: img('1500648767791-00dcc994a43e', 200),
   },
   {
     quote:
-      'Professionally repurpose flexible testing procedures via molla in customer service. Dynamically reconceptualize value-added the systems before manufactured products. Enthusiastically envisioneer emerging best',
-    name: 'Brandon Mack',
-    role: 'Manger',
+      'Best hotel for corporate visits, near to main bus stand of jalgaon. large size beds and rooms. Rooftop restaurant and best for family dining as well as with friends',
+    name: 'Deepak Mittal',
+    role: '',
     avatar: img('1507003211169-0a1dd7228f2d', 200),
   },
 ]
