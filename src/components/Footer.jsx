@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { Mail, MapPin, Phone } from 'lucide-react'
 import { brand, contact, departmentEmails, gallery, usefulLinks } from '../data/site'
+import GalleryGrid from './GalleryGrid'
 
 export default function Footer() {
   return (
@@ -76,17 +77,7 @@ export default function Footer() {
           <h4 className="mb-5 text-xs font-medium tracking-[0.3em] text-white uppercase">
             Gallery
           </h4>
-          <div className="grid max-w-[220px] grid-cols-3 gap-2">
-            {gallery.map((src) => (
-              <img
-                key={src}
-                src={src}
-                alt=""
-                loading="lazy"
-                className="aspect-square w-full object-cover opacity-70 transition-opacity duration-300 hover:opacity-100"
-              />
-            ))}
-          </div>
+          <GalleryGrid images={gallery} className="max-w-[240px]" />
         </div>
 
       </div>

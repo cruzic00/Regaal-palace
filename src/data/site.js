@@ -194,12 +194,15 @@ export const posts = [
 ]
 
 export const gallery = [
-  img('1566073771259-6a8506099945', 400),
-  img('1571896349842-33c89424de2d', 400),
-  img('1582719478250-c89cae4dc85b', 400),
-  img('1534438327276-14e5300c3a48', 400),
-  img('1590490360182-c33d57733427', 400),
-  img('1414235077428-338989a2e8c0', 400),
+  '/images/banner-1.jpeg',
+  '/images/business-class.jpeg',
+  '/images/skyroof.jpeg',
+  '/images/meeting.jpeg',
+  '/images/executive-class.jpeg',
+  '/images/resturent1.jpeg',
+  '/images/family-rooms.jpeg',
+  '/images/weddings.jpeg',
+  '/images/room-1.jpeg',
 ]
 
 export const usefulLinks = [
