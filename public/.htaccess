@@ -1,0 +1,20 @@
+# SPA routing for Apache (Hostinger). Every path that isn't a real file or
+# folder is served index.html, so React Router handles it and deep links /
+# refreshes don't 404.
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+  RewriteRule ^index\.html$ - [L]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule . /index.html [L]
+</IfModule>
+
+# Cache hashed assets aggressively; they get a new filename on every build.
+<IfModule mod_expires.c>
+  ExpiresActive On
+  <FilesMatch "\.(js|css|woff2?|jpe?g|png|svg|webp|gif|ico)$">
+    ExpiresDefault "access plus 1 year"
+    Header set Cache-Control "public, immutable"
+  </FilesMatch>
+</IfModule>

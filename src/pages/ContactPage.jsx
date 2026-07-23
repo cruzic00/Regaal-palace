@@ -11,9 +11,27 @@ export default function ContactPage() {
   const [sent, setSent] = useState(false)
 
   const cards = [
-    { icon: Phone, label: 'Phone', lines: [contact.phone] },
-    { icon: Mail, label: 'Email', lines: [contact.email] },
-    { icon: MapPin, label: 'Address', lines: contact.addressLines },
+    {
+      icon: Phone,
+      label: 'Phone',
+      lines: [contact.phone],
+      href: `tel:${contact.phone.replace(/\s+/g, '')}`,
+    },
+    {
+      icon: Mail,
+      label: 'Email',
+      lines: [contact.email.trim()],
+      href: `mailto:${contact.email.trim()}`,
+    },
+    {
+      icon: MapPin,
+      label: 'Address',
+      lines: contact.addressLines,
+      href: `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
+        contact.addressLines.join(' '),
+      )}`,
+      external: true,
+    },
   ]
 
   return (
@@ -37,7 +55,12 @@ export default function ContactPage() {
           <div className="mt-10 grid gap-6 md:grid-cols-3 lg:mt-14">
             {cards.map((card, i) => (
               <Reveal key={card.label} delay={i * 110}>
-                <div className="h-full border border-line bg-ink-soft px-7 py-9 text-center">
+                <a
+                  href={card.href}
+                  target={card.external ? '_blank' : undefined}
+                  rel={card.external ? 'noreferrer' : undefined}
+                  className="block h-full border border-line bg-ink-soft px-7 py-9 text-center transition-colors duration-300 hover:border-gold/40"
+                >
                   <card.icon className="mx-auto mb-4 size-7 text-gold" />
                   <p className="text-xs tracking-[0.25em] text-faint uppercase">{card.label}</p>
                   {card.lines.map((line) => (
@@ -45,7 +68,7 @@ export default function ContactPage() {
                       {line}
                     </p>
                   ))}
-                </div>
+                </a>
               </Reveal>
             ))}
           </div>
