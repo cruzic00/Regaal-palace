@@ -9,10 +9,10 @@ const img = (id, w = 1600) =>
   `https://images.unsplash.com/photo-${id}?auto=format&fit=crop&w=${w}&q=80`
 
 export const contact = {
-  phone: '+980 (1234) 567 220',
+  phone: '0256 2222424',
   phoneShort: '+980 123 4567 890',
-  email: 'example@yahoo.com',
-  addressLines: ['102/B New Elephant Rd', 'Dhaka - 1212'],
+  email: ' info@regaalpalace.com',
+  addressLines: ['Plot No 324/2 Sugan Heights Teresvar Navin Bus Stand Javal, Jilha Peth, Jalgaon, Maharashtra 425001'],
 }
 
 export const nav = [
@@ -32,7 +32,6 @@ export const nav = [
       { label: 'Family Rooms', to: '/rooms/presidential-villa' },
     ],
   },
-  { label: 'Blog', to: '/blog' },
   { label: 'Our Team', to: '/team' },
   { label: 'Contact', to: '/contact' },
 ]
