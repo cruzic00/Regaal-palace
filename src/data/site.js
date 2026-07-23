@@ -27,9 +27,9 @@ export const nav = [
     to: '/rooms',
     children: [
       { label: 'All Rooms', to: '/rooms' },
-      { label: 'Business Class Rooms', to: '/rooms/double-suite-rooms' },
-      { label: '', to: '/rooms/delux-family-rooms' },
-      { label: 'Presidential Villa', to: '/rooms/presidential-villa' },
+      { label: 'Business Class', to: '/rooms/double-suite-rooms' },
+      { label: 'Executive Class', to: '/rooms/delux-family-rooms' },
+      { label: 'Family Rooms', to: '/rooms/presidential-villa' },
     ],
   },
   { label: 'Blog', to: '/blog' },
@@ -62,34 +62,34 @@ export const slides = [
 export const rooms = [
   {
     slug: 'double-suite-rooms',
-    name: 'Double Suite Rooms',
+    name: 'Business Class',
     price: 560,
     size: '1500 SQ.FT/Rooms',
     beds: '2 King Bed',
     guests: '3 Adults, 1 Child',
-    image: img('1590490360182-c33d57733427'),
+    image: '/images/business-class.jpeg',
     blurb:
       'A softly lit corner suite with a private balcony, deep soaking tub and a view that runs all the way to the water line.',
   },
   {
     slug: 'delux-family-rooms',
-    name: 'Delux Family Rooms',
+    name: 'Executive Class',
     price: 560,
     size: '1500 SQ.FT/Rooms',
     beds: '2 King Bed',
     guests: '4 Adults, 2 Children',
-    image: img('1611892440504-42a792e24d32'),
+    image: '/images/executive-class.jpeg',
     blurb:
       'Two connected chambers built for families who travel together but still want a door between them at night.',
   },
   {
     slug: 'suprior-bed-rooms',
-    name: 'Suprior Bed Rooms',
+    name: 'Family Rooms',
     price: 560,
     size: '1500 SQ.FT/Rooms',
     beds: '2 King Bed',
     guests: '2 Adults',
-    image: img('1618773928121-c32242e63f39'),
+    image: '/images/family-rooms.jpeg',
     blurb:
       'Warm oak, linen drapes and a writing desk facing the garden — our quietest rooms, tucked into the east wing.',
   },
