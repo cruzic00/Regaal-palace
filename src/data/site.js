@@ -63,6 +63,7 @@ export const rooms = [
   {
     slug: 'double-suite-rooms',
     name: 'Business Class',
+    category: 'Premium room',
     price: 560,
     size: '1500 SQ.FT/Rooms',
     beds: '2 King Bed',
@@ -74,6 +75,7 @@ export const rooms = [
   {
     slug: 'delux-family-rooms',
     name: 'Executive Class',
+    category: 'Luxury room',
     price: 560,
     size: '1500 SQ.FT/Rooms',
     beds: '2 King Bed',
@@ -85,6 +87,7 @@ export const rooms = [
   {
     slug: 'suprior-bed-rooms',
     name: 'Family Rooms',
+    category: 'Deluxe Room',
     price: 560,
     size: '1500 SQ.FT/Rooms',
     beds: '2 King Bed',
@@ -102,28 +105,17 @@ export const amenities = [
   'Wi-Fi Internet',
   'Smart Key',
   'Breakfast',
-  'Swimming Pool',
+  'Restaurant',
   'Room Service',
 ]
 
 export const facilities = [
-  {
-    no: '01',
-    tag: 'Fitness',
-    title: 'Gym Training Grounds',
-    image: img('1534438327276-14e5300c3a48'),
-  },
-  {
-    no: '02',
-    tag: 'Fitness',
-    title: 'Indoor Swimming Pool',
-    image: img('1578683010236-d716f9a3f461'),
-  },
+  
   {
     no: '03',
     tag: 'Foods',
     title: 'The Restaurant Center',
-    image: img('1414235077428-338989a2e8c0'),
+    image: '/images/resturent1.jpeg',
   },
   {
     no: '04',
@@ -137,10 +129,10 @@ export const facilityBlurb =
   'Rapidiously myocardinate cross-platform intellectual capital after model. Appropriately create interactive infrastructures after are Holisticly facilitate stand-alone'
 
 export const offers = [
-  { discount: '25% off', name: 'Delux Family Rooms', image: img('1611892440504-42a792e24d32', 900) },
-  { discount: '24% off', name: 'Double Suite Rooms', image: img('1590490360182-c33d57733427', 900) },
-  { discount: '26% off', name: 'Suprior Bed Room', image: img('1618773928121-c32242e63f39', 900) },
-  { discount: '22% off', name: 'Junior Suite Room', image: img('1631049307264-da0ec9d70304', 900) },
+  { discount: '25% off', name: 'Premium room', image: img('1611892440504-42a792e24d32', 900) },
+  { discount: '24% off', name: 'Luxury room', image: img('1590490360182-c33d57733427', 900) },
+  { discount: '26% off', name: 'Deluxe Room', image: img('1618773928121-c32242e63f39', 900) },
+  
 ]
 
 export const testimonials = [

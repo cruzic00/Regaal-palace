@@ -25,7 +25,7 @@ export default function RoomCard({ room }) {
       </div>
 
       <div className="p-7">
-        <p className="eyebrow mb-2">Luxury Room</p>
+        <p className="eyebrow mb-2">{room.category ?? 'Luxury Room'}</p>
         <h3 className="text-2xl font-medium">
           <Link to={`/rooms/${room.slug}`} className="transition-colors hover:text-gold">
             {room.name}
