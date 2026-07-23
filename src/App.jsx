@@ -9,6 +9,7 @@ import ContactPage from './pages/ContactPage'
 import Home from './pages/Home'
 import RoomDetail from './pages/RoomDetail'
 import RoomsPage from './pages/RoomsPage'
+import TeamPage from './pages/TeamPage'
 
 /** Routers keep scroll position between pages; hotels shouldn't. */
 function ScrollToTop() {
@@ -39,6 +40,7 @@ export default function App() {
           <Route path="/rooms" element={<RoomsPage />} />
           <Route path="/rooms/:slug" element={<RoomDetail />} />
           <Route path="/blog" element={<BlogPage />} />
+          <Route path="/team" element={<TeamPage />} />
           <Route path="/contact" element={<ContactPage />} />
         </Routes>
       </main>

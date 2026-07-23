@@ -33,6 +33,7 @@ export const nav = [
     ],
   },
   { label: 'Blog', to: '/blog' },
+  { label: 'Our Team', to: '/team' },
   { label: 'Contact', to: '/contact' },
 ]
 
@@ -209,3 +210,29 @@ export const manager = {
 
 export const lead =
   'Proactively morph optimal infomediaries rather than accurate expertise. Intrinsicly progressive resources rather than resource-leveling'
+
+// Placeholder staff — swap names, roles and photos for the real team. Drop
+// portraits in public/images/ (no # or spaces in the filename) and point
+// `photo` at them, e.g. '/images/gm.jpeg'.
+export const team = [
+  {
+    name: 'Rajesh Chaudhari',
+    role: 'General Manager',
+    photo: img('1560250097-0b93528c311a', 600),
+  },
+  {
+    name: 'Priya Sharma',
+    role: 'Front Office Manager',
+    photo: img('1573497019940-1c28c88b4f3e', 600),
+  },
+  {
+    name: 'Amit Verma',
+    role: 'Executive Chef',
+    photo: img('1583864697784-a0efc8379f70', 600),
+  },
+  {
+    name: 'Sneha Patil',
+    role: 'Guest Relations Manager',
+    photo: img('1580489944761-15a19d654956', 600),
+  },
+]
