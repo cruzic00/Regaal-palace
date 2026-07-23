@@ -13,7 +13,7 @@ export default function Logo({ compact = false }) {
         src="/logo.png"
         alt={brand.name}
         className={`w-auto object-contain transition-all duration-500 ${
-          compact ? 'h-12' : 'h-16 lg:h-20'
+          compact ? 'h-14' : 'h-20 lg:h-24'
         }`}
       />
     </Link>
