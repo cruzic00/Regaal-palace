@@ -123,18 +123,22 @@ export const facilities = [
     title: 'Rooftop Family Restaurant  ',
     image: '/images/skyroof.jpeg',
     focus: '50% 70%',
+    blurb:
+      'Dine under the open sky at Regaal Palace’s rooftop family restaurant, offering delicious cuisine and a vibrant ambience for memorable evenings.',
   },
   {
     no: '03',
     tag: 'Experience',
     title: 'Corporate Meetings  ',
     image: '/images/meeting.jpeg',
+    blurb:'Our corporate meeting hall offers a professional, well-equipped setting for productive meetings, conferences, and business events.',
   },
   {
     no: '04',
     tag: 'Experience',
     title: 'Weddings ',
     image: '/images/weddings.jpeg',
+    blurb:"Celebrate your special day in our elegant wedding banquets, offering a beautiful setting, exquisite hospitality, and unforgettable memories.",
   },
 ]
 

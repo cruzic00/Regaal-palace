@@ -51,7 +51,7 @@ export default function Facilities() {
                     <ArrowUpRight className="size-5 -translate-x-2 text-gold opacity-0 transition-all duration-500 group-hover:translate-x-0 group-hover:opacity-100" />
                   </h3>
                   <p className="mt-3 max-h-0 overflow-hidden text-sm text-white/60 transition-all duration-500 group-hover:max-h-32">
-                    {facilityBlurb}
+                    {item.blurb ?? facilityBlurb}
                   </p>
                 </div>
               </article>
