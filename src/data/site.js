@@ -103,7 +103,7 @@ export const rooms = [
 export const amenities = [
   'Room Services',
   'Wi-Fi Internet',
-  'Smart Key',
+  'GYM',
   'Breakfast',
   'Restaurant',
   'Room Service',
@@ -113,7 +113,7 @@ export const facilities = [
   
   {
     no: '01',
-    tag: 'Foods',
+    tag: 'Food',
     title: 'The Restaurant Center',
     image: '/images/resturent1.jpeg',
   },
@@ -139,7 +139,7 @@ export const facilities = [
 ]
 
 export const facilityBlurb =
-  'Rapidiously myocardinate cross-platform intellectual capital after model. Appropriately create interactive infrastructures after are Holisticly facilitate stand-alone'
+  'Savour an exquisite culinary experience at Regaal Palace, featuring delectable cuisine, elegant dining, and impeccable service.'
 
 export const offers = [
   { discount: '25% off', name: 'Premium room', image: '/images/business-class.jpeg',  },
@@ -222,12 +222,11 @@ export const departmentEmails = [
 ]
 
 export const manager = {
-  name: 'John D. Alexon',
-  role: 'Manger',
-  avatar: img('1500648767791-00dcc994a43e', 200),
+  name: 'Arindam Roy Chowdhury',
+  role: 'Group General Manager',
+  avatar: '/images/manager1.jpeg',
   quote:
-    'Model. Appropriately create interactive infrastructures after main Holisticly facilitate stand-alone inframe of the world',
-  body: 'Rapidiously myocardinate cross-platform intellectual capital after model. Appropriately create interactive infrastructures after main Holisticly facilitate stand-alone inframe',
+    '“Regaal Palace Jalgaon delivers an elevated hospitality experience, blending refined comfort, impeccable service, and contemporary amenities for both corporate and leisure travellers.”',
   image: '/images/back1.jpeg',
 }
 

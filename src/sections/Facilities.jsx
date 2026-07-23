@@ -1,5 +1,5 @@
 ﻿import { ArrowUpRight } from 'lucide-react'
-import { Button, Reveal } from '../components/ui'
+import { Reveal } from '../components/ui'
 import { facilities, facilityBlurb } from '../data/site'
 
 /**
@@ -18,16 +18,13 @@ export default function Facilities() {
   return (
     <section className="bg-ink-soft py-16 sm:py-20 lg:py-32">
       <div className="container-x">
-        <Reveal className="flex flex-wrap items-end justify-between gap-8">
+        <Reveal>
           <div className="max-w-xl">
             <p className="eyebrow mb-4">Facilities</p>
             <h2 className="text-3xl leading-[1.15] font-medium sm:text-4xl lg:text-[44px]">
               Enjoy Complete & Best Quality Facilities
             </h2>
           </div>
-          <Button to="/about" variant="outline">
-            View More Item
-          </Button>
         </Reveal>
 
         <div className="mt-10 grid gap-8 sm:grid-cols-2 lg:mt-14">
