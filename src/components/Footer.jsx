@@ -1,11 +1,11 @@
 import { Link } from 'react-router-dom'
 import { Mail, MapPin, Phone } from 'lucide-react'
-import { brand, contact, gallery, usefulLinks } from '../data/site'
+import { brand, contact, departmentEmails, gallery, usefulLinks } from '../data/site'
 
 export default function Footer() {
   return (
     <footer className="bg-ink-soft pt-20">
-      <div className="container-x grid gap-10 pb-14 sm:grid-cols-2 sm:gap-12 sm:pb-16 lg:grid-cols-3">
+      <div className="container-x grid gap-10 pb-14 sm:grid-cols-2 sm:gap-12 sm:pb-16 lg:grid-cols-4">
         <div>
           <Link to="/" className="font-display text-3xl font-semibold text-white">
             {brand.name}<span className="text-gold">.</span>
@@ -32,6 +32,25 @@ export default function Footer() {
                 ))}
               </span>
             </li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 className="mb-5 text-xs font-medium tracking-[0.3em] text-white uppercase">
+            Email Us
+          </h4>
+          <ul className="space-y-3.5 text-sm">
+            {departmentEmails.map((dept) => (
+              <li key={dept.email}>
+                <p className="text-xs tracking-wide text-faint">{dept.label}</p>
+                <a
+                  href={`mailto:${dept.email}`}
+                  className="break-all transition-colors duration-300 hover:text-gold"
+                >
+                  {dept.email}
+                </a>
+              </li>
+            ))}
           </ul>
         </div>
 

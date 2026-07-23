@@ -210,6 +210,14 @@ export const usefulLinks = [
   'Contact Us',
 ]
 
+export const departmentEmails = [
+  { label: 'Room Booking', email: 'reservations@regaalpalace.com' },
+  { label: 'Banquet / Events', email: 'events@regaalpalace.com' },
+  { label: 'Corporate Bookings / Sales', email: 'sales@regaalpalace.com' },
+  { label: 'Careers', email: 'hr@regaalpalace.com' },
+  { label: 'Complaints / Feedback', email: 'complaints@regaalpalace.com' },
+]
+
 export const manager = {
   name: 'John D. Alexon',
   role: 'Manger',
