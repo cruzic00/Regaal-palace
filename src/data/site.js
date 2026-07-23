@@ -123,7 +123,7 @@ export const facilities = [
     tag: 'Experience',
     title: 'Rooftop Family Restaurant  ',
     image: '/images/skyroof.jpeg',
-    focus: 'bottom',
+    focus: '50% 70%',
   },
   {
     no: '03',
