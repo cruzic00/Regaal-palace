@@ -68,7 +68,7 @@ export const rooms = [
     size: '284 SQ.FT/Rooms',
     beds: '1 King Bed',
     guests: '3 Adults, 1 Child',
-    image: '/images/business-class.jpeg',
+    image: '/images/business-class2.jpeg',
     blurb:
       'A softly lit corner suite with a private balcony, deep soaking tub and a view that runs all the way to the water line.',
   },

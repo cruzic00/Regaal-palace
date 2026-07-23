@@ -100,12 +100,12 @@ export default function Header() {
             {light ? <Moon className="size-6" /> : <Sun className="size-6" />}
           </button>
 
-          <Link
-            to="/rooms"
+          <a
+            href="mailto:reservations@regaalpalace.com?subject=Room Booking Enquiry"
             className="hidden border border-gold px-5 py-3 font-display text-xs tracking-[0.14em] text-gold uppercase transition-colors duration-300 hover:bg-gold hover:text-on-gold sm:inline-block xl:px-8 xl:py-4 xl:text-sm xl:tracking-[0.16em]"
           >
             Booking Online
-          </Link>
+          </a>
 
           <button
             type="button"
