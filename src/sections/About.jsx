@@ -43,10 +43,7 @@ export default function About() {
             Best Business Hotel in Jalgaon  
           </h2>
           <p className="mt-6">
-            Rapidiously myocardinate cross-platform intellectual capital after marketing model.
-            Appropriately create interactive infrastructures after maintainable are Holisticly
-            facilitate stand-alone inframe Compellingly create premier open data through
-            economically.
+            Enjoy comfortable, well-appointed rooms at Regaal Palace, designed for a restful and productive corporate stay. With modern amenities and a convenient location, our rooms offer the perfect balance of comfort, convenience, and relaxation for business travellers.
           </p>
 
           <div className="mt-10 flex gap-12">
