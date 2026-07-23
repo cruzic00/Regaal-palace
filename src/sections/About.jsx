@@ -28,7 +28,7 @@ export default function About() {
           >
             <div className="group overflow-hidden border-8 border-ink-soft">
               <img
-                src="/images/room-2.jpeg"
+                src="/images/sofa1.jpeg"
                 alt="Hotel lobby"
                 loading="lazy"
                 className="aspect-square w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
