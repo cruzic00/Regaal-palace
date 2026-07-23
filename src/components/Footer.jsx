@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import { Mail, MapPin, Phone } from 'lucide-react'
 import { brand, contact, departmentEmails, gallery, usefulLinks } from '../data/site'
 import GalleryGrid from './GalleryGrid'
+import Logo from './Logo'
 
 // lucide dropped brand marks, so the social glyphs are inlined. Swap href='#'
 // for the real profile URLs.
@@ -23,9 +24,7 @@ export default function Footer() {
     <footer className="bg-ink-soft pt-20">
       <div className="container-x grid gap-10 pb-14 sm:grid-cols-2 sm:gap-12 sm:pb-16 lg:grid-cols-4">
         <div>
-          <Link to="/" className="font-display text-3xl font-semibold text-white">
-            {brand.name}<span className="text-gold">.</span>
-          </Link>
+          <Logo />
           <h4 className="mt-8 mb-5 text-xs font-medium tracking-[0.3em] text-white uppercase">
             Contact Info
           </h4>
