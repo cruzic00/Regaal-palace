@@ -204,7 +204,7 @@ export const manager = {
   quote:
     'Model. Appropriately create interactive infrastructures after main Holisticly facilitate stand-alone inframe of the world',
   body: 'Rapidiously myocardinate cross-platform intellectual capital after model. Appropriately create interactive infrastructures after main Holisticly facilitate stand-alone inframe',
-  image: '/images/banner-1.jpeg',
+  image: '/images/back1.jpeg',
 }
 
 export const lead =
