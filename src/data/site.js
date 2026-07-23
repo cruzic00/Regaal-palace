@@ -109,7 +109,7 @@ export const rooms = [
 export const amenities = [
   'Room Services',
   'Wi-Fi Internet',
-  'GYM',
+  'Laundry Service',
   'Breakfast',
   'Restaurant',
   'Room Service',
@@ -250,21 +250,21 @@ export const team = [
   {
     name: 'Rajesh Chaudhari',
     role: 'General Manager',
-    photo: img('1560250097-0b93528c311a', 600),
+    photo: '/images/unkownicon.jpg',
   },
   {
     name: 'Priya Sharma',
     role: 'Front Office Manager',
-    photo: img('1573497019940-1c28c88b4f3e', 600),
+    photo: '/images/unkownicon.jpg',
   },
   {
     name: 'Amit Verma',
     role: 'Executive Chef',
-    photo: img('1583864697784-a0efc8379f70', 600),
+    photo: '/images/unkownicon.jpg',
   },
   {
     name: 'Sneha Patil',
     role: 'Guest Relations Manager',
-    photo: img('1580489944761-15a19d654956', 600),
+    photo: '/images/unkownicon.jpg',
   },
 ]
