@@ -38,7 +38,7 @@ export default function Hero() {
           // own edge and bleeds past it, which showed up as a seam between
           // slides mid-roll. Clipping it, with the image scaled past the clip,
           // keeps every visible pixel fully covered.
-          <div key={slide.place} className="relative h-full w-full shrink-0 overflow-hidden">
+          <div key={slide.image} className="relative h-full w-full shrink-0 overflow-hidden">
             <img
               src={slide.image}
               alt=""
@@ -60,13 +60,15 @@ export default function Hero() {
                   ))}
                 </div>
                 <p className="font-display text-xs tracking-[0.25em] text-white uppercase sm:text-sm sm:tracking-[0.3em]">
-                  Luxury Hotel and Resort
+                  
                 </p>
-                <h1 className="mx-auto mt-5 max-w-5xl font-display text-[2.1rem] leading-[1.1] font-medium tracking-wide text-white uppercase sm:text-5xl md:text-6xl lg:text-[68px] xl:text-[80px]">
-                  The Best Luxury Hotel
-                  <span className="block">{slide.place}</span>
+                <h1 className="mx-auto mt-5 max-w-4xl font-display text-[2rem] leading-[1.12] font-bold tracking-wide text-white sm:text-5xl md:text-[52px] lg:text-6xl">
+                  {slide.headline}
                 </h1>
-                <Button to="/rooms" className="mt-10">
+                <p className="mx-auto mt-5 max-w-2xl font-display text-lg font-semibold tracking-wide text-gold sm:text-xl lg:text-2xl">
+                  {slide.subline}
+                </p>
+                <Button to="/rooms" className="mt-9">
                   Discover More
                 </Button>
               </div>
@@ -103,7 +105,7 @@ export default function Hero() {
       <div className="absolute bottom-6 left-4 z-10 flex gap-2 sm:bottom-8 sm:left-6 sm:gap-3 lg:left-10">
         {slides.map((slide, i) => (
           <button
-            key={slide.place}
+            key={slide.image}
             type="button"
             onClick={() => go(i)}
             aria-label={`Go to slide ${i + 1}`}

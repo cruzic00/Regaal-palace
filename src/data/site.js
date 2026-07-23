@@ -27,8 +27,8 @@ export const nav = [
     to: '/rooms',
     children: [
       { label: 'All Rooms', to: '/rooms' },
-      { label: 'Double Suite Rooms', to: '/rooms/double-suite-rooms' },
-      { label: 'Delux Family Rooms', to: '/rooms/delux-family-rooms' },
+      { label: 'Business Class Rooms', to: '/rooms/double-suite-rooms' },
+      { label: '', to: '/rooms/delux-family-rooms' },
       { label: 'Presidential Villa', to: '/rooms/presidential-villa' },
     ],
   },
@@ -37,10 +37,26 @@ export const nav = [
 ]
 
 export const slides = [
-  { place: 'IN CALIFORNIA', image: '/images/banner-1.jpeg' },
-  { place: 'IN KASHMIR', image: '/images/banner-2.jpeg' },
-  { place: 'IN COLOSSEUM', image: '/images/banner-3.jpeg' },
-  { place: 'IN SRILANKA', image: '/images/banner-4.jpeg' },
+  {
+    headline: 'Elegant stays. Effortless experiences.',
+    subline: 'Where Business Meets Comfort.',
+    image: '/images/banner-1.jpeg',
+  },
+  {
+    headline: 'Designed for business, perfected for comfort.',
+    subline: 'Your Corporate Address in Jalgaon.',
+    image: '/images/banner-2.jpeg',
+  },
+  {
+    headline: 'Stay Smart. Meet Better. Experience Regaal.',
+    subline: 'The preferred choice for today’s business traveller.',
+    image: '/images/banner-3.jpeg',
+  },
+  {
+    headline: 'Business Hospitality, Redefined.',
+    subline: 'Premium comfort. Professional service. Memorable stays.',
+    image: '/images/banner-4.jpeg',
+  },
 ]
 
 export const rooms = [
