@@ -40,6 +40,7 @@ export default function ContactPage() {
         title="Contact Us"
         crumb="Contact"
         image="/images/aboutus1.jpeg"
+        position="50% 20%"
       />
 
       <section className="py-16 sm:py-20 lg:py-32">
