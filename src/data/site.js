@@ -261,7 +261,8 @@ export const team = [
   },
   {
     name: 'Sunil Chaudhari',
-    role: 'Head of Operations',
+    role: 'Operations head',
+    focus: 'day to day operations, inventory management',
     photo: '/images/sunil .jpeg',
   },
   {
@@ -272,7 +273,8 @@ export const team = [
   },
   {
     name: 'Arindam Roy Chowdhury',
-    role: 'Group General Manager',
+    role: 'Corporate General Manager',
+    focus: 'Operations & Business Development',
     photo: '/images/arindam.jpeg',
   },
   {
