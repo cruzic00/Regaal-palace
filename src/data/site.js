@@ -280,7 +280,7 @@ export const team = [
   {
     name: 'Dipak Mandal',
     role: 'Head of Sales',
-    photo: '/images/unkownicon.jpg',
+    photo: '/images/dipak.jpeg',
   },
   
 ]
