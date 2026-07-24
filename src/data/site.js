@@ -271,6 +271,7 @@ export const team = [
   {
     name: 'Vinod Chaudhari',
     role: 'Managing Director',
+     focus: 'Business strategy',
     photo: '/images/vinod.jpeg',
   },
   {
