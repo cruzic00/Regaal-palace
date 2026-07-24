@@ -262,7 +262,7 @@ export const team = [
   {
     name: 'Sunil Chaudhari',
     role: 'Head of Operations',
-    photo: '/images/unkownicon.jpg',
+    photo: '/images/sunil .jpeg',
   },
   {
     name: 'Vinod Chaudhari',
@@ -273,7 +273,7 @@ export const team = [
   {
     name: 'Arindam Roy Chowdhury',
     role: 'Group General Manager',
-    photo: '/images/unkownicon.jpg',
+    photo: '/images/arindam.jpeg',
   },
   {
     name: 'Dipak Mandal',
