@@ -39,6 +39,9 @@ export default function TeamPage() {
                     {member.name}
                   </h3>
                   <p className="mt-1 text-sm tracking-wide text-gold">{member.role}</p>
+                  {member.focus && (
+                    <p className="mt-0.5 text-xs tracking-wide text-muted">{member.focus}</p>
+                  )}
                 </article>
               </Reveal>
             ))}

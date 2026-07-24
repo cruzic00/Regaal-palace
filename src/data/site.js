@@ -260,7 +260,8 @@ export const team = [
   {
     name: 'Nandu Chaudhari',
     role: 'Managing Director',
-    photo: '/images/unkownicon.jpg',
+    focus: 'Growth and Expansion',
+    photo: '/images/nandhu.jpeg',
   },
   {
     name: 'Sunil Chaudhari',
@@ -270,7 +271,7 @@ export const team = [
   {
     name: 'Vinod Chaudhari',
     role: 'Managing Director',
-    photo: '/images/unkownicon.jpg',
+    photo: '/images/vinod.jpeg',
   },
   {
     name: 'Arindam Roy Chowdhury',
