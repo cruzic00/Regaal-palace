@@ -250,7 +250,8 @@ export const team = [
   {
     name: 'Tushar Chaudhari',
     role: 'Managing Director',
-    photo: '/images/unkownicon.jpg',
+    focus: 'Business strategy',
+    photo: '/images/tushar.jpeg',
   },
   {
     name: 'Jayesh Chaudhari',
