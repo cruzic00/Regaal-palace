@@ -254,11 +254,6 @@ export const team = [
     photo: '/images/tushar.jpeg',
   },
   {
-    name: 'Jayesh Chaudhari',
-    role: 'Managing Director',
-    photo: '/images/unkownicon.jpg',
-  },
-  {
     name: 'Nandu Chaudhari',
     role: 'Managing Director',
     focus: 'Growth and Expansion',
