@@ -11,7 +11,7 @@ export default function FixedBackdrop({ image, scrim = 'bg-scrim/75', position =
     <>
       <div
         aria-hidden="true"
-        className="absolute inset-0 bg-scroll bg-cover md:bg-fixed"
+        className="absolute inset-0 bg-fixed bg-cover"
         style={{ backgroundImage: `url("${image}")`, backgroundPosition: position }}
       />
       <div aria-hidden="true" className={`absolute inset-0 ${scrim}`} />
