@@ -1,4 +1,4 @@
-﻿import { Button, Reveal } from '../components/ui'
+import { Button, Reveal } from '../components/ui'
 
 const stats = [
   { value: '40 +', label: 'Luxury Rooms' },

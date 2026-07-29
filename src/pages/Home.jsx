@@ -2,6 +2,7 @@ import Hero from '../components/Hero'
 import About from '../sections/About'
 import Amenities from '../sections/Amenities'
 import BookingSection from '../sections/BookingSection'
+import BusinessBanner from '../sections/BusinessBanner'
 import Facilities from '../sections/Facilities'
 import Highlights from '../sections/Highlights'
 import Manager from '../sections/Manager'
@@ -15,6 +16,7 @@ export default function Home() {
       <BookingSection />
       <Highlights />
       <Rooms />
+      <BusinessBanner />
       <About />
       <Amenities />
       <Manager />
