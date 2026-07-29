@@ -14,7 +14,11 @@ export default function Rooms() {
         </Reveal>
         <div className="mt-10 grid gap-8 sm:grid-cols-2 lg:mt-14 lg:grid-cols-2">
           {rooms.slice(0, 4).map((room, i) => (
-            <Reveal key={room.slug} variant="emerge" delay={i * 120}>
+            <Reveal
+              key={room.slug}
+              variant={i % 2 === 0 ? 'left-zoom' : 'right-zoom'}
+              delay={i * 120}
+            >
               <RoomCard room={room} />
             </Reveal>
           ))}

@@ -9,6 +9,8 @@ const restingState = {
   drop: { transform: 'translateY(-70px)', filter: 'blur(12px)' },
   left: { transform: 'translateX(-56px)', filter: 'blur(12px)' },
   right: { transform: 'translateX(56px)', filter: 'blur(12px)' },
+  'left-zoom': { transform: 'translateX(-100px) scale(0.82)', filter: 'blur(14px)' },
+  'right-zoom': { transform: 'translateX(100px) scale(0.82)', filter: 'blur(14px)' },
   'right-far': { transform: 'translateX(180px)', filter: 'blur(14px)' },
   zoom: { transform: 'scale(1.1)', filter: 'blur(16px)' },
   // --spread-x/y let a caller start a card on top of a sibling, so a grid can
