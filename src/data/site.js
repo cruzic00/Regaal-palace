@@ -73,7 +73,7 @@ export const rooms = [
     blurb:
       'A softly lit corner suite with a private balcony, deep soaking tub and a view that runs all the way to the water line.',
     details:
-      'The room measures 264 sq. ft. (25 sq. mt.) and features 2 Single Beds, City View, and 1 Bathroom. Room amenities include Laundry Service, Air Conditioning, Housekeeping, Wi-Fi, and Bathroom. Room features include a Telephone, Charging Points, Closet, Chair, and Centre Table. Beds and blankets include a Blanket. Media and entertainment facilities include a TV. Bathroom amenities include Towels, Geyser/Water Heater, Western Toilet Seat, Hot & Cold Water, and Toiletries. Other facilities include a Fan.',
+      'The room measures 280 sq. ft. (25 sq. mt.) and features 2 Single Beds, City View, and 1 Bathroom. Room amenities include Laundry Service, Air Conditioning, Housekeeping, Wi-Fi, and Bathroom. Room features include a Telephone, Charging Points, Closet, Chair, and Centre Table. Beds and blankets include a Blanket. Media and entertainment facilities include a TV. Bathroom amenities include Towels, Geyser/Water Heater, Western Toilet Seat, Hot & Cold Water, and Toiletries. Other facilities include a Fan.',
   },
   {
     slug: 'delux-family-rooms',
@@ -87,7 +87,7 @@ export const rooms = [
     blurb:
       'A spacious executive suite offering contemporary design, working desk area, and luxury amenities for business travelers.',
     details:
-      'The room measures 336 sq. ft. (31 sq. mt.) and features 1 King Bed, City View, and 1 Bathroom. Room amenities include Mineral Water, Laundry Service, Air Conditioning, Housekeeping, Wi-Fi, Bathroom, Room Service, and Smoking Room. Room features include a Telephone. Beds and blankets include a Blanket. Media and entertainment facilities include a TV. Bathroom amenities include a Dental Kit, Towels, Geyser/Water Heater, Toiletries, Western Toilet Seat, and Hot & Cold Water. Other facilities include a Newspaper.',
+      'The room measures 320 sq. ft. (31 sq. mt.) and features 1 King Bed, City View, and 1 Bathroom. Room amenities include Mineral Water, Laundry Service, Air Conditioning, Housekeeping, Wi-Fi, Bathroom, Room Service, and Smoking Room. Room features include a Telephone. Beds and blankets include a Blanket. Media and entertainment facilities include a TV. Bathroom amenities include a Dental Kit, Towels, Geyser/Water Heater, Toiletries, Western Toilet Seat, and Hot & Cold Water. Other facilities include a Newspaper.',
   },
   {
     slug: 'suprior-bed-rooms',
@@ -101,7 +101,7 @@ export const rooms = [
     blurb:
       'Designed for family comfort with ample living space, cozy king bed, and modern entertainment setup.',
     details:
-      'The room measures 350 sq. ft. (33 sq. mt.) and features 1 King Bed, City View, and 1 Bathroom. Room amenities include Mineral Water, Laundry Service, Air Conditioning, Housekeeping, and Wi-Fi. Room features include a Telephone and Sofa. Beds and blankets include a Blanket. Media and entertainment facilities include a TV. Bathroom amenities include a Dental Kit, Towels, Geyser/Water Heater, Toiletries, and Hot & Cold Water. Other facilities include a Newspaper.',
+      'The room measures 320 sq. ft. (33 sq. mt.) and features 1 King Bed, City View, and 1 Bathroom. Room amenities include Mineral Water, Laundry Service, Air Conditioning, Housekeeping, and Wi-Fi. Room features include a Telephone and Sofa. Beds and blankets include a Blanket. Media and entertainment facilities include a TV. Bathroom amenities include a Dental Kit, Towels, Geyser/Water Heater, Toiletries, and Hot & Cold Water. Other facilities include a Newspaper.',
   },
   {
     slug: 'presidential-villa',
@@ -115,7 +115,7 @@ export const rooms = [
     blurb:
       'An expansive, luxurious suite featuring premium furnishing, city skyline view, private dining area, and dedicated butler service.',
     details:
-      'The room measures 480 sq. ft. (45 sq. mt.) and features 1 Super King Bed, City View, and 1 Luxury Bathroom. Room amenities include Mineral Water, Laundry Service, Air Conditioning, Housekeeping, High-Speed Wi-Fi, Bathroom, Room Service, and Mini Bar.',
+      'The room measures 320 sq. ft. (45 sq. mt.) and features 1 Super King Bed, City View, and 1 Luxury Bathroom. Room amenities include Mineral Water, Laundry Service, Air Conditioning, Housekeeping, High-Speed Wi-Fi, Bathroom, Room Service, and Mini Bar.',
   },
   ]
 
