@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Mail, MessageCircle, Phone, X } from 'lucide-react'
+import { ChevronDown, ChevronUp, Mail, Phone } from 'lucide-react'
 import { contact } from '../data/site'
 
 // lucide dropped brand marks, so the glyphs are inlined.
@@ -81,12 +81,14 @@ export default function FloatingContact() {
           type="button"
           onClick={() => setOpen((prev) => !prev)}
           aria-label={open ? 'Close contact menu' : 'Open contact menu'}
-          className="grid size-11 place-items-center rounded-full bg-gold text-on-gold shadow-xl transition-transform duration-300 active:scale-95"
+          className={`grid size-11 place-items-center rounded-full bg-gold text-on-gold shadow-xl transition-all duration-300 active:scale-95 ${
+            open ? '' : 'animate-bounce'
+          }`}
         >
           {open ? (
-            <X className="size-5 transition-transform duration-300 rotate-90" />
+            <ChevronDown className="size-6 transition-transform duration-300" />
           ) : (
-            <MessageCircle className="size-5 transition-transform duration-300" />
+            <ChevronUp className="size-6 transition-transform duration-300" />
           )}
         </button>
       </div>
