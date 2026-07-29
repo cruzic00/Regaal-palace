@@ -10,7 +10,7 @@ export default function Logo({ compact = false }) {
   return (
     <Link to="/" className="shrink-0" aria-label={`${brand.name} — home`}>
       <img
-        src="/logo.png"
+        src="/images/logo.png"
         alt={brand.name}
         className={`w-auto object-contain transition-all duration-500 ${
           compact ? 'h-14' : 'h-20 lg:h-24'
