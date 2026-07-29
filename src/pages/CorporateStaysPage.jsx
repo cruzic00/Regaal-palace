@@ -221,13 +221,13 @@ export default function CorporateStaysPage() {
             <Reveal delay={benefits.length * 80}>
               <div className="flex h-full flex-col justify-between bg-gold p-7 text-on-gold">
                 <div>
-                  <p className="font-sans text-xs font-semibold tracking-[0.2em] uppercase opacity-75">
+                  <p className="font-sans text-xs font-semibold tracking-[0.2em] uppercase text-on-gold/80">
                     Custom Corporate Tariffs
                   </p>
-                  <h3 className="mt-2 text-2xl font-semibold leading-snug">
+                  <h3 className="mt-2 text-2xl font-semibold leading-snug text-on-gold">
                     Need Custom Corporate Rates?
                   </h3>
-                  <p className="mt-3 text-sm opacity-90">
+                  <p className="mt-3 text-sm text-on-gold/90">
                     Contact our sales team today to discuss customized packages and annual contracts tailored for your organization.
                   </p>
                 </div>
