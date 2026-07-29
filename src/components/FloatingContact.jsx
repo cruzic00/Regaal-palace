@@ -38,7 +38,7 @@ export default function FloatingContact() {
           rel="noreferrer"
           aria-label={item.label}
           title={item.label}
-          className="grid size-10 place-items-center rounded-full border border-gold/40 bg-ink-soft/85 text-gold shadow-lg backdrop-blur transition-all duration-300 hover:scale-110 hover:bg-gold hover:text-on-gold sm:size-11"
+          className="grid size-10 place-items-center rounded-full bg-gold text-on-gold shadow-lg transition-all duration-300 hover:scale-110 hover:bg-ink hover:text-gold sm:size-11"
         >
           {item.node}
         </a>
