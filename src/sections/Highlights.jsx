@@ -1,4 +1,4 @@
-import { BadgePercent, Briefcase, Headset, MapPin, Wifi } from 'lucide-react'
+import { Briefcase, Headset, IndianRupee, MapPin, Wifi } from 'lucide-react'
 import { Reveal } from '../components/ui'
 
 const highlights = [
@@ -6,7 +6,7 @@ const highlights = [
   { icon: Wifi, label: 'High-Speed Wi-Fi' },
   { icon: Briefcase, label: 'Business-Friendly Rooms' },
   { icon: Headset, label: '24-Hour Assistance' },
-  { icon: BadgePercent, label: 'Corporate Rates' },
+  { icon: IndianRupee, label: 'Corporate Rates' },
 ]
 
 export default function Highlights() {
