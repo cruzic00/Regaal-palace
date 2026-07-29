@@ -1,5 +1,6 @@
 import { useEffect } from 'react'
 import { Route, Routes, useLocation } from 'react-router-dom'
+import FloatingContact from './components/FloatingContact'
 import Footer from './components/Footer'
 import Header from './components/Header'
 import { initSmoothScroll, jumpToTop } from './lib/smoothScroll'
@@ -44,6 +45,7 @@ export default function App() {
         </Routes>
       </main>
       <Footer />
+      <FloatingContact />
     </>
   )
 }
