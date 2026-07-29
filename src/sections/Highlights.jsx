@@ -13,10 +13,10 @@ export default function Highlights() {
   return (
     <section className="pt-8 pb-2 lg:pt-10 lg:pb-2">
       <div className="container-x">
-        <div className="grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 lg:grid-cols-5">
+        <div className="flex flex-wrap items-start justify-center gap-x-6 gap-y-8 sm:gap-x-10 lg:gap-x-16">
           {highlights.map((item, i) => (
             <Reveal key={item.label} variant="up" delay={i * 90}>
-              <div className="flex flex-col items-center gap-3 px-4 text-center">
+              <div className="flex w-32 flex-col items-center gap-3 text-center sm:w-40 lg:w-44">
                 <item.icon className="size-8 shrink-0 text-gold" strokeWidth={1.5} />
                 <span className="font-display text-base leading-snug text-white sm:text-lg">
                   {item.label}
