@@ -30,6 +30,7 @@ export const nav = [
       { label: 'Business Class', to: '/rooms/double-suite-rooms' },
       { label: 'Executive Class', to: '/rooms/delux-family-rooms' },
       { label: 'Family Rooms', to: '/rooms/presidential-villa' },
+      
     ],
   },
   { label: 'Our Team', to: '/team' },
@@ -62,10 +63,10 @@ export const slides = [
 export const rooms = [
   {
     slug: 'double-suite-rooms',
-    name: 'Business Class',
-    category: 'Premium room',
-    price: 2499,
-    size: '264 SQ.FT/Rooms',
+    name: 'Business Suite',
+    category: '',
+    price: 3200,
+    size: '280 SQ.FT/Rooms',
     beds: '2 Single Beds',
     guests: '3 Adults, 1 Child',
     image: '/images/business-class2.jpeg',
@@ -76,35 +77,47 @@ export const rooms = [
   },
   {
     slug: 'delux-family-rooms',
-    name: 'Executive Class',
-    category: 'Luxury room',
-    price: 2799,
-    size: '336 SQ.FT/Rooms',
+    name: 'Executive Suite',
+    category: '',
+    price: 3500,
+    size: '320 SQ.FT/Rooms',
     beds: '1 King Bed',
     guests: '3 Adults, 1 Children',
     image: '/images/executive-class.jpeg',
     blurb:
-      '',
+      'A spacious executive suite offering contemporary design, working desk area, and luxury amenities for business travelers.',
     details:
       'The room measures 336 sq. ft. (31 sq. mt.) and features 1 King Bed, City View, and 1 Bathroom. Room amenities include Mineral Water, Laundry Service, Air Conditioning, Housekeeping, Wi-Fi, Bathroom, Room Service, and Smoking Room. Room features include a Telephone. Beds and blankets include a Blanket. Media and entertainment facilities include a TV. Bathroom amenities include a Dental Kit, Towels, Geyser/Water Heater, Toiletries, Western Toilet Seat, and Hot & Cold Water. Other facilities include a Newspaper.',
   },
   {
     slug: 'suprior-bed-rooms',
-    name: 'Family Rooms',
-    category: 'Deluxe Room',
-    price: 3099,
-    size: '350 SQ.FT/Rooms',
+    name: 'Premium Family Executive Room',
+    category: '',
+    price: 4000,
+    size: '320 SQ.FT/Rooms',
     beds: '1 King Bed',
     guests: '4 Adults, 1 Child',
     image: '/images/family-rooms.jpeg',
     blurb:
-      '',
-      details:
-        'The room measures *350 sq. ft. (33 sq. mt.)* and features *1 King Bed, City View, and 1 Bathroom. Room amenities include **Mineral Water, Laundry Service, Air Conditioning, Housekeeping, and Wi-Fi. Room features include a **Telephone and Sofa. Beds and blankets include a **Blanket. Media and entertainment facilities include a **TV. Bathroom amenities include a **Dental Kit, Towels, Geyser/Water Heater, Toiletries, and Hot & Cold Water. Other facilities include a **Newspaper*.'
+      'Designed for family comfort with ample living space, cozy king bed, and modern entertainment setup.',
+    details:
+      'The room measures 350 sq. ft. (33 sq. mt.) and features 1 King Bed, City View, and 1 Bathroom. Room amenities include Mineral Water, Laundry Service, Air Conditioning, Housekeeping, and Wi-Fi. Room features include a Telephone and Sofa. Beds and blankets include a Blanket. Media and entertainment facilities include a TV. Bathroom amenities include a Dental Kit, Towels, Geyser/Water Heater, Toiletries, and Hot & Cold Water. Other facilities include a Newspaper.',
   },
-  
-  
-]
+  {
+    slug: 'presidential-villa',
+    name: 'Premium Executive Suite Room ',
+    category: '',
+    price: 4500,
+    size: '320 SQ.FT/Rooms',
+    beds: '1 Super King Bed',
+    guests: '4 Adults, 2 Children',
+    image: '/images/room-1.jpeg',
+    blurb:
+      'An expansive, luxurious suite featuring premium furnishing, city skyline view, private dining area, and dedicated butler service.',
+    details:
+      'The room measures 480 sq. ft. (45 sq. mt.) and features 1 Super King Bed, City View, and 1 Luxury Bathroom. Room amenities include Mineral Water, Laundry Service, Air Conditioning, Housekeeping, High-Speed Wi-Fi, Bathroom, Room Service, and Mini Bar.',
+  },
+  ]
 
 export const amenities = [
   'Room Services',

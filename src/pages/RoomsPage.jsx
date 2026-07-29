@@ -29,9 +29,9 @@ export default function RoomsPage() {
             </div>
           )}
 
-          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-2">
             {rooms.map((room, i) => (
-              <Reveal key={room.slug} delay={(i % 3) * 120}>
+              <Reveal key={room.slug} delay={(i % 2) * 120}>
                 <RoomCard room={room} />
               </Reveal>
             ))}

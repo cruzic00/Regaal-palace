@@ -9,7 +9,7 @@ export default function RoomCard({ room }) {
           src={room.image}
           alt={room.name}
           loading="lazy"
-          className="h-64 w-full object-cover transition-transform duration-700 group-hover:scale-110"
+          className="h-64 sm:h-72 lg:h-80 w-full object-cover transition-transform duration-700 group-hover:scale-110"
         />
         <div className="absolute inset-0 bg-scrim/60 opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
         <Link
@@ -35,11 +35,11 @@ export default function RoomCard({ room }) {
         </h3>
         <div className="mt-5 flex items-center gap-6 border-t border-line pt-5 text-sm">
           <span className="flex items-center gap-2">
-            <Maximize className="size-4 text-gold" />
+            <Maximize className="size-4 shrink-0 text-gold" />
             {room.size}
           </span>
           <span className="flex items-center gap-2">
-            <BedDouble className="size-4 text-gold" />
+            <BedDouble className="size-4 shrink-0 text-gold" />
             {room.beds}
           </span>
         </div>

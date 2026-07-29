@@ -1,5 +1,5 @@
 import RoomCard from '../components/RoomCard'
-import { Reveal, SectionHeading, spreadFromCentre, spreadFromCentreDelays } from '../components/ui'
+import { Reveal, SectionHeading } from '../components/ui'
 import { brand, rooms } from '../data/site'
 
 const roomsIntro =
@@ -12,14 +12,9 @@ export default function Rooms() {
         <Reveal>
           <SectionHeading title={`${brand.possessive} Rooms & Suites`} blurb={roomsIntro} />
         </Reveal>
-        <div className="mt-10 grid gap-8 sm:grid-cols-2 lg:mt-14 lg:grid-cols-3">
-          {rooms.slice(0, 3).map((room, i) => (
-            <Reveal
-              key={room.slug}
-              variant="emerge"
-              delay={spreadFromCentreDelays[i]}
-              className={spreadFromCentre[i]}
-            >
+        <div className="mt-10 grid gap-8 sm:grid-cols-2 lg:mt-14 lg:grid-cols-2">
+          {rooms.slice(0, 4).map((room, i) => (
+            <Reveal key={room.slug} variant="emerge" delay={i * 120}>
               <RoomCard room={room} />
             </Reveal>
           ))}
