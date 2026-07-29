@@ -1,21 +1,8 @@
 import { useEffect, useState } from 'react'
 import { Link, NavLink, useLocation } from 'react-router-dom'
-import { ChevronDown, Menu, Moon, Sun, X } from 'lucide-react'
+import { ChevronDown, Menu, X } from 'lucide-react'
 import { nav } from '../data/site'
 import Logo from './Logo'
-
-function useTheme() {
-  const [light, setLight] = useState(
-    () => localStorage.getItem('regaal-theme') === 'light',
-  )
-
-  useEffect(() => {
-    document.documentElement.classList.toggle('light', light)
-    localStorage.setItem('regaal-theme', light ? 'light' : 'dark')
-  }, [light])
-
-  return [light, () => setLight((v) => !v)]
-}
 
 function NavItem({ item }) {
   const linkCls = ({ isActive }) =>
@@ -59,7 +46,6 @@ function NavItem({ item }) {
 export default function Header() {
   const [scrolled, setScrolled] = useState(false)
   const [open, setOpen] = useState(false)
-  const [light, toggleTheme] = useTheme()
   const { pathname } = useLocation()
 
   useEffect(() => {
@@ -90,16 +76,6 @@ export default function Header() {
         </nav>
 
         <div className="flex items-center gap-3 sm:gap-5">
-          <button
-            type="button"
-            onClick={toggleTheme}
-            aria-label={light ? 'Apply dark mode' : 'Apply light mode'}
-            title={light ? 'Apply Dark Mode' : 'Apply Light Mode'}
-            className="text-gold transition-transform duration-500 hover:rotate-90"
-          >
-            {light ? <Moon className="size-6" /> : <Sun className="size-6" />}
-          </button>
-
           <a
             href="mailto:reservations@regaalpalace.com?subject=Room Booking Enquiry"
             className="hidden border border-gold px-5 py-3 font-display text-xs tracking-[0.14em] text-gold uppercase transition-colors duration-300 hover:bg-gold hover:text-on-gold sm:inline-block xl:px-8 xl:py-4 xl:text-sm xl:tracking-[0.16em]"
