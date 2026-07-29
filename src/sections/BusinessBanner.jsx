@@ -31,6 +31,7 @@ export default function BusinessBanner() {
               src="/images/businessMeets.jpeg"
               alt="Business facilities at Regaal Palace"
               loading="lazy"
+              style={{ objectPosition: 'left center' }}
               className="aspect-4/5 w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
             />
           </div>
