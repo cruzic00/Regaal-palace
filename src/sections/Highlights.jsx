@@ -11,9 +11,9 @@ const highlights = [
 
 export default function Highlights() {
   return (
-    <section className="py-10 lg:py-14">
+    <section className="pt-8 pb-2 lg:pt-10 lg:pb-2">
       <div className="container-x">
-        <div className="grid grid-cols-2 gap-x-4 gap-y-8 border-y border-line py-9 sm:grid-cols-3 lg:grid-cols-5 lg:divide-x lg:divide-white/10">
+        <div className="grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 lg:grid-cols-5">
           {highlights.map((item, i) => (
             <Reveal key={item.label} variant="up" delay={i * 90}>
               <div className="flex flex-col items-center gap-3 px-4 text-center">
