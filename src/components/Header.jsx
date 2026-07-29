@@ -69,7 +69,7 @@ export default function Header() {
       <div className="container-x flex items-center justify-between gap-4 lg:gap-8">
         <Logo compact={scrolled} />
 
-        <nav className="hidden items-center gap-6 lg:flex xl:gap-9">
+        <nav className="hidden items-center gap-4 lg:flex xl:gap-7">
           {nav.map((item) => (
             <NavItem key={item.label} item={item} />
           ))}

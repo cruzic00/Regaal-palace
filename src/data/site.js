@@ -19,7 +19,6 @@ export const nav = [
   {
     label: 'Home',
     to: '/',
-    
   },
   { label: 'About', to: '/about' },
   {
@@ -27,12 +26,13 @@ export const nav = [
     to: '/rooms',
     children: [
       { label: 'All Rooms', to: '/rooms' },
-      { label: 'Business Class', to: '/rooms/double-suite-rooms' },
-      { label: 'Executive Class', to: '/rooms/delux-family-rooms' },
-      { label: 'Family Rooms', to: '/rooms/presidential-villa' },
-      
+      { label: 'Business Suite', to: '/rooms/double-suite-rooms' },
+      { label: 'Executive Suite', to: '/rooms/delux-family-rooms' },
+      { label: 'Premium Family Executive Room', to: '/rooms/suprior-bed-rooms' },
+      { label: 'Premium Executive Suite Room', to: '/rooms/presidential-villa' },
     ],
   },
+  { label: 'Corporate Stays', to: '/corporate-stays' },
   { label: 'Our Team', to: '/team' },
   { label: 'Contact', to: '/contact' },
 ]

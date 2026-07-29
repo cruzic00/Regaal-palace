@@ -7,6 +7,7 @@ import { initSmoothScroll, jumpToTop } from './lib/smoothScroll'
 import AboutPage from './pages/AboutPage'
 import BlogPage from './pages/BlogPage'
 import ContactPage from './pages/ContactPage'
+import CorporateStaysPage from './pages/CorporateStaysPage'
 import Home from './pages/Home'
 import RoomDetail from './pages/RoomDetail'
 import RoomsPage from './pages/RoomsPage'
@@ -40,6 +41,7 @@ export default function App() {
           <Route path="/about" element={<AboutPage />} />
           <Route path="/rooms" element={<RoomsPage />} />
           <Route path="/rooms/:slug" element={<RoomDetail />} />
+          <Route path="/corporate-stays" element={<CorporateStaysPage />} />
           <Route path="/team" element={<TeamPage />} />
           <Route path="/contact" element={<ContactPage />} />
         </Routes>
