@@ -1,20 +1,21 @@
 @import 'tailwindcss';
 
 @theme {
-  /* Sampled straight off logo.png: #ecd270 is the artwork's average gold,
-     #fce893 its highlight. --color-on-gold is whatever text sits on a gold
-     fill, and flips per theme because the gold itself does. */
-  --color-gold: #ecd270;
-  --color-gold-light: #fce893;
+  /* Cream accent in dark mode: replaces the gold across text, borders, stars and
+     buttons. --color-on-gold is the text that sits on a filled (cream) button. */
+  --color-gold: #f5eede;
+  --color-gold-light: #fbf6ec;
   --color-on-gold: #14110a;
 
-  --color-ink: #0d0d0d;
-  --color-ink-soft: #161616;
-  --color-ink-line: #2a2a2a;
+  /* Dark navy background (#010A19). --color-ink-soft is a touch lighter so
+     alternating sections still read against the base. */
+  --color-ink: #010a19;
+  --color-ink-soft: #0a1526;
+  --color-ink-line: #1c2942;
   --color-cream: #f7f4f0;
 
   /* Never flips with the theme — scrims sit on photographs. */
-  --color-scrim: #0d0d0d;
+  --color-scrim: #010a19;
 
   --font-display: 'Cormorant Garamond', Georgia, serif;
   --font-sans: 'Jost', system-ui, sans-serif;
@@ -139,8 +140,8 @@ html.light {
    --color-white locally makes every `text-white` descendant ignore the flip. */
 @utility on-photo {
   --color-white: #ffffff;
-  --color-gold: #ecd270;
-  --color-gold-light: #fce893;
+  --color-gold: #f5eede;
+  --color-gold-light: #fbf6ec;
   --color-on-gold: #14110a;
   /* Back to the dark-theme mixes: a scrimmed photo is always light-on-dark,
      whichever theme the rest of the page is in. */

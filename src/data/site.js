@@ -38,23 +38,23 @@ export const nav = [
 
 export const slides = [
   {
-    headline: 'Elegant stays. Effortless experiences.',
-    subline: 'Where Business Meets Comfort.',
+    headline: 'Your Business Address in Jalgaon.',
+    subline: 'Comfortable stays, thoughtful hospitality and business-friendly convenience at The Regaal.',
     image: '/images/banner-1.jpeg',
   },
   {
-    headline: 'Designed for business, perfected for comfort.',
-    subline: 'Your Corporate Address in Jalgaon.',
+    headline: 'Your Business Address in Jalgaon.',
+    subline: 'Comfortable stays, thoughtful hospitality and business-friendly convenience at The Regaal.',
     image: '/images/banner-2.jpeg',
   },
   {
-    headline: 'Stay Smart. Meet Better. Experience Regaal.',
-    subline: 'The preferred choice for today’s business traveller.',
+    headline: 'Your Business Address in Jalgaon.',
+    subline: 'Comfortable stays, thoughtful hospitality and business-friendly convenience at The Regaal.',
     image: '/images/banner-3.jpeg',
   },
   {
-    headline: 'Business Hospitality, Redefined.',
-    subline: 'Premium comfort. Professional service. Memorable stays.',
+    headline: 'Your Business Address in Jalgaon.',
+    subline: 'Comfortable stays, thoughtful hospitality and business-friendly convenience at The Regaal.',
     image: '/images/banner-4.jpeg',
   },
 ]
