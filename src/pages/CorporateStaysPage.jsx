@@ -204,7 +204,11 @@ export default function CorporateStaysPage() {
 
           <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 lg:mt-16">
             {benefits.map((item, i) => (
-              <Reveal key={item.title} delay={i * 80}>
+              <Reveal
+                key={item.title}
+                variant={i % 2 === 0 ? 'left-zoom' : 'right-zoom'}
+                delay={i * 80}
+              >
                 <div className="group flex h-full flex-col bg-ink-soft p-7 transition-all duration-500 hover:bg-gold hover:text-on-gold">
                   <item.icon className="size-8 text-gold transition-colors duration-500 group-hover:text-on-gold" />
                   <h3 className="mt-5 text-xl font-medium text-white transition-colors duration-500 group-hover:text-on-gold">
@@ -218,7 +222,10 @@ export default function CorporateStaysPage() {
             ))}
 
             {/* Custom Tariff Callout Card */}
-            <Reveal delay={benefits.length * 80}>
+            <Reveal
+              variant={benefits.length % 2 === 0 ? 'left-zoom' : 'right-zoom'}
+              delay={benefits.length * 80}
+            >
               <div className="flex h-full flex-col justify-between bg-gold p-7 text-on-gold">
                 <div>
                   <p className="font-sans text-xs font-semibold tracking-[0.2em] uppercase text-on-gold/80">
@@ -262,7 +269,7 @@ export default function CorporateStaysPage() {
                   className="grid items-center gap-10 lg:grid-cols-12 lg:gap-16"
                 >
                   <Reveal
-                    variant={isEven ? 'left' : 'right'}
+                    variant={isEven ? 'left-zoom' : 'right-zoom'}
                     className={`lg:col-span-6 ${isEven ? 'lg:order-1' : 'lg:order-2'}`}
                   >
                     <div className="group overflow-hidden rounded-sm border border-white/10 shadow-xl">
@@ -276,7 +283,7 @@ export default function CorporateStaysPage() {
                   </Reveal>
 
                   <Reveal
-                    variant={isEven ? 'right' : 'left'}
+                    variant={isEven ? 'right-zoom' : 'left-zoom'}
                     className={`lg:col-span-6 ${isEven ? 'lg:order-2' : 'lg:order-1'}`}
                   >
                     <div className="flex items-center gap-3">
@@ -317,7 +324,12 @@ export default function CorporateStaysPage() {
 
           <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4 lg:mt-16">
             {whyChoose.map((item, i) => (
-              <Reveal key={item} delay={i * 60} className="h-full">
+              <Reveal
+                key={item}
+                variant={i % 2 === 0 ? 'left-zoom' : 'right-zoom'}
+                delay={i * 60}
+                className="h-full"
+              >
                 <div className="flex h-full items-center gap-4 rounded-sm border border-white/10 bg-ink-soft p-6 transition-all hover:border-gold/50 hover:bg-white/[0.02]">
                   <span className="flex size-7 shrink-0 items-center justify-center rounded-full bg-gold/15 text-xs font-semibold text-gold">
                     {i + 1}
