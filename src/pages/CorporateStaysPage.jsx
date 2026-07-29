@@ -317,12 +317,12 @@ export default function CorporateStaysPage() {
 
           <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4 lg:mt-16">
             {whyChoose.map((item, i) => (
-              <Reveal key={item} delay={i * 60}>
-                <div className="flex items-start gap-4 rounded-sm border border-white/10 bg-ink-soft p-6 transition-all hover:border-gold/50">
+              <Reveal key={item} delay={i * 60} className="h-full">
+                <div className="flex h-full items-center gap-4 rounded-sm border border-white/10 bg-ink-soft p-6 transition-all hover:border-gold/50 hover:bg-white/[0.02]">
                   <span className="flex size-7 shrink-0 items-center justify-center rounded-full bg-gold/15 text-xs font-semibold text-gold">
                     {i + 1}
                   </span>
-                  <p className="text-base font-medium text-white/90 leading-snug">{item}</p>
+                  <p className="text-sm font-medium leading-snug text-white/90 sm:text-base">{item}</p>
                 </div>
               </Reveal>
             ))}
