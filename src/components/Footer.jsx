@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { Mail, MapPin, Phone } from 'lucide-react'
-import { brand, contact, departmentEmails, usefulLinks } from '../data/site'
+import { brand, contact, departmentEmails, mapLocation, usefulLinks } from '../data/site'
 import Logo from './Logo'
 
 // lucide dropped brand marks, so the social glyphs are inlined. Swap href='#'
@@ -21,7 +21,7 @@ const socials = [
 export default function Footer() {
   return (
     <footer className="bg-ink-soft pt-20">
-      <div className="container-x grid gap-10 pb-14 sm:grid-cols-2 sm:gap-12 sm:pb-16 lg:grid-cols-3">
+      <div className="container-x grid gap-10 pb-14 sm:grid-cols-2 sm:gap-12 sm:pb-16 lg:grid-cols-4">
         <div>
           <Logo />
           <h4 className="mt-8 mb-5 text-xs font-medium tracking-[0.3em] text-white uppercase">
@@ -122,8 +122,25 @@ export default function Footer() {
           </ul>
         </div>
 
-        {/* Gallery column hidden for now — re-enable once we know where it
-            should live (footer vs. its own page). */}
+        <div>
+          <h4 className="mb-5 text-xs font-medium tracking-[0.3em] text-white uppercase">
+            Find Us
+          </h4>
+          <a
+            href={mapLocation.shareUrl}
+            target="_blank"
+            rel="noreferrer"
+            className="block aspect-4/3 w-full overflow-hidden border border-line grayscale transition-all duration-300 hover:grayscale-0"
+          >
+            <iframe
+              title="Regaal Palace location"
+              src={`https://www.google.com/maps?q=${mapLocation.lat},${mapLocation.lng}(${encodeURIComponent(mapLocation.label)})&z=16&output=embed`}
+              className="size-full pointer-events-none"
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            />
+          </a>
+        </div>
       </div>
 
       <div className="border-t border-line">

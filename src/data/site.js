@@ -15,6 +15,14 @@ export const contact = {
   addressLines: ['Plot No 324/2 Sugan Heights Teresvar Navin Bus Stand Javal, Jilha Peth, Jalgaon, Maharashtra 425001'],
 }
 
+// Resolved from the venue's Google Maps share link (maps.app.goo.gl/wZyKDTdnBA2ThBnZA).
+export const mapLocation = {
+  label: 'Regaal Palace',
+  lat: 21.0071508,
+  lng: 75.5636067,
+  shareUrl: 'https://maps.app.goo.gl/wZyKDTdnBA2ThBnZA',
+}
+
 export const nav = [
   {
     label: 'Home',
