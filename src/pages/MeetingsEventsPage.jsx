@@ -124,7 +124,8 @@ function EventTrack({ eyebrow, title, tagline, body, image, imageAlt, occasionsT
         delay={120}
         className={`lg:col-span-7 ${reverse ? 'lg:order-1' : 'lg:order-2'}`}
       >
-        <h4 className="text-xs font-medium tracking-[0.3em] text-white uppercase">
+        {/* Same display treatment as the page's section headings. */}
+        <h4 className="text-3xl leading-[1.15] font-medium sm:text-4xl lg:text-[44px]">
           {occasionsTitle}
         </h4>
         <div className="mt-6 grid gap-4 sm:grid-cols-2">
@@ -139,7 +140,7 @@ function EventTrack({ eyebrow, title, tagline, body, image, imageAlt, occasionsT
           ))}
         </div>
 
-        <h4 className="mt-12 text-xs font-medium tracking-[0.3em] text-white uppercase">
+        <h4 className="mt-14 text-3xl leading-[1.15] font-medium sm:text-4xl lg:text-[44px]">
           {servicesTitle}
         </h4>
         <ul className="mt-6 grid gap-3.5 sm:grid-cols-2">
