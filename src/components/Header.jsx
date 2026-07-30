@@ -90,13 +90,20 @@ export default function Header() {
             ))}
           </nav>
 
-          <div className="flex items-center gap-3 sm:gap-5">
-            <a
-              href="mailto:reservations@regaalpalace.com?subject=Room Booking Enquiry"
-              className="hidden border border-gold px-4 py-2.5 font-display text-[10px] tracking-[0.1em] whitespace-nowrap text-gold uppercase transition-colors duration-300 hover:bg-gold hover:text-on-gold sm:inline-block xl:px-7 xl:py-4 xl:text-sm xl:tracking-[0.16em]"
+          <div className="flex items-center gap-2 sm:gap-3">
+            <Link
+              to="/rooms"
+              className="hidden border border-gold bg-gold px-3 py-2 font-display text-[10px] font-semibold tracking-[0.08em] whitespace-nowrap text-on-gold uppercase transition-colors duration-300 hover:bg-transparent hover:text-gold sm:inline-block xl:px-4.5 xl:py-2.5 xl:text-xs xl:tracking-[0.12em]"
             >
-              Booking Online
-            </a>
+              Book Your Stay
+            </Link>
+
+            <Link
+              to="/corporate-stays"
+              className="hidden border border-gold px-3 py-2 font-display text-[10px] font-semibold tracking-[0.08em] whitespace-nowrap text-gold uppercase transition-colors duration-300 hover:bg-gold hover:text-on-gold sm:inline-block xl:px-4.5 xl:py-2.5 xl:text-xs xl:tracking-[0.12em]"
+            >
+              Corporate Enquiries
+            </Link>
 
             <button
               type="button"
@@ -163,14 +170,22 @@ export default function Header() {
         </nav>
 
         {/* Mobile Footer CTA */}
-        <div className="space-y-4 border-t border-white/10 pt-5">
-          <a
-            href="mailto:reservations@regaalpalace.com?subject=Room Booking Enquiry"
-            className="block w-full bg-gold py-3.5 text-center font-display text-xs tracking-[0.2em] font-medium text-on-gold uppercase transition-colors hover:bg-white"
+        <div className="space-y-2.5 border-t border-white/10 pt-5">
+          <Link
+            to="/rooms"
+            onClick={() => setOpen(false)}
+            className="block w-full bg-gold py-3 text-center font-display text-xs font-semibold tracking-[0.15em] text-on-gold uppercase transition-colors hover:bg-white"
           >
-            Booking Online
-          </a>
-          <div className="flex items-center justify-between text-xs text-white/60">
+            Book Your Stay
+          </Link>
+          <Link
+            to="/corporate-stays"
+            onClick={() => setOpen(false)}
+            className="block w-full border border-gold py-3 text-center font-display text-xs font-semibold tracking-[0.15em] text-gold uppercase transition-colors hover:bg-gold hover:text-on-gold"
+          >
+            Corporate Enquiries
+          </Link>
+          <div className="flex items-center justify-between text-xs text-white/60 pt-1">
             <span>Call: 0256 2222424</span>
             <span>info@regaalpalace.com</span>
           </div>
