@@ -5,11 +5,11 @@ import Footer from './components/Footer'
 import Header from './components/Header'
 import { initSmoothScroll, jumpToTop } from './lib/smoothScroll'
 import AboutPage from './pages/AboutPage'
-import BlogPage from './pages/BlogPage'
 import ContactPage from './pages/ContactPage'
 import CorporateStaysPage from './pages/CorporateStaysPage'
 import GalleryPage from './pages/GalleryPage'
 import Home from './pages/Home'
+import MeetingsEventsPage from './pages/MeetingsEventsPage'
 import RoomDetail from './pages/RoomDetail'
 import RoomsPage from './pages/RoomsPage'
 import TeamPage from './pages/TeamPage'
@@ -43,6 +43,7 @@ export default function App() {
           <Route path="/rooms" element={<RoomsPage />} />
           <Route path="/rooms/:slug" element={<RoomDetail />} />
           <Route path="/corporate-stays" element={<CorporateStaysPage />} />
+          <Route path="/meetings-events" element={<MeetingsEventsPage />} />
           <Route path="/gallery" element={<GalleryPage />} />
           <Route path="/team" element={<TeamPage />} />
           <Route path="/contact" element={<ContactPage />} />

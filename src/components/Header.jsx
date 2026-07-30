@@ -5,8 +5,10 @@ import { nav } from '../data/site'
 import Logo from './Logo'
 
 function NavItem({ item }) {
+  // whitespace-nowrap keeps two-word labels ("Corporate Stays") on one line; the
+  // type tightens at lg so all eight items fit a 1024px viewport.
   const linkCls = ({ isActive }) =>
-    `relative flex items-center gap-1 font-display text-sm font-medium tracking-[0.16em] uppercase transition-colors duration-300 after:absolute after:-bottom-2 after:left-0 after:h-px after:bg-gold after:transition-all after:duration-300 ${
+    `relative flex items-center gap-1 font-display text-[11px] font-medium tracking-[0.08em] whitespace-nowrap uppercase transition-colors duration-300 after:absolute after:-bottom-2 after:left-0 after:h-px after:bg-gold after:transition-all after:duration-300 xl:text-sm xl:tracking-[0.14em] ${
       isActive ? 'text-gold after:w-full' : 'text-white after:w-0 hover:text-gold hover:after:w-full'
     }`
 
