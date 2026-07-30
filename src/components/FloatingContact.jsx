@@ -20,8 +20,8 @@ const WHATSAPP =
 // Replace the '#' social URLs with the real profiles; the WhatsApp number is a
 // placeholder (country code + number, no spaces).
 const items = [
-  { label: 'Facebook', href: '#', node: glyph(FACEBOOK) },
-  { label: 'Instagram', href: '#', node: glyph(INSTAGRAM) },
+  { label: 'Facebook', href: 'https://www.facebook.com/hotelregaalpalace', node: glyph(FACEBOOK) },
+  { label: 'Instagram', href: 'https://www.instagram.com/newregalpalace', node: glyph(INSTAGRAM) },
   { label: 'LinkedIn', href: '#', node: glyph(LINKEDIN) },
   { label: 'WhatsApp', href: 'https://wa.me/912562222424', node: glyph(WHATSAPP) },
   { label: 'Email', href: `mailto:${contact.email.trim()}`, node: <Mail className="size-[18px]" /> },

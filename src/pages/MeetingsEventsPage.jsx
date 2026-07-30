@@ -203,26 +203,33 @@ export default function MeetingsEventsPage() {
             </Button>
           </Reveal>
 
-          <Reveal variant="right" delay={120}>
-            <div className="grid gap-4 sm:grid-cols-2">
-              <div className="group overflow-hidden rounded-sm border border-white/10 shadow-xl sm:mt-10">
+          <div className="relative">
+            <Reveal variant="right">
+              <div className="group overflow-hidden rounded-sm border border-white/10 shadow-2xl">
                 <img
                   src="/images/meeting.jpeg"
                   alt="Corporate meeting hall"
                   loading="lazy"
-                  className="aspect-3/4 w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                  className="aspect-4/5 w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                 />
               </div>
-              <div className="group overflow-hidden rounded-sm border border-white/10 shadow-xl">
+            </Reveal>
+
+            <Reveal
+              variant="left-far"
+              delay={220}
+              className="absolute -right-4 -bottom-8 hidden w-48 sm:block lg:-right-8 lg:w-60 z-10"
+            >
+              <div className="group overflow-hidden rounded-sm border-8 border-ink-soft shadow-2xl">
                 <img
                   src="/images/weddings.jpeg"
                   alt="Wedding banquet setup"
                   loading="lazy"
-                  className="aspect-3/4 w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                  className="aspect-4/5 w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                 />
               </div>
-            </div>
-          </Reveal>
+            </Reveal>
+          </div>
         </div>
       </section>
 
