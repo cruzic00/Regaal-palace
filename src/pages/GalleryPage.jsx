@@ -6,7 +6,12 @@ import { gallery } from '../data/site'
 export default function GalleryPage() {
   return (
     <>
-      <PageHero title="Gallery" crumb="Gallery" image="/images/skyroof.jpeg" />
+      <PageHero
+        title="Gallery"
+        crumb="Gallery"
+        image="/images/room-1.jpeg"
+        position="50% 20%"
+      />
 
       <section className="py-16 sm:py-20 lg:py-32">
         <div className="container-x">
