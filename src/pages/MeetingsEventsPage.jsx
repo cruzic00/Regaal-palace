@@ -398,7 +398,7 @@ export default function MeetingsEventsPage() {
           <Reveal variant="right" delay={120}>
             <div className="group overflow-hidden rounded-sm border border-white/10 shadow-2xl">
               <img
-                src="/images/Professionalism.jpeg"
+                src="/images/Perfect.jpeg"
                 alt="Banquet and catering at Regaal Palace"
                 loading="lazy"
                 className="aspect-4/3 w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
