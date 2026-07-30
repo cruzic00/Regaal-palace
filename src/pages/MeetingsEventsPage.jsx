@@ -289,6 +289,7 @@ export default function MeetingsEventsPage() {
             occasions={celebrationOccasions}
             servicesTitle="Celebration Services"
             services={celebrationServices}
+            imagePosition="object-left"
           />
 
           <Reveal>
