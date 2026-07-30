@@ -62,8 +62,14 @@ export default function Hero() {
                 <p className="font-display text-xs tracking-[0.25em] text-white uppercase sm:text-sm sm:tracking-[0.3em]">
                   
                 </p>
-                <h1 className="mx-auto mt-5 max-w-4xl font-display text-[2rem] leading-[1.12] font-bold tracking-wide text-white sm:text-5xl md:text-[52px] lg:text-6xl">
-                  {slide.headline}
+                <h1 className="mx-auto mt-5 max-w-4xl font-display text-[1.4rem] leading-[1.25] font-bold tracking-wide text-white sm:text-5xl md:text-[52px] lg:text-6xl">
+                  {slide.headline.includes('Jalgaon') ? (
+                    <>
+                      Your Business Address in<br className="sm:hidden" /> Jalgaon.
+                    </>
+                  ) : (
+                    slide.headline
+                  )}
                 </h1>
                 <p className="mx-auto mt-5 max-w-2xl font-display text-lg font-semibold tracking-wide text-gold sm:text-xl lg:text-2xl">
                   {slide.subline}
