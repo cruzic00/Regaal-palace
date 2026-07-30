@@ -21,7 +21,7 @@ export default function TeamPage() {
             />
           </Reveal>
 
-          <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:mt-16 lg:grid-cols-4">
+          <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:mt-16 lg:grid-cols-3">
             {team.map((member, i) => (
               <Reveal key={member.name} variant="up" delay={i * 110}>
                 <article className="group text-center">
