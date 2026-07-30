@@ -10,7 +10,7 @@ export default function GalleryPage() {
         title="Gallery"
         crumb="Gallery"
         image="/images/room-1.jpeg"
-        position="50% 20%"
+        position="center"
       />
 
       <section className="py-16 sm:py-20 lg:py-32">
