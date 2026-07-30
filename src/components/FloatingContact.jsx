@@ -29,7 +29,7 @@ const items = [
 
 export default function FloatingContact() {
   return (
-    <div className="fixed top-20 right-2.5 z-40 sm:bottom-4 sm:top-auto sm:left-4 sm:right-auto">
+    <div className="fixed top-32 right-2.5 z-40 sm:bottom-4 sm:top-auto sm:left-4 sm:right-auto">
       <div className="flex flex-col gap-1.5 sm:gap-2.5">
         {items.map((item) => (
           <a
