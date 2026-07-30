@@ -1,5 +1,4 @@
-import { useState } from 'react'
-import { ChevronDown, ChevronUp, Mail, Phone } from 'lucide-react'
+import { Mail, Phone } from 'lucide-react'
 import { contact } from '../data/site'
 
 // lucide dropped brand marks, so the glyphs are inlined.
@@ -29,12 +28,9 @@ const items = [
 ]
 
 export default function FloatingContact() {
-  const [open, setOpen] = useState(false)
-
   return (
-    <div className="fixed bottom-4 left-3 z-40 sm:left-4">
-      {/* Desktop view: always show vertical stack */}
-      <div className="hidden flex-col gap-2.5 sm:flex">
+    <div className="fixed bottom-4 left-2.5 z-40 sm:left-4">
+      <div className="flex flex-col gap-1.5 sm:gap-2.5">
         {items.map((item) => (
           <a
             key={item.label}
@@ -43,54 +39,11 @@ export default function FloatingContact() {
             rel="noreferrer"
             aria-label={item.label}
             title={item.label}
-            className="grid size-11 place-items-center rounded-full bg-gold text-on-gold shadow-lg transition-all duration-300 hover:scale-110 hover:bg-ink hover:text-gold"
+            className="grid size-8.5 sm:size-11 place-items-center rounded-full bg-gold text-on-gold shadow-lg transition-all duration-300 hover:scale-110 hover:bg-ink hover:text-gold active:scale-95"
           >
             {item.node}
           </a>
         ))}
-      </div>
-
-      {/* Mobile view: Collapsible drop-up speed dial menu */}
-      <div className="relative sm:hidden">
-        {/* Drop-up popup list */}
-        <div
-          className={`flex flex-col gap-2.5 transition-all duration-300 ${
-            open
-              ? 'pointer-events-auto mb-3 opacity-100 translate-y-0 scale-100'
-              : 'pointer-events-none mb-0 h-0 opacity-0 translate-y-4 scale-90 overflow-hidden'
-          }`}
-        >
-          {items.map((item) => (
-            <a
-              key={item.label}
-              href={item.href}
-              target={item.href.startsWith('http') ? '_blank' : undefined}
-              rel="noreferrer"
-              aria-label={item.label}
-              title={item.label}
-              onClick={() => setOpen(false)}
-              className="grid size-10 place-items-center rounded-full bg-gold text-on-gold shadow-lg transition-all duration-300 active:scale-95"
-            >
-              {item.node}
-            </a>
-          ))}
-        </div>
-
-        {/* Main drop-up toggle button */}
-        <button
-          type="button"
-          onClick={() => setOpen((prev) => !prev)}
-          aria-label={open ? 'Close contact menu' : 'Open contact menu'}
-          className={`grid size-11 place-items-center rounded-full bg-gold text-on-gold shadow-xl transition-all duration-300 active:scale-95 ${
-            open ? '' : 'animate-bounce'
-          }`}
-        >
-          {open ? (
-            <ChevronDown className="size-6 transition-transform duration-300" />
-          ) : (
-            <ChevronUp className="size-6 transition-transform duration-300" />
-          )}
-        </button>
       </div>
     </div>
   )
