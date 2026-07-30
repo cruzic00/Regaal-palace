@@ -1,4 +1,5 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
+import { useLocation } from 'react-router-dom'
 import {
   Award,
   Building2,
@@ -43,17 +44,22 @@ const benefits = [
   {
     icon: Sparkles,
     title: 'Daily Housekeeping',
-    desc: 'Pristine, hygienic, and sanitized rooms maintained daily with meticulous attention to detail.',
+    desc: 'Impeccable daily room cleaning and linen refresh for maximum hygiene and comfort.',
   },
   {
     icon: Coffee,
     title: 'Complimentary Breakfast',
-    desc: 'Delicious gourmet breakfast spread served every morning to jumpstart your productive day.',
+    desc: 'Delicious, nutritious daily breakfast spreads to start your workdays energized.',
   },
   {
-    icon: Headset,
-    title: 'Dedicated Account Manager',
-    desc: 'Personal corporate relationship manager to assist with reservations, billing, and custom requests.',
+    icon: ShieldCheck,
+    title: '24/7 Security & Support',
+    desc: 'Round-the-clock front desk, security surveillance, and dedicated guest assistance.',
+  },
+  {
+    icon: Building2,
+    title: 'GST Invoice & Billing',
+    desc: '100% GST-compliant corporate invoices for hassle-free company expense filing.',
   },
 ]
 
@@ -129,6 +135,20 @@ const whyChoose = [
 
 export default function CorporateStaysPage() {
   const [submitted, setSubmitted] = useState(false)
+  const { hash } = useLocation()
+
+  useEffect(() => {
+    if (hash) {
+      const timer = setTimeout(() => {
+        const el = document.querySelector(hash)
+        if (el) {
+          el.scrollIntoView({ behavior: 'smooth' })
+        }
+      }, 150)
+      return () => clearTimeout(timer)
+    }
+  }, [hash])
+
   const [formData, setFormData] = useState({
     company: '',
     name: '',
