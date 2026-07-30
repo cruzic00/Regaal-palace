@@ -96,8 +96,10 @@ function EventTrack({ eyebrow, title, tagline, body, image, imageAlt, occasionsT
         variant={reverse ? 'right-zoom' : 'left-zoom'}
         className={`lg:col-span-5 ${reverse ? 'lg:order-2' : 'lg:order-1'}`}
       >
-        <div className="lg:sticky lg:top-28">
-          <div className="group overflow-hidden rounded-sm border border-white/10 shadow-2xl">
+        {/* On phones the copy leads and the photo follows; from lg the column
+            stacks image-first and sticks alongside the lists. */}
+        <div className="flex flex-col lg:sticky lg:top-28">
+          <div className="group order-2 overflow-hidden rounded-sm border border-white/10 shadow-2xl lg:order-1">
             <img
               src={image}
               alt={imageAlt}
@@ -106,12 +108,14 @@ function EventTrack({ eyebrow, title, tagline, body, image, imageAlt, occasionsT
             />
           </div>
 
-          <p className="eyebrow mt-7">{eyebrow}</p>
-          <h3 className="mt-3 font-display text-3xl leading-tight font-medium text-white sm:text-4xl">
-            {title}
-          </h3>
-          <p className="mt-2 font-display text-lg text-gold">{tagline}</p>
-          <p className="mt-4 text-base leading-relaxed text-white/70">{body}</p>
+          <div className="order-1 mb-8 lg:order-2 lg:mt-7 lg:mb-0">
+            <p className="eyebrow">{eyebrow}</p>
+            <h3 className="mt-3 font-display text-3xl leading-tight font-medium text-white sm:text-4xl">
+              {title}
+            </h3>
+            <p className="mt-2 font-display text-lg text-gold">{tagline}</p>
+            <p className="mt-4 text-base leading-relaxed text-white/70">{body}</p>
+          </div>
         </div>
       </Reveal>
 
