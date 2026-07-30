@@ -41,6 +41,7 @@ export const nav = [
     ],
   },
   { label: 'Corporate Stays', to: '/corporate-stays' },
+  { label: 'Gallery', to: '/gallery' },
   { label: 'Our Team', to: '/team' },
   { label: 'Contact', to: '/contact' },
 ]
