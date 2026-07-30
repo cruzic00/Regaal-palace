@@ -8,7 +8,7 @@ function NavItem({ item }) {
   // whitespace-nowrap keeps two-word labels ("Corporate Stays") on one line; the
   // type tightens at lg so all eight items fit a 1024px viewport.
   const linkCls = ({ isActive }) =>
-    `relative flex items-center gap-1 font-display text-[11px] font-medium tracking-[0.08em] whitespace-nowrap uppercase transition-colors duration-300 after:absolute after:-bottom-2 after:left-0 after:h-px after:bg-gold after:transition-all after:duration-300 xl:text-sm xl:tracking-[0.14em] ${
+    `relative flex items-center gap-1 font-display text-[10px] font-medium tracking-[0.05em] whitespace-nowrap uppercase transition-colors duration-300 after:absolute after:-bottom-2 after:left-0 after:h-px after:bg-gold after:transition-all after:duration-300 xl:text-[11px] xl:tracking-[0.08em] 2xl:text-xs 2xl:tracking-[0.1em] ${
       isActive ? 'text-gold after:w-full' : 'text-white after:w-0 hover:text-gold hover:after:w-full'
     }`
 
@@ -24,7 +24,7 @@ function NavItem({ item }) {
     <div className="group relative">
       <NavLink to={item.to} className={linkCls}>
         {item.label}
-        <ChevronDown className="size-3.5 transition-transform duration-300 group-hover:rotate-180" />
+        <ChevronDown className="size-3 transition-transform duration-300 group-hover:rotate-180" />
       </NavLink>
 
       <div className="invisible absolute top-full left-0 z-10 w-56 translate-y-3 pt-6 opacity-0 transition-all duration-300 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100">
@@ -78,29 +78,29 @@ export default function Header() {
     <>
       <header
         className={`fixed inset-x-0 top-0 z-50 transition-all duration-500 ${
-          scrolled ? 'bg-ink/95 py-3 shadow-xl backdrop-blur' : 'on-photo py-7'
+          scrolled ? 'bg-ink/95 py-3 shadow-xl backdrop-blur' : 'on-photo py-6'
         }`}
       >
-        <div className="container-x flex items-center justify-between gap-3 lg:gap-4 xl:gap-8">
-          <Logo compact={scrolled} />
+        <div className="container-x flex items-center justify-between gap-2 lg:gap-3 xl:gap-4">
+          <Logo compact={scrolled} className="shrink-0" />
 
-          <nav className="hidden items-center gap-3.5 lg:flex xl:gap-6">
+          <nav className="hidden items-center gap-2 lg:flex xl:gap-3.5 2xl:gap-4.5">
             {nav.map((item) => (
               <NavItem key={item.label} item={item} />
             ))}
           </nav>
 
-          <div className="flex items-center gap-2 sm:gap-3">
+          <div className="flex items-center gap-1.5 sm:gap-2 shrink-0">
             <Link
               to="/rooms"
-              className="hidden border border-gold bg-gold px-3 py-2 font-display text-[10px] font-semibold tracking-[0.08em] whitespace-nowrap text-on-gold uppercase transition-colors duration-300 hover:bg-transparent hover:text-gold sm:inline-block xl:px-4.5 xl:py-2.5 xl:text-xs xl:tracking-[0.12em]"
+              className="hidden border border-gold bg-gold px-2.5 py-1.5 font-display text-[9px] font-semibold tracking-[0.05em] whitespace-nowrap text-on-gold uppercase transition-colors duration-300 hover:bg-transparent hover:text-gold sm:inline-block xl:px-3.5 xl:py-2 xl:text-[11px] xl:tracking-[0.08em]"
             >
               Book Your Stay
             </Link>
 
             <Link
               to="/corporate-stays"
-              className="hidden border border-gold px-3 py-2 font-display text-[10px] font-semibold tracking-[0.08em] whitespace-nowrap text-gold uppercase transition-colors duration-300 hover:bg-gold hover:text-on-gold sm:inline-block xl:px-4.5 xl:py-2.5 xl:text-xs xl:tracking-[0.12em]"
+              className="hidden border border-gold px-2.5 py-1.5 font-display text-[9px] font-semibold tracking-[0.05em] whitespace-nowrap text-gold uppercase transition-colors duration-300 hover:bg-gold hover:text-on-gold sm:inline-block xl:px-3.5 xl:py-2 xl:text-[11px] xl:tracking-[0.08em]"
             >
               Corporate Enquiries
             </Link>
