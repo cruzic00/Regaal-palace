@@ -158,7 +158,7 @@ export const facilities = [
   {
     no: '03',
     tag: 'Experience',
-    title: 'Corporate Meetings  ',
+    title: 'Corporate Events & Meetings  ',
     image: '/images/meeting.jpeg',
     blurb:'Our corporate meeting hall offers a professional, well-equipped setting for productive meetings, conferences, and business events.',
   },
