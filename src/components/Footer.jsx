@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom'
 import { Mail, MapPin, Phone } from 'lucide-react'
-import { brand, contact, departmentEmails, gallery, usefulLinks } from '../data/site'
-import GalleryGrid from './GalleryGrid'
+import { brand, contact, departmentEmails, usefulLinks } from '../data/site'
 import Logo from './Logo'
 
 // lucide dropped brand marks, so the social glyphs are inlined. Swap href='#'
@@ -22,7 +21,7 @@ const socials = [
 export default function Footer() {
   return (
     <footer className="bg-ink-soft pt-20">
-      <div className="container-x grid gap-10 pb-14 sm:grid-cols-2 sm:gap-12 sm:pb-16 lg:grid-cols-4">
+      <div className="container-x grid gap-10 pb-14 sm:grid-cols-2 sm:gap-12 sm:pb-16 lg:grid-cols-3">
         <div>
           <Logo />
           <h4 className="mt-8 mb-5 text-xs font-medium tracking-[0.3em] text-white uppercase">
@@ -123,13 +122,8 @@ export default function Footer() {
           </ul>
         </div>
 
-        <div>
-          <h4 className="mb-5 text-xs font-medium tracking-[0.3em] text-white uppercase">
-            Gallery
-          </h4>
-          <GalleryGrid images={gallery} className="max-w-[240px]" />
-        </div>
-
+        {/* Gallery column hidden for now — re-enable once we know where it
+            should live (footer vs. its own page). */}
       </div>
 
       <div className="border-t border-line">
