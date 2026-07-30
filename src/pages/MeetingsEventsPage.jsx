@@ -165,7 +165,7 @@ export default function MeetingsEventsPage() {
       <PageHero
         title="Meetings & Events"
         crumb="Meetings & Events"
-        image="/images/weddings.jpeg"
+        image="images/MeetingEvents.jpeg"
       />
 
       {/* Overview */}
