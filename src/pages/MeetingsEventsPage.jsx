@@ -243,7 +243,7 @@ export default function MeetingsEventsPage() {
             title="Professional Spaces for Productive Gatherings"
             tagline="Designed for comfort, efficiency and success"
             body="Host your business events in a sophisticated environment designed for comfort, efficiency, and success. Our versatile venues are ideal for organisations looking to conduct meetings, presentations, and corporate engagements with ease."
-            image="/images/meeting.jpeg"
+            image="/images/ideal.jpeg"
             imageAlt="Corporate meeting hall at Regaal Palace"
             occasionsTitle="Ideal For"
             occasions={businessOccasions}
@@ -270,7 +270,7 @@ export default function MeetingsEventsPage() {
             title="Celebrate Life’s Special Moments in Style"
             tagline="Elegant spaces, personalised service"
             body="Every celebration deserves a beautiful venue and exceptional hospitality. From intimate family gatherings to grand social occasions, The Regaal Palace offers elegant spaces and personalised services that transform your special day into an unforgettable experience."
-            image="/images/weddings.jpeg"
+            image="/images/Perfect.jpeg"
             imageAlt="Wedding celebration at Regaal Palace"
             occasionsTitle="Perfect For"
             occasions={celebrationOccasions}
@@ -384,7 +384,7 @@ export default function MeetingsEventsPage() {
           <Reveal variant="right" delay={120}>
             <div className="group overflow-hidden rounded-sm border border-white/10 shadow-2xl">
               <img
-                src="/images/resturent1.jpeg"
+                src="/images/Professionalism.jpeg"
                 alt="Banquet and catering at Regaal Palace"
                 loading="lazy"
                 className="aspect-4/3 w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
