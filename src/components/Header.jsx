@@ -81,10 +81,10 @@ export default function Header() {
           scrolled ? 'bg-ink/95 py-3 shadow-xl backdrop-blur' : 'on-photo py-7'
         }`}
       >
-        <div className="container-x flex items-center justify-between gap-4 lg:gap-8">
+        <div className="container-x flex items-center justify-between gap-3 lg:gap-4 xl:gap-8">
           <Logo compact={scrolled} />
 
-          <nav className="hidden items-center gap-4 lg:flex xl:gap-7">
+          <nav className="hidden items-center gap-3.5 lg:flex xl:gap-6">
             {nav.map((item) => (
               <NavItem key={item.label} item={item} />
             ))}
@@ -93,7 +93,7 @@ export default function Header() {
           <div className="flex items-center gap-3 sm:gap-5">
             <a
               href="mailto:reservations@regaalpalace.com?subject=Room Booking Enquiry"
-              className="hidden border border-gold px-5 py-3 font-display text-xs tracking-[0.14em] text-gold uppercase transition-colors duration-300 hover:bg-gold hover:text-on-gold sm:inline-block xl:px-8 xl:py-4 xl:text-sm xl:tracking-[0.16em]"
+              className="hidden border border-gold px-4 py-2.5 font-display text-[10px] tracking-[0.1em] whitespace-nowrap text-gold uppercase transition-colors duration-300 hover:bg-gold hover:text-on-gold sm:inline-block xl:px-7 xl:py-4 xl:text-sm xl:tracking-[0.16em]"
             >
               Booking Online
             </a>
