@@ -1,6 +1,6 @@
 export const brand = {
-  name: 'Regaal Palace',
-  possessive: 'Regaal Palace’s',
+  name: 'The Reegal',
+  possessive: 'The Reegal’s',
   tagline: 'Feel the Regal Touch',
   parent: 'A unit of Chaudhari Hotels & Hospitality',
 }
@@ -17,7 +17,7 @@ export const contact = {
 
 // Resolved from the venue's Google Maps share link (maps.app.goo.gl/wZyKDTdnBA2ThBnZA).
 export const mapLocation = {
-  label: 'Regaal Palace',
+  label: 'The Reegal',
   lat: 21.0071508,
   lng: 75.5636067,
   shareUrl: 'https://maps.app.goo.gl/wZyKDTdnBA2ThBnZA',
@@ -153,7 +153,7 @@ export const facilities = [
     image: '/images/skyroof.jpeg',
     focus: '50% 70%',
     blurb:
-      'Dine under the open sky at Regaal Palace’s rooftop family restaurant, offering delicious cuisine and a vibrant ambience for memorable evenings.',
+      'Dine under the open sky at The Reegal’s rooftop family restaurant, offering delicious cuisine and a vibrant ambience for memorable evenings.',
   },
   {
     no: '03',
@@ -172,7 +172,7 @@ export const facilities = [
 ]
 
 export const facilityBlurb =
-  'Savour an exquisite culinary experience at Regaal Palace, featuring delectable cuisine, elegant dining, and impeccable service.'
+  'Savour an exquisite culinary experience at The Reegal, featuring delectable cuisine, elegant dining, and impeccable service.'
 
 export const offers = [
   { discount: '25% off', name: 'Premium room', image: '/images/business-class.jpeg',  },
@@ -191,7 +191,7 @@ export const testimonials = [
   },
   {
     quote:
-      'New Regal Palace is a very good hotel in Jalgaon. Room service is excellent. Food is also tasty. The staff behavior is friendly and they are quick in their service. Highly recommended.',
+      'The Reegal is a very good hotel in Jalgaon. Room service is excellent. Food is also tasty. The staff behavior is friendly and they are quick in their service. Highly recommended.',
     name: 'SHIVAPRASAD REWALE',
     role: '',
     avatar: '/images/comment2.jpg',
@@ -259,7 +259,7 @@ export const manager = {
   role: 'Group General Manager',
   avatar: '/images/manager1.jpeg',
   quote:
-    '“Regaal Palace Jalgaon delivers an elevated hospitality experience, blending refined comfort, impeccable service, and contemporary amenities for both corporate and leisure travellers.”',
+    '“The Reegal Jalgaon delivers an elevated hospitality experience, blending refined comfort, impeccable service, and contemporary amenities for both corporate and leisure travellers.”',
   image: '/images/back1.jpeg',
 }
 

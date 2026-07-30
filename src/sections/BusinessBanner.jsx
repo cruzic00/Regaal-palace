@@ -10,7 +10,7 @@ export default function BusinessBanner() {
     <section className="bg-ink-soft py-16 sm:py-20 lg:py-32">
       <div className="container-x grid items-center gap-14 lg:grid-cols-2 lg:gap-20">
         <Reveal variant="left">
-          <p className="eyebrow mb-4">Hotel Regaal Palace</p>
+          <p className="eyebrow mb-4">Hotel The Reegal</p>
           <h2 className="text-3xl leading-[1.15] font-medium sm:text-4xl lg:text-[44px]">
             Business Meets Hospitality
           </h2>
@@ -29,7 +29,7 @@ export default function BusinessBanner() {
           <div className="group overflow-hidden">
             <img
               src="/images/businessMeets.jpeg"
-              alt="Business facilities at Regaal Palace"
+              alt="Business facilities at The Reegal"
               loading="lazy"
               style={{ objectPosition: 'left center' }}
               className="aspect-4/5 w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"

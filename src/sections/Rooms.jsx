@@ -3,7 +3,7 @@ import { Reveal, SectionHeading } from '../components/ui'
 import { brand, rooms } from '../data/site'
 
 const roomsIntro =
-  'Regaal Palace offers comfortable, well-appointed rooms with modern amenities, perfect for corporate travellers seeking a productive and relaxing stay.'
+  'The Reegal offers comfortable, well-appointed rooms with modern amenities, perfect for corporate travellers seeking a productive and relaxing stay.'
 
 export default function Rooms() {
   return (

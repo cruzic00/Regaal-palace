@@ -38,12 +38,12 @@ export default function About() {
         </div>
 
         <Reveal variant="right" delay={120} className="order-1 lg:order-none">
-          <p className="eyebrow mb-4"> Hotel Regaal Palace</p>
+          <p className="eyebrow mb-4">Hotel The Reegal</p>
           <h2 className="text-3xl leading-[1.15] font-medium sm:text-4xl lg:text-[44px]">
             Best Business Hotel in Jalgaon  
           </h2>
           <p className="mt-6">
-            Enjoy comfortable, well-appointed rooms at Regaal Palace, designed for a restful and productive corporate stay. With modern amenities and a convenient location, our rooms offer the perfect balance of comfort, convenience, and relaxation for business travellers.
+            Enjoy comfortable, well-appointed rooms at The Reegal, designed for a restful and productive corporate stay. With modern amenities and a convenient location, our rooms offer the perfect balance of comfort, convenience, and relaxation for business travellers.
           </p>
 
           <div className="mt-10 flex gap-12">
