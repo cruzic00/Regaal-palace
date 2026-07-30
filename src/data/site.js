@@ -258,9 +258,12 @@ export const gallery = [
 ]
 
 export const usefulLinks = [
+  { label: 'Home', to: '/' },
   { label: 'About Hotel', to: '/about' },
   { label: 'Rooms & Suites', to: '/rooms' },
-  { label: 'Reservations', to: '/rooms' },
+  { label: 'Corporate Stays', to: '/corporate-stays' },
+  { label: 'Meetings & Events', to: '/meetings-events' },
+  { label: 'Gallery', to: '/gallery' },
   { label: 'Our Team', to: '/team' },
   { label: 'Contact Us', to: '/contact' },
 ]
