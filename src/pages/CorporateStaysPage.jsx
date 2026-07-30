@@ -330,11 +330,13 @@ export default function CorporateStaysPage() {
                 delay={i * 60}
                 className="h-full"
               >
-                <div className="flex h-full items-center gap-4 rounded-sm border border-white/10 bg-ink-soft p-6 transition-all hover:border-gold/50 hover:bg-white/[0.02]">
-                  <span className="flex size-7 shrink-0 items-center justify-center rounded-full bg-gold/15 text-xs font-semibold text-gold">
+                <div className="group flex h-full cursor-pointer items-center gap-4 rounded-sm border border-white/10 bg-ink-soft p-6 transition-colors duration-500 hover:border-gold hover:bg-gold">
+                  <span className="flex size-7 shrink-0 items-center justify-center rounded-full bg-gold/15 text-xs font-semibold text-gold transition-colors duration-500 group-hover:bg-on-gold/15 group-hover:text-on-gold">
                     {i + 1}
                   </span>
-                  <p className="text-sm font-medium leading-snug text-white/90 sm:text-base">{item}</p>
+                  <p className="text-sm leading-snug font-medium text-white/90 transition-colors duration-500 group-hover:text-on-gold sm:text-base">
+                    {item}
+                  </p>
                 </div>
               </Reveal>
             ))}
