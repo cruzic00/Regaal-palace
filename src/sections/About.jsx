@@ -9,7 +9,7 @@ export default function About() {
   return (
     <section className="bg-ink-soft py-16 sm:py-20 lg:py-32">
       <div className="container-x grid items-center gap-14 lg:grid-cols-2 lg:gap-20">
-        <div className="relative">
+        <div className="relative order-2 lg:order-none">
           <Reveal variant="left">
             <div className="group overflow-hidden">
               <img
@@ -37,7 +37,7 @@ export default function About() {
           </Reveal>
         </div>
 
-        <Reveal variant="right" delay={120}>
+        <Reveal variant="right" delay={120} className="order-1 lg:order-none">
           <p className="eyebrow mb-4"> Hotel Regaal Palace</p>
           <h2 className="text-3xl leading-[1.15] font-medium sm:text-4xl lg:text-[44px]">
             Best Business Hotel in Jalgaon  
