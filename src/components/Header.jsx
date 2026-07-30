@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Link, NavLink, useLocation } from 'react-router-dom'
-import { ChevronDown, Menu, X } from 'lucide-react'
+import { BedDouble, Briefcase, ChevronDown, Menu, X } from 'lucide-react'
 import { nav } from '../data/site'
 import Logo from './Logo'
 
@@ -91,6 +91,7 @@ export default function Header() {
           </nav>
 
           <div className="flex items-center gap-1.5 sm:gap-2 shrink-0">
+            {/* Desktop / Tablet text buttons */}
             <Link
               to="/rooms"
               className="hidden border border-gold bg-gold px-2.5 py-1.5 font-display text-[9px] font-semibold tracking-[0.05em] whitespace-nowrap text-on-gold uppercase transition-colors duration-300 hover:bg-transparent hover:text-gold sm:inline-block xl:px-3.5 xl:py-2 xl:text-[11px] xl:tracking-[0.08em]"
@@ -105,11 +106,30 @@ export default function Header() {
               Corporate Enquiries
             </Link>
 
+            {/* Mobile icon buttons */}
+            <Link
+              to="/rooms"
+              title="Book Your Stay"
+              aria-label="Book Your Stay"
+              className="flex size-8.5 items-center justify-center rounded-sm border border-gold bg-gold text-on-gold transition-colors hover:bg-transparent hover:text-gold sm:hidden"
+            >
+              <BedDouble className="size-4" />
+            </Link>
+
+            <Link
+              to="/corporate-stays"
+              title="Corporate Enquiries"
+              aria-label="Corporate Enquiries"
+              className="flex size-8.5 items-center justify-center rounded-sm border border-gold/70 text-gold transition-colors hover:bg-gold hover:text-on-gold sm:hidden"
+            >
+              <Briefcase className="size-4" />
+            </Link>
+
             <button
               type="button"
               onClick={() => setOpen((v) => !v)}
               aria-label={open ? 'Close menu' : 'Open menu'}
-              className="text-white lg:hidden"
+              className="flex size-8.5 items-center justify-center text-white lg:hidden"
             >
               {open ? <X className="size-6 text-gold" /> : <Menu className="size-6" />}
             </button>
