@@ -92,32 +92,32 @@ export default function Header() {
 
           <div className="flex items-center gap-1.5 sm:gap-2 shrink-0">
             {/* Desktop / Tablet text buttons */}
-            <Link
-              to="/rooms"
+            <a
+              href="mailto:reservations@regaalpalace.com?subject=Room Booking Enquiry"
               className="hidden border border-gold bg-gold px-2.5 py-1.5 font-display text-[9px] font-semibold tracking-[0.05em] whitespace-nowrap text-on-gold uppercase transition-colors duration-300 hover:bg-transparent hover:text-gold sm:inline-block xl:px-3.5 xl:py-2 xl:text-[11px] xl:tracking-[0.08em]"
             >
               Book Your Stay
-            </Link>
+            </a>
 
             <Link
-              to="/corporate-stays"
+              to="/corporate-stays#inquiry-form"
               className="hidden border border-gold px-2.5 py-1.5 font-display text-[9px] font-semibold tracking-[0.05em] whitespace-nowrap text-gold uppercase transition-colors duration-300 hover:bg-gold hover:text-on-gold sm:inline-block xl:px-3.5 xl:py-2 xl:text-[11px] xl:tracking-[0.08em]"
             >
               Corporate Enquiries
             </Link>
 
             {/* Mobile icon buttons */}
-            <Link
-              to="/rooms"
+            <a
+              href="mailto:reservations@regaalpalace.com?subject=Room Booking Enquiry"
               title="Book Your Stay"
               aria-label="Book Your Stay"
               className="flex size-8.5 items-center justify-center rounded-sm border border-gold bg-gold text-on-gold transition-colors hover:bg-transparent hover:text-gold sm:hidden"
             >
               <BedDouble className="size-4" />
-            </Link>
+            </a>
 
             <Link
-              to="/corporate-stays"
+              to="/corporate-stays#inquiry-form"
               title="Corporate Enquiries"
               aria-label="Corporate Enquiries"
               className="flex size-8.5 items-center justify-center rounded-sm border border-gold/70 text-gold transition-colors hover:bg-gold hover:text-on-gold sm:hidden"
@@ -191,15 +191,15 @@ export default function Header() {
 
         {/* Mobile Footer CTA */}
         <div className="space-y-2.5 border-t border-white/10 pt-5">
-          <Link
-            to="/rooms"
+          <a
+            href="mailto:reservations@regaalpalace.com?subject=Room Booking Enquiry"
             onClick={() => setOpen(false)}
             className="block w-full bg-gold py-3 text-center font-display text-xs font-semibold tracking-[0.15em] text-on-gold uppercase transition-colors hover:bg-white"
           >
             Book Your Stay
-          </Link>
+          </a>
           <Link
-            to="/corporate-stays"
+            to="/corporate-stays#inquiry-form"
             onClick={() => setOpen(false)}
             className="block w-full border border-gold py-3 text-center font-display text-xs font-semibold tracking-[0.15em] text-gold uppercase transition-colors hover:bg-gold hover:text-on-gold"
           >
