@@ -89,7 +89,20 @@ const whyChoose = [
 ]
 
 /** Reusable two-column block: occasion chips beside a service checklist. */
-function EventTrack({ eyebrow, title, tagline, body, image, imageAlt, occasionsTitle, occasions, servicesTitle, services, reverse = false }) {
+function EventTrack({
+  eyebrow,
+  title,
+  tagline,
+  body,
+  image,
+  imageAlt,
+  occasionsTitle,
+  occasions,
+  servicesTitle,
+  services,
+  reverse = false,
+  imagePosition = 'object-center',
+}) {
   return (
     <div className="grid items-start gap-12 lg:grid-cols-12 lg:gap-16">
       <Reveal
@@ -104,7 +117,7 @@ function EventTrack({ eyebrow, title, tagline, body, image, imageAlt, occasionsT
               src={image}
               alt={imageAlt}
               loading="lazy"
-              className="aspect-4/5 w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+              className={`aspect-4/5 w-full object-cover ${imagePosition} transition-transform duration-700 ease-out group-hover:scale-105`}
             />
           </div>
 
@@ -270,7 +283,7 @@ export default function MeetingsEventsPage() {
             title="Celebrate Life’s Special Moments in Style"
             tagline="Elegant spaces, personalised service"
             body="Every celebration deserves a beautiful venue and exceptional hospitality. From intimate family gatherings to grand social occasions, The Regaal Palace offers elegant spaces and personalised services that transform your special day into an unforgettable experience."
-            image="/images/Perfect.jpeg"
+            image="/images/Professionalism.jpeg"
             imageAlt="Wedding celebration at Regaal Palace"
             occasionsTitle="Perfect For"
             occasions={celebrationOccasions}
