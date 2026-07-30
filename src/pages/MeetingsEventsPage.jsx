@@ -209,7 +209,7 @@ export default function MeetingsEventsPage() {
             <Reveal variant="right">
               <div className="group overflow-hidden rounded-sm border border-white/10 shadow-2xl">
                 <img
-                  src="/images/meeting.jpeg"
+                  src="/images/second.jpeg"
                   alt="Corporate meeting hall"
                   loading="lazy"
                   className="aspect-4/5 w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
