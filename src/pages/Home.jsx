@@ -17,7 +17,6 @@ export default function Home() {
       <BookingSection />
       <Highlights />
       <Brands />
-      <Rooms />
       <BusinessBanner />
       <About />
       <Amenities />
