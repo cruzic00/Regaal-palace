@@ -18,12 +18,14 @@ export default function Brands() {
           {brands.map((item, i) => (
             <Reveal key={item.name} variant={i === 0 ? 'left-zoom' : 'right-zoom'} delay={i * 120}>
               <div className="group flex h-full flex-col items-center rounded-sm border border-white/10 bg-ink-soft px-8 py-10 text-center transition-colors duration-500 hover:border-gold/50">
-                <div className="grid h-40 w-full place-items-center">
+                {/* Both marks are 500x500, so sizing by width shows each one
+                    whole — no fixed height to clip against. */}
+                <div className="flex w-full items-center justify-center">
                   <img
                     src={item.logo}
                     alt={item.name}
                     loading="lazy"
-                    className="max-h-40 w-auto object-contain transition-transform duration-700 ease-out group-hover:scale-105"
+                    className="h-auto w-full max-w-[240px] object-contain transition-transform duration-700 ease-out group-hover:scale-105 sm:max-w-[270px]"
                   />
                 </div>
                 <h3 className="mt-6 font-display text-2xl font-medium text-white">{item.name}</h3>
