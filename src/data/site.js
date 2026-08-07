@@ -5,6 +5,20 @@ export const brand = {
   parent: 'A unit of Chaudhari Hotels & Hospitality',
 }
 
+// Logos are background-removed PNGs so the gold sits directly on the navy.
+export const brands = [
+  {
+    name: 'Reegal Hotels',
+    blurb: 'Business stays, thoughtful hospitality and corporate-ready comfort in Jalgaon.',
+    logo: '/images/newlogo.png',
+  },
+  {
+    name: 'Reegal Spices',
+    blurb: 'Multi-cuisine dining and live kitchens, served with the same regal standard.',
+    logo: '/images/spices-logo.png',
+  },
+]
+
 const img = (id, w = 1600) =>
   `https://images.unsplash.com/photo-${id}?auto=format&fit=crop&w=${w}&q=80`
 
