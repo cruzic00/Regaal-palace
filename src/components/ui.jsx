@@ -102,7 +102,7 @@ export function SectionHeading({ eyebrow, title, blurb, align = 'center', waterm
         // is so close to --color-ink that at this opacity only the gold artwork
         // reads; on the light theme it needs to go fainter still.
         <img
-          src="/images/newlogo.jpeg"
+          src="/images/newlogo.png"
           alt=""
           aria-hidden="true"
           className="pointer-events-none absolute top-1/2 left-1/2 w-[300px] -translate-x-1/2 -translate-y-1/2 opacity-[0.09] light:opacity-[0.035] lg:w-[400px]"
