@@ -13,7 +13,7 @@ export default function RoomsPage() {
   return (
     <>
       <PageHero
-        title="Rooms & Suites"
+        title="Your Business Address in Jalgaon."
         crumb="Rooms"
         image="/images/room-1.jpeg"
       />
