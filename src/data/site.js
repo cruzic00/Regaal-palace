@@ -1,6 +1,6 @@
 export const brand = {
   name: 'The Reegal',
-  possessive: 'The Reegal’s',
+  possessive: 'The Reegal Hotels',
   tagline: 'Feel the Regal Touch',
   parent: 'A unit of Chaudhari Hotels & Hospitality',
 }
