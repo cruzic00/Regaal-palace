@@ -1,8 +1,11 @@
 import { useSearchParams } from 'react-router-dom'
 import PageHero from '../components/PageHero'
 import RoomCard from '../components/RoomCard'
-import { Reveal } from '../components/ui'
-import { rooms } from '../data/site'
+import { Reveal, SectionHeading } from '../components/ui'
+import { brand, rooms } from '../data/site'
+
+const roomsIntro =
+  'The Regaal Hotels offers comfortable, well-appointed rooms with modern amenities, perfect for corporate travellers seeking a productive and relaxing stay.'
 
 export default function RoomsPage() {
   const [params] = useSearchParams()
