@@ -49,7 +49,7 @@ export const nav = [
   },
   { label: 'About', to: '/about' },
   {
-    label: 'Rooms',
+    label: 'Our Brands',
     to: '/rooms',
     children: [
       { label: 'All Rooms', to: '/rooms' },
