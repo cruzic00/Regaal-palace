@@ -37,7 +37,7 @@ export default function Amenities() {
     <section className="py-16 sm:py-20 lg:py-32">
       <div className="container-x">
         <Reveal>
-          <SectionHeading title="Hotel’s Facilities" blurb={facilitiesIntro} />
+          <SectionHeading title="Hotel Facilities" blurb={facilitiesIntro} />
         </Reveal>
 
         <div className="mt-10 grid grid-cols-2 gap-px bg-white/10 sm:grid-cols-3 lg:mt-14 lg:grid-cols-6">
