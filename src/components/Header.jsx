@@ -182,16 +182,23 @@ export default function Header() {
               </NavLink>
               {item.children && (
                 <ul className="mt-2.5 ml-4 space-y-2 border-l-2 border-gold/40 pl-4">
-                  {item.children.map((child, i) => (
-                    <li key={`${child.label}-${i}`}>
-                      <Link
-                        to={child.to}
-                        className="font-sans text-sm tracking-wide text-white/75 transition-colors hover:text-gold"
-                      >
-                        {child.label}
-                      </Link>
-                    </li>
-                  ))}
+                  {item.children.map((child, i) => {
+                    const cls =
+                      'font-sans text-sm tracking-wide text-white/75 transition-colors hover:text-gold'
+                    return (
+                      <li key={`${child.label}-${i}`}>
+                        {child.href ? (
+                          <a href={child.href} target="_blank" rel="noreferrer" className={cls}>
+                            {child.label}
+                          </a>
+                        ) : (
+                          <Link to={child.to} className={cls}>
+                            {child.label}
+                          </Link>
+                        )}
+                      </li>
+                    )
+                  })}
                 </ul>
               )}
             </div>
