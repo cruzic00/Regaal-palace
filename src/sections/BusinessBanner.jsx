@@ -10,7 +10,7 @@ export default function BusinessBanner() {
     <section className="bg-ink-soft py-16 sm:py-20 lg:py-32">
       <div className="container-x grid items-center gap-14 lg:grid-cols-2 lg:gap-20">
         <Reveal variant="left">
-          <p className="eyebrow mb-4">Hotel Regaal Hotels</p>
+          <p className="eyebrow mb-4">Regaal Hotels</p>
           <h2 className="text-3xl leading-[1.15] font-medium sm:text-4xl lg:text-[44px]">
             Business Meets Hospitality
           </h2>

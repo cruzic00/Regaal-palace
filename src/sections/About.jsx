@@ -40,7 +40,7 @@ export default function About({ brandLabel = 'The Regaal' }) {
         </div>
 
         <Reveal variant="right" delay={120} className="order-1 lg:order-none">
-          <p className="eyebrow mb-4">Hotel {brandLabel}</p>
+          <p className="eyebrow mb-4">{brandLabel}</p>
           <h2 className="text-3xl leading-[1.15] font-medium sm:text-4xl lg:text-[44px]">
             Best Business Hotel in Jalgaon  
           </h2>
