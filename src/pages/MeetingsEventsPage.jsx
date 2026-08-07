@@ -183,7 +183,7 @@ export default function MeetingsEventsPage() {
         position="bottom"
       />
 
-      <EventsOverview ctaHref="#plan-event" />
+      <EventsOverview ctaHref="#plan-event" brandLabel="Regaal Hotels" />
 
       {/* Business Events */}
       <section className="py-16 sm:py-20 lg:py-28">

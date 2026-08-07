@@ -7,7 +7,7 @@ import { brand } from '../data/site'
  * per host: the events page scrolls to its own enquiry block, the home page
  * routes across to that page.
  */
-export default function EventsOverview({ ctaHref = '/meetings-events', brandLabel = brand.name }) {
+export default function EventsOverview({ ctaHref = '/meetings-events', brandLabel = 'Regaal Hotels' }) {
   return (
     <section className="bg-ink-soft py-16 sm:py-20 lg:py-28">
       <div className="container-x grid items-center gap-14 lg:grid-cols-2 lg:gap-20">
