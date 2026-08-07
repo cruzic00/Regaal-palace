@@ -133,7 +133,7 @@ export default function Footer() {
             className="block aspect-4/3 w-full overflow-hidden border border-line grayscale transition-all duration-300 hover:grayscale-0"
           >
             <iframe
-              title="The Reegal location"
+              title="The Regaal location"
               src={`https://www.google.com/maps?q=${mapLocation.lat},${mapLocation.lng}(${encodeURIComponent(mapLocation.label)})&z=16&output=embed`}
               className="size-full pointer-events-none"
               loading="lazy"

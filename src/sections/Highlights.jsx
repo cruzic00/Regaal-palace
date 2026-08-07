@@ -16,7 +16,7 @@ export default function Highlights() {
       <div className="container-x">
         <Reveal>
           <h2 className="mb-8 text-center font-display text-2xl leading-tight font-medium text-white sm:text-3xl lg:mb-12 lg:text-4xl">
-            Why Business Travellers Choose Reegal Hotels
+            Why Business Travellers Choose Regaal Hotels
           </h2>
         </Reveal>
         <div className="grid grid-cols-2 gap-px overflow-hidden rounded-sm bg-white/10 border border-white/10 sm:grid-cols-3 lg:grid-cols-6">
