@@ -8,7 +8,7 @@ export const brand = {
 // Logos are background-removed PNGs so the gold sits directly on the navy.
 export const brands = [
   {
-    name: 'The Regaal',
+    name: 'Regaal Hotels',
     blurb: 'Business stays, thoughtful hospitality and corporate-ready comfort in Jalgaon.',
     logo: '/images/the-regaal-logo.png',
   },
@@ -68,22 +68,26 @@ export const nav = [
 export const slides = [
   {
     headline: 'Your Business Address in Jalgaon.',
-    subline: 'Comfortable stays, thoughtful hospitality and business-friendly convenience at The Regaal.',
+    subline:
+      'Comfortable stays, thoughtful hospitality and business-friendly convenience at Regaal Hotels.',
     image: '/images/banner-1.jpeg',
   },
   {
     headline: 'Your Business Address in Jalgaon.',
-    subline: 'Comfortable stays, thoughtful hospitality and business-friendly convenience at The Regaal.',
+    subline:
+      'Comfortable stays, thoughtful hospitality and business-friendly convenience at Regaal Hotels.',
     image: '/images/banner-2.jpeg',
   },
   {
     headline: 'Your Business Address in Jalgaon.',
-    subline: 'Comfortable stays, thoughtful hospitality and business-friendly convenience at The Regaal.',
+    subline:
+      'Comfortable stays, thoughtful hospitality and business-friendly convenience at Regaal Hotels.',
     image: '/images/banner-3.jpeg',
   },
   {
     headline: 'Your Business Address in Jalgaon.',
-    subline: 'Comfortable stays, thoughtful hospitality and business-friendly convenience at The Regaal.',
+    subline:
+      'Comfortable stays, thoughtful hospitality and business-friendly convenience at Regaal Hotels.',
     image: '/images/banner-4.jpeg',
   },
 ]

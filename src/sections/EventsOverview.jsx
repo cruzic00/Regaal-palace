@@ -7,17 +7,17 @@ import { brand } from '../data/site'
  * per host: the events page scrolls to its own enquiry block, the home page
  * routes across to that page.
  */
-export default function EventsOverview({ ctaHref = '/meetings-events' }) {
+export default function EventsOverview({ ctaHref = '/meetings-events', brandLabel = brand.name }) {
   return (
     <section className="bg-ink-soft py-16 sm:py-20 lg:py-28">
       <div className="container-x grid items-center gap-14 lg:grid-cols-2 lg:gap-20">
         <Reveal variant="left">
-          <p className="eyebrow mb-4">{brand.name}</p>
+          <p className="eyebrow mb-4">{brandLabel}</p>
           <h2 className="text-3xl leading-[1.15] font-medium sm:text-4xl lg:text-[44px]">
             Where Every Occasion Becomes Memorable
           </h2>
           <p className="mt-6 text-base leading-relaxed text-white/75 sm:text-lg">
-            At <strong className="text-white">{brand.name}, Jalgaon</strong>, we provide the perfect
+            At <strong className="text-white">{brandLabel}, Jalgaon</strong>, we provide the perfect
             setting for both professional gatherings and life&rsquo;s special celebrations. With
             elegant banquet spaces, modern facilities, exceptional catering, and dedicated event
             support, we ensure every occasion is flawlessly executed.

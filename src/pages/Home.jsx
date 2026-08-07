@@ -17,8 +17,8 @@ export default function Home() {
       <Highlights />
       <Brands />
       <BusinessBanner />
-      <About />
-      <EventsOverview />
+      <About brandLabel="Regaal Hotels" />
+      <EventsOverview brandLabel="Regaal Hotels" />
       <Manager />
       <Facilities />
       <Testimonials />
