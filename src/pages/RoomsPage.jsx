@@ -33,7 +33,7 @@ export default function RoomsPage() {
 
           <Reveal>
             <img
-              src="/images/newlogo.png"
+              src="/images/the-regaal-logo.png"
               alt="Regaal Hotels"
               className="mx-auto mb-14 h-auto w-full max-w-[200px] object-contain sm:max-w-[240px] lg:mb-20"
             />
