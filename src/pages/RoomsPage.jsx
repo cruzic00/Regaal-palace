@@ -6,7 +6,7 @@ import { Reveal, SectionHeading } from '../components/ui'
 import { brand, rooms } from '../data/site'
 
 const roomsIntro =
-  'The Regaal Hotels offers comfortable, well-appointed rooms with modern amenities, perfect for corporate travellers seeking a productive and relaxing stay.'
+  'The Regaal offers comfortable, well-appointed rooms with modern amenities, perfect for corporate travellers seeking a productive and relaxing stay.'
 
 export default function RoomsPage() {
   const [params] = useSearchParams()
@@ -50,7 +50,7 @@ export default function RoomsPage() {
       <section className="pb-16 sm:pb-20 lg:pb-28">
         <div className="container-x">
           <Reveal>
-            <SectionHeading title={`${brand.possessive} Rooms & Suites`} blurb={roomsIntro} />
+            <SectionHeading title={`${brand.name} Rooms & Suites`} blurb={roomsIntro} />
           </Reveal>
 
           <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:mt-16 lg:grid-cols-2">
