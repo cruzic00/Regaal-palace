@@ -38,11 +38,20 @@ export default function RoomsPage() {
             <img
               src="/images/the-regaal-logo.png"
               alt="Regaal Hotels"
-              className="mx-auto mb-14 h-auto w-full max-w-[200px] object-contain sm:max-w-[240px] lg:mb-20"
+              className="mx-auto mb-8 h-auto w-full max-w-[200px] object-contain sm:max-w-[240px] lg:mb-10"
             />
           </Reveal>
 
-          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-2">
+          {/* Watermark off: the real logo already sits directly above this. */}
+          <Reveal>
+            <SectionHeading
+              title={`${brand.possessive} Rooms & Suites`}
+              blurb={roomsIntro}
+              watermark={false}
+            />
+          </Reveal>
+
+          <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:mt-16 lg:grid-cols-2">
             {rooms.map((room, i) => (
               <Reveal
                 key={room.slug}
