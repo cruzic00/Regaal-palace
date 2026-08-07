@@ -24,7 +24,7 @@ export default function RoomsPage() {
         image="/images/allrooms.jpeg"
       />
 
-      <section className="py-16 sm:py-20 lg:py-32">
+      <section className="pt-16 sm:pt-20 lg:pt-28">
         <div className="container-x">
           {hasSearch && (
             <div className="mb-12 border border-gold/30 bg-ink-soft px-6 py-5 text-sm">
@@ -39,17 +39,18 @@ export default function RoomsPage() {
             <img
               src="/images/the-regaal-logo.png"
               alt="Regaal Hotels"
-              className="mx-auto mb-8 h-auto w-full max-w-[200px] object-contain sm:max-w-[240px] lg:mb-10"
+              className="mx-auto h-auto w-full max-w-[200px] object-contain sm:max-w-[240px]"
             />
           </Reveal>
+        </div>
+      </section>
 
-          {/* Watermark off: the real logo already sits directly above this. */}
+      <Amenities />
+
+      <section className="pb-16 sm:pb-20 lg:pb-28">
+        <div className="container-x">
           <Reveal>
-            <SectionHeading
-              title={`${brand.possessive} Rooms & Suites`}
-              blurb={roomsIntro}
-              watermark={false}
-            />
+            <SectionHeading title={`${brand.possessive} Rooms & Suites`} blurb={roomsIntro} />
           </Reveal>
 
           <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:mt-16 lg:grid-cols-2">
@@ -65,8 +66,6 @@ export default function RoomsPage() {
           </div>
         </div>
       </section>
-
-      <Amenities />
     </>
   )
 }
