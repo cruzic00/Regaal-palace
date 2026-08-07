@@ -29,16 +29,25 @@ function NavItem({ item }) {
 
       <div className="invisible absolute top-full left-0 z-10 w-56 translate-y-3 pt-6 opacity-0 transition-all duration-300 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100">
         <ul className="border-t-2 border-gold bg-ink-soft py-2 shadow-2xl">
-          {item.children.map((child, i) => (
-            <li key={`${child.label}-${i}`}>
-              <Link
-                to={child.to}
-                className="block px-6 py-2.5 text-sm text-muted transition-colors duration-200 hover:bg-gold hover:text-on-gold"
-              >
-                {child.label}
-              </Link>
-            </li>
-          ))}
+          {item.children.map((child, i) => {
+            const cls =
+              'block px-6 py-2.5 text-sm text-muted transition-colors duration-200 hover:bg-gold hover:text-on-gold'
+            return (
+              <li key={`${child.label}-${i}`}>
+                {/* A child with `href` points off-site, so it needs a plain
+                    anchor rather than a router Link. */}
+                {child.href ? (
+                  <a href={child.href} target="_blank" rel="noreferrer" className={cls}>
+                    {child.label}
+                  </a>
+                ) : (
+                  <Link to={child.to} className={cls}>
+                    {child.label}
+                  </Link>
+                )}
+              </li>
+            )
+          })}
         </ul>
       </div>
     </div>
