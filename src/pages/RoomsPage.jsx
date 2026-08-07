@@ -31,6 +31,14 @@ export default function RoomsPage() {
             </div>
           )}
 
+          <Reveal>
+            <img
+              src="/images/newlogo.png"
+              alt="Regaal Hotels"
+              className="mx-auto mb-14 h-auto w-full max-w-[200px] object-contain sm:max-w-[240px] lg:mb-20"
+            />
+          </Reveal>
+
           <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-2">
             {rooms.map((room, i) => (
               <Reveal
