@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
 import { ArrowUpRight } from 'lucide-react'
 import { Reveal } from '../components/ui'
 import { brands } from '../data/site'
@@ -12,7 +13,7 @@ export default function Brands() {
   }, [])
 
   return (
-    <section className="py-16 sm:py-20 lg:py-24">
+    <section id="our-brands" className="py-16 sm:py-20 lg:py-24">
       <div className="container-x">
         <Reveal>
           <h2 className="text-center font-display text-3xl leading-tight font-medium text-white sm:text-4xl lg:text-[44px]">
@@ -26,16 +27,22 @@ export default function Brands() {
         <div className="mx-auto mt-12 grid max-w-4xl gap-8 sm:grid-cols-2 lg:mt-16">
           {brands.map((item, i) => {
             const href = item.androidUrl && isAndroid ? item.androidUrl : item.webUrl
-            const Card = href ? 'a' : 'div'
+            const to = item.to
+
+            const isExternal = !!href
+            const Card = isExternal ? 'a' : to ? Link : 'div'
+            const cardProps = isExternal
+              ? { href, target: '_blank', rel: 'noreferrer', 'aria-label': `${item.cta ?? 'Open'} — ${item.name}` }
+              : to
+              ? { to, 'aria-label': `${item.cta ?? 'Explore'} — ${item.name}` }
+              : {}
 
             return (
               <Reveal key={item.name} variant={i === 0 ? 'left-zoom' : 'right-zoom'} delay={i * 120}>
                 <Card
-                  {...(href
-                    ? { href, target: '_blank', rel: 'noreferrer', 'aria-label': `${item.cta ?? 'Open'} — ${item.name}` }
-                    : {})}
+                  {...cardProps}
                   className={`group flex h-full flex-col items-center rounded-sm border border-white/10 bg-ink-soft px-8 py-10 text-center transition-colors duration-500 hover:border-gold/50 ${
-                    href ? 'cursor-pointer' : ''
+                    href || to ? 'cursor-pointer' : ''
                   }`}
                 >
                   {/* Both marks are 500x500, so sizing by width shows each one
