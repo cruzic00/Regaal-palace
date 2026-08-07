@@ -13,6 +13,7 @@ import MeetingsEventsPage from './pages/MeetingsEventsPage'
 import RoomDetail from './pages/RoomDetail'
 import RoomsPage from './pages/RoomsPage'
 import TeamPage from './pages/TeamPage'
+import Brands from './sections/Brands'
 
 /** Routers keep scroll position between pages; hotels shouldn't. */
 function ScrollToTop() {
@@ -31,6 +32,9 @@ function SmoothScroll() {
 }
 
 export default function App() {
+  const location = useLocation()
+  const isHomePage = location.pathname === '/'
+
   return (
     <>
       <SmoothScroll />
@@ -49,8 +53,10 @@ export default function App() {
           <Route path="/contact" element={<ContactPage />} />
         </Routes>
       </main>
+      {!isHomePage && <Brands />}
       <Footer />
       <FloatingContact />
     </>
   )
 }
+
