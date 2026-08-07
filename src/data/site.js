@@ -8,9 +8,9 @@ export const brand = {
 // Logos are background-removed PNGs so the gold sits directly on the navy.
 export const brands = [
   {
-    name: 'Reegal Hotels',
+    name: 'The Reegal',
     blurb: 'Business stays, thoughtful hospitality and corporate-ready comfort in Jalgaon.',
-    logo: '/images/newlogo.png',
+    logo: '/images/the-reegal-logo.png',
   },
   {
     name: 'Reegal Spices',
