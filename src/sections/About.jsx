@@ -7,7 +7,7 @@ const stats = [
 
 /** `brandLabel` lets the home page say "Regaal Hotels" while other pages keep
  *  the default wording. */
-export default function About({ brandLabel = 'The Regaal' }) {
+export default function About({ brandLabel = 'Regaal Hotels' }) {
   return (
     <section className="bg-ink-soft py-16 sm:py-20 lg:py-32">
       <div className="container-x grid items-center gap-14 lg:grid-cols-2 lg:gap-20">
