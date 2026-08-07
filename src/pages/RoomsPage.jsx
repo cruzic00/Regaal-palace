@@ -16,7 +16,7 @@ export default function RoomsPage() {
         title="Your Business Address in Jalgaon."
         subline="Comfortable stays, thoughtful hospitality and business-friendly convenience at The Regaal."
         crumb="Rooms"
-        image="/images/room-1.jpeg"
+        image="/images/allrooms.jpeg"
       />
 
       <section className="py-16 sm:py-20 lg:py-32">
