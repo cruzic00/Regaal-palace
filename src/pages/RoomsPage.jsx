@@ -14,6 +14,7 @@ export default function RoomsPage() {
     <>
       <PageHero
         title="Your Business Address in Jalgaon."
+        subline="Comfortable stays, thoughtful hospitality and business-friendly convenience at The Regaal."
         crumb="Rooms"
         image="/images/room-1.jpeg"
       />
