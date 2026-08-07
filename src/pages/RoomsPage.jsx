@@ -1,6 +1,7 @@
 import { useSearchParams } from 'react-router-dom'
 import PageHero from '../components/PageHero'
 import RoomCard from '../components/RoomCard'
+import Amenities from '../sections/Amenities'
 import { Reveal, SectionHeading } from '../components/ui'
 import { brand, rooms } from '../data/site'
 
@@ -64,6 +65,8 @@ export default function RoomsPage() {
           </div>
         </div>
       </section>
+
+      <Amenities />
     </>
   )
 }
