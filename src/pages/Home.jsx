@@ -7,7 +7,6 @@ import BusinessBanner from '../sections/BusinessBanner'
 import Facilities from '../sections/Facilities'
 import Highlights from '../sections/Highlights'
 import Manager from '../sections/Manager'
-import Rooms from '../sections/Rooms'
 import Testimonials from '../sections/Testimonials'
 
 export default function Home() {
