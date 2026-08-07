@@ -16,6 +16,11 @@ export const brands = [
     name: 'Regaal Spices',
     blurb: 'Multi-cuisine dining and live kitchens, served with the same regal standard.',
     logo: '/images/spices-logo.png',
+    cta: 'Click to Order',
+    // Android goes to the Play Store app; everything else (iOS, desktop) to the
+    // ordering site.
+    androidUrl: 'https://play.google.com/store/apps/details?id=innewregalpalace.thrivenow.app',
+    webUrl: 'https://regalchoice.in',
   },
 ]
 
