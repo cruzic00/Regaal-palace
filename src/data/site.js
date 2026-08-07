@@ -53,10 +53,9 @@ export const nav = [
     to: '/rooms',
     children: [
       { label: 'The Regaal', to: '/rooms' },
-      { label: 'Business Suite', to: '/rooms/double-suite-rooms' },
-      { label: 'Executive Suite', to: '/rooms/delux-family-rooms' },
-      { label: 'Premium Family Executive Room', to: '/rooms/suprior-bed-rooms' },
-      { label: 'Premium Executive Suite Room', to: '/rooms/presidential-villa' },
+      // Ordering site; the home page card additionally deep-links Android to
+      // the Play Store app.
+      { label: 'Regaal Spices', href: 'https://regalchoice.in' },
     ],
   },
   { label: 'Corporate Stays', to: '/corporate-stays' },
