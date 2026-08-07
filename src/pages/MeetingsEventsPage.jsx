@@ -186,7 +186,7 @@ export default function MeetingsEventsPage() {
       <section className="bg-ink-soft py-16 sm:py-20 lg:py-28">
         <div className="container-x grid items-center gap-14 lg:grid-cols-2 lg:gap-20">
           <Reveal variant="left">
-            <p className="eyebrow mb-4">The Reegal</p>
+            <p className="eyebrow mb-4">The Regaal</p>
             <h2 className="text-3xl leading-[1.15] font-medium sm:text-4xl lg:text-[44px]">
               Where Every Occasion Becomes Memorable
             </h2>
@@ -257,7 +257,7 @@ export default function MeetingsEventsPage() {
             tagline="Designed for comfort, efficiency and success"
             body="Host your business events in a sophisticated environment designed for comfort, efficiency, and success. Our versatile venues are ideal for organisations looking to conduct meetings, presentations, and corporate engagements with ease."
             image="/images/ideal.jpeg"
-            imageAlt="Corporate meeting hall at The Reegal"
+            imageAlt="Corporate meeting hall at The Regaal"
             occasionsTitle="Ideal For"
             occasions={businessOccasions}
             servicesTitle="Corporate Event Facilities"
@@ -282,9 +282,9 @@ export default function MeetingsEventsPage() {
             eyebrow="Celebrations"
             title="Celebrate Life’s Special Moments in Style"
             tagline="Elegant spaces, personalised service"
-            body="Every celebration deserves a beautiful venue and exceptional hospitality. From intimate family gatherings to grand social occasions, The Reegal offers elegant spaces and personalised services that transform your special day into an unforgettable experience."
+            body="Every celebration deserves a beautiful venue and exceptional hospitality. From intimate family gatherings to grand social occasions, The Regaal offers elegant spaces and personalised services that transform your special day into an unforgettable experience."
             image="/images/Professionalism.jpeg"
-            imageAlt="Wedding celebration at The Reegal"
+            imageAlt="Wedding celebration at The Regaal"
             occasionsTitle="Perfect For"
             occasions={celebrationOccasions}
             servicesTitle="Celebration Services"
@@ -399,7 +399,7 @@ export default function MeetingsEventsPage() {
             <div className="group overflow-hidden rounded-sm border border-white/10 shadow-2xl">
               <img
                 src="/images/Perfect.jpeg"
-                alt="Banquet and catering at The Reegal"
+                alt="Banquet and catering at The Regaal"
                 loading="lazy"
                 className="aspect-4/3 w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
               />

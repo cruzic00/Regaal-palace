@@ -1,6 +1,6 @@
 export const brand = {
-  name: 'The Reegal',
-  possessive: 'The Reegal Hotels',
+  name: 'The Regaal',
+  possessive: 'The Regaal Hotels',
   tagline: 'Feel the Regal Touch',
   parent: 'A unit of Chaudhari Hotels & Hospitality',
 }
@@ -8,12 +8,12 @@ export const brand = {
 // Logos are background-removed PNGs so the gold sits directly on the navy.
 export const brands = [
   {
-    name: 'The Reegal',
+    name: 'The Regaal',
     blurb: 'Business stays, thoughtful hospitality and corporate-ready comfort in Jalgaon.',
-    logo: '/images/the-reegal-logo.png',
+    logo: '/images/the-regaal-logo.png',
   },
   {
-    name: 'Reegal Spices',
+    name: 'Regaal Spices',
     blurb: 'Multi-cuisine dining and live kitchens, served with the same regal standard.',
     logo: '/images/spices-logo.png',
   },
@@ -31,7 +31,7 @@ export const contact = {
 
 // Resolved from the venue's Google Maps share link (maps.app.goo.gl/wZyKDTdnBA2ThBnZA).
 export const mapLocation = {
-  label: 'The Reegal',
+  label: 'The Regaal',
   lat: 21.0071508,
   lng: 75.5636067,
   shareUrl: 'https://maps.app.goo.gl/wZyKDTdnBA2ThBnZA',
@@ -167,7 +167,7 @@ export const facilities = [
     image: '/images/skyroof.jpeg',
     focus: '50% 70%',
     blurb:
-      'Dine under the open sky at The Reegal’s rooftop family restaurant, offering delicious cuisine and a vibrant ambience for memorable evenings.',
+      'Dine under the open sky at The Regaal’s rooftop family restaurant, offering delicious cuisine and a vibrant ambience for memorable evenings.',
   },
   {
     no: '03',
@@ -186,7 +186,7 @@ export const facilities = [
 ]
 
 export const facilityBlurb =
-  'Savour an exquisite culinary experience at The Reegal, featuring delectable cuisine, elegant dining, and impeccable service.'
+  'Savour an exquisite culinary experience at The Regaal, featuring delectable cuisine, elegant dining, and impeccable service.'
 
 export const offers = [
   { discount: '25% off', name: 'Premium room', image: '/images/business-class.jpeg',  },
@@ -205,7 +205,7 @@ export const testimonials = [
   },
   {
     quote:
-      'The Reegal is a very good hotel in Jalgaon. Room service is excellent. Food is also tasty. The staff behavior is friendly and they are quick in their service. Highly recommended.',
+      'The Regaal is a very good hotel in Jalgaon. Room service is excellent. Food is also tasty. The staff behavior is friendly and they are quick in their service. Highly recommended.',
     name: 'SHIVAPRASAD REWALE',
     role: '',
     avatar: '/images/comment2.jpg',
@@ -295,7 +295,7 @@ export const manager = {
   role: 'Group General Manager',
   avatar: '/images/manager1.jpeg',
   quote:
-    '“The Reegal Jalgaon delivers an elevated hospitality experience, blending refined comfort, impeccable service, and contemporary amenities for both corporate and leisure travellers.”',
+    '“The Regaal Jalgaon delivers an elevated hospitality experience, blending refined comfort, impeccable service, and contemporary amenities for both corporate and leisure travellers.”',
   image: '/images/back1.jpeg',
 }
 

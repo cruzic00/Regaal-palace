@@ -18,7 +18,7 @@ export default function GalleryPage() {
           <Reveal>
             <SectionHeading
               eyebrow="Gallery"
-              title="A closer look at The Reegal"
+              title="A closer look at The Regaal"
               blurb="Rooms, dining and the spaces in between — a glimpse of what a stay with us looks like."
             />
           </Reveal>
