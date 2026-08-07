@@ -52,7 +52,7 @@ export const nav = [
   { label: 'About', to: '/about' },
   {
     label: 'Our Brands',
-    to: '/rooms',
+    to: '#our-brands',
     children: [
       { label: 'The Regaal', to: '/rooms' },
       // Ordering site; the home page card additionally deep-links Android to

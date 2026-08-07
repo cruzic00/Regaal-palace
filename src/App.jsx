@@ -3,7 +3,7 @@ import { Route, Routes, useLocation } from 'react-router-dom'
 import FloatingContact from './components/FloatingContact'
 import Footer from './components/Footer'
 import Header from './components/Header'
-import { initSmoothScroll, jumpToTop } from './lib/smoothScroll'
+import { initSmoothScroll, jumpToTop, scrollToTarget } from './lib/smoothScroll'
 import AboutPage from './pages/AboutPage'
 import ContactPage from './pages/ContactPage'
 import CorporateStaysPage from './pages/CorporateStaysPage'
@@ -17,12 +17,16 @@ import Brands from './sections/Brands'
 
 /** Routers keep scroll position between pages; hotels shouldn't. */
 function ScrollToTop() {
-  const { pathname } = useLocation()
-  // Braces matter: a concise body would return scrollTo's value, and React
-  // treats any non-function return as a broken cleanup.
+  const { pathname, hash } = useLocation()
   useEffect(() => {
-    jumpToTop()
-  }, [pathname])
+    if (hash) {
+      setTimeout(() => {
+        scrollToTarget(hash)
+      }, 100)
+    } else {
+      jumpToTop()
+    }
+  }, [pathname, hash])
   return null
 }
 

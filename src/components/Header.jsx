@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { Link, NavLink, useLocation } from 'react-router-dom'
 import { BedDouble, Briefcase, ChevronDown, Menu, X } from 'lucide-react'
 import { nav } from '../data/site'
+import { scrollToTarget } from '../lib/smoothScroll'
 import Logo from './Logo'
 
 function NavItem({ item }) {
@@ -12,7 +13,27 @@ function NavItem({ item }) {
       isActive ? 'text-gold after:w-full' : 'text-white after:w-0 hover:text-gold hover:after:w-full'
     }`
 
+  const isHash = item.to.startsWith('#')
+
+  const handleHashClick = (e) => {
+    if (isHash) {
+      e.preventDefault()
+      scrollToTarget(item.to)
+    }
+  }
+
   if (!item.children) {
+    if (isHash) {
+      return (
+        <a
+          href={item.to}
+          onClick={handleHashClick}
+          className="relative flex items-center gap-1 font-display text-[10px] font-medium tracking-[0.05em] whitespace-nowrap text-white uppercase transition-colors duration-300 hover:text-gold after:absolute after:-bottom-2 after:left-0 after:h-px after:bg-gold after:w-0 hover:after:w-full xl:text-[11px] xl:tracking-[0.08em] 2xl:text-xs 2xl:tracking-[0.1em]"
+        >
+          {item.label}
+        </a>
+      )
+    }
     return (
       <NavLink to={item.to} className={linkCls}>
         {item.label}
@@ -22,10 +43,21 @@ function NavItem({ item }) {
 
   return (
     <div className="group relative">
-      <NavLink to={item.to} className={linkCls}>
-        {item.label}
-        <ChevronDown className="size-3 transition-transform duration-300 group-hover:rotate-180" />
-      </NavLink>
+      {isHash ? (
+        <a
+          href={item.to}
+          onClick={handleHashClick}
+          className="relative flex items-center gap-1 font-display text-[10px] font-medium tracking-[0.05em] whitespace-nowrap text-white uppercase transition-colors duration-300 hover:text-gold after:absolute after:-bottom-2 after:left-0 after:h-px after:bg-gold after:w-0 hover:after:w-full xl:text-[11px] xl:tracking-[0.08em] 2xl:text-xs 2xl:tracking-[0.1em]"
+        >
+          {item.label}
+          <ChevronDown className="size-3 transition-transform duration-300 group-hover:rotate-180" />
+        </a>
+      ) : (
+        <NavLink to={item.to} className={linkCls}>
+          {item.label}
+          <ChevronDown className="size-3 transition-transform duration-300 group-hover:rotate-180" />
+        </NavLink>
+      )}
 
       <div className="invisible absolute top-full left-0 z-10 w-56 translate-y-3 pt-6 opacity-0 transition-all duration-300 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100">
         <ul className="border-t-2 border-gold bg-ink-soft py-2 shadow-2xl">
@@ -170,16 +202,30 @@ export default function Header() {
         <nav className="my-auto flex flex-col gap-5 py-6 overflow-y-auto">
           {nav.map((item) => (
             <div key={item.label}>
-              <NavLink
-                to={item.to}
-                className={({ isActive }) =>
-                  `font-display text-xl tracking-[0.14em] uppercase transition-colors sm:text-2xl ${
-                    isActive ? 'text-gold font-semibold' : 'text-white hover:text-gold'
-                  }`
-                }
-              >
-                {item.label}
-              </NavLink>
+              {item.to.startsWith('#') ? (
+                <a
+                  href={item.to}
+                  onClick={(e) => {
+                    e.preventDefault()
+                    setOpen(false)
+                    scrollToTarget(item.to)
+                  }}
+                  className="font-display text-xl tracking-[0.14em] uppercase transition-colors sm:text-2xl text-white hover:text-gold block"
+                >
+                  {item.label}
+                </a>
+              ) : (
+                <NavLink
+                  to={item.to}
+                  className={({ isActive }) =>
+                    `font-display text-xl tracking-[0.14em] uppercase transition-colors sm:text-2xl ${
+                      isActive ? 'text-gold font-semibold' : 'text-white hover:text-gold'
+                    }`
+                  }
+                >
+                  {item.label}
+                </NavLink>
+              )}
               {item.children && (
                 <ul className="mt-2.5 ml-4 space-y-2 border-l-2 border-gold/40 pl-4">
                   {item.children.map((child, i) => {

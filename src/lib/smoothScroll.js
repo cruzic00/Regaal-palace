@@ -28,3 +28,15 @@ export function jumpToTop() {
   if (lenis) lenis.scrollTo(0, { immediate: true })
   else window.scrollTo(0, 0)
 }
+
+/** Scroll smoothly to a target element or selector. */
+export function scrollToTarget(target) {
+  if (!target) return
+  if (lenis) {
+    lenis.scrollTo(target, { duration: 1.2 })
+  } else {
+    const el = typeof target === 'string' ? document.querySelector(target) : target
+    if (el) el.scrollIntoView({ behavior: 'smooth' })
+  }
+}
+
