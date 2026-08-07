@@ -194,7 +194,7 @@ export default function MeetingsEventsPage() {
             tagline="Designed for comfort, efficiency and success"
             body="Host your business events in a sophisticated environment designed for comfort, efficiency, and success. Our versatile venues are ideal for organisations looking to conduct meetings, presentations, and corporate engagements with ease."
             image="/images/ideal.jpeg"
-            imageAlt="Corporate meeting hall at The Regaal"
+            imageAlt="Corporate meeting hall at Regaal Hotels"
             occasionsTitle="Ideal For"
             occasions={businessOccasions}
             servicesTitle="Corporate Event Facilities"
@@ -204,7 +204,7 @@ export default function MeetingsEventsPage() {
           <Reveal>
             <p className="mx-auto mt-14 max-w-3xl text-center font-display text-xl leading-relaxed text-white/80 italic sm:text-2xl lg:mt-20">
               &ldquo;Whether you&rsquo;re hosting a small executive meeting or a large corporate
-              conference, The {brand.name} ensures a professional experience from start to
+              conference, Regaal Hotels ensures a professional experience from start to
               finish.&rdquo;
             </p>
           </Reveal>
@@ -219,9 +219,9 @@ export default function MeetingsEventsPage() {
             eyebrow="Celebrations"
             title="Celebrate Life’s Special Moments in Style"
             tagline="Elegant spaces, personalised service"
-            body="Every celebration deserves a beautiful venue and exceptional hospitality. From intimate family gatherings to grand social occasions, The Regaal offers elegant spaces and personalised services that transform your special day into an unforgettable experience."
+            body="Every celebration deserves a beautiful venue and exceptional hospitality. From intimate family gatherings to grand social occasions, Regaal Hotels offers elegant spaces and personalised services that transform your special day into an unforgettable experience."
             image="/images/Professionalism.jpeg"
-            imageAlt="Wedding celebration at The Regaal"
+            imageAlt="Wedding celebration at Regaal Hotels"
             occasionsTitle="Perfect For"
             occasions={celebrationOccasions}
             servicesTitle="Celebration Services"
@@ -243,7 +243,7 @@ export default function MeetingsEventsPage() {
         <div className="container-x">
           <Reveal>
             <SectionHeading
-              title={`Why Choose The ${brand.name}?`}
+              title="Why Choose Regaal Hotels?"
               blurb="Every element of your event, handled with the same care we bring to every stay."
             />
           </Reveal>
@@ -280,7 +280,7 @@ export default function MeetingsEventsPage() {
             </h2>
             <p className="mt-6 text-base leading-relaxed text-white/75">
               Whether you&rsquo;re organising a business conference or celebrating one of
-              life&rsquo;s biggest milestones, <strong className="text-white">The {brand.name}, Jalgaon</strong>{' '}
+              life&rsquo;s biggest milestones, <strong className="text-white">Regaal Hotels, Jalgaon</strong>{' '}
               is the perfect venue to host your event.
             </p>
             <p className="mt-4 text-base leading-relaxed text-white/70">
@@ -336,7 +336,7 @@ export default function MeetingsEventsPage() {
             <div className="group overflow-hidden rounded-sm border border-white/10 shadow-2xl">
               <img
                 src="/images/Perfect.jpeg"
-                alt="Banquet and catering at The Regaal"
+                alt="Banquet and catering at Regaal Hotels"
                 loading="lazy"
                 className="aspect-4/3 w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
               />

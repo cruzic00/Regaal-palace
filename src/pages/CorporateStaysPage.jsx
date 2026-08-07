@@ -68,7 +68,7 @@ const services = [
     icon: Building2,
     title: 'Company Bookings',
     tagline: 'Hassle-free corporate travel management',
-    desc: 'Managing business travel is simple with The Regaal. We work closely with organisations to provide seamless accommodation solutions for employees, clients, vendors, and project teams.',
+    desc: 'Managing business travel is simple with Regaal Hotels. We work closely with organisations to provide seamless accommodation solutions for employees, clients, vendors, and project teams.',
     image: '/images/meeting.jpeg',
     points: [
       'Individual executive bookings',
@@ -82,7 +82,7 @@ const services = [
     icon: CalendarDays,
     title: 'Long Stay Packages',
     tagline: 'Extended comfort & flexibility',
-    desc: 'For professionals on extended assignments, relocation projects, audits, or training programs, The Regaal offers specially designed long-stay packages that combine luxury, flexibility, and value.',
+    desc: 'For professionals on extended assignments, relocation projects, audits, or training programs, Regaal Hotels offers specially designed long-stay packages that combine luxury, flexibility, and value.',
     image: '/images/sofa1.jpeg',
     points: [
       'Ideal for project teams & consultants',
@@ -110,7 +110,7 @@ const services = [
     icon: FileCheck2,
     title: 'GST Billing & Compliance',
     tagline: 'Simplified accounting & reimbursement',
-    desc: 'The Regaal provides 100% GST-compliant invoices to simplify your company accounting, tax filing, and employee reimbursement processes.',
+    desc: 'Regaal Hotels provides 100% GST-compliant invoices to simplify your company accounting, tax filing, and employee reimbursement processes.',
     image: '/images/banner-1.jpeg',
     points: [
       'GST invoices for every eligible stay',
@@ -180,10 +180,10 @@ export default function CorporateStaysPage() {
               Business Stays, Redefined
             </h2>
             <p className="mt-6 text-base leading-relaxed text-white/75 sm:text-lg">
-              At <strong className="text-white">The Regaal, Jalgaon</strong>, we understand the unique needs of today's business travellers. Whether you're visiting for a corporate meeting, industrial project, training program, or extended assignment, we provide a seamless blend of professional convenience and warm hospitality.
+              At <strong className="text-white">Regaal Hotels, Jalgaon</strong>, we understand the unique needs of today's business travellers. Whether you're visiting for a corporate meeting, industrial project, training program, or extended assignment, we provide a seamless blend of professional convenience and warm hospitality.
             </p>
             <p className="mt-4 text-base leading-relaxed text-white/70">
-              Strategically located with easy access to Jalgaon's commercial and industrial hubs, The Regaal is the preferred accommodation partner for corporate executives, business teams, consultants, and long-term guests.
+              Strategically located with easy access to Jalgaon's commercial and industrial hubs, Regaal Hotels is the preferred accommodation partner for corporate executives, business teams, consultants, and long-term guests.
             </p>
 
             <div className="mt-8 flex flex-wrap gap-4">
@@ -202,7 +202,7 @@ export default function CorporateStaysPage() {
             <div className="group overflow-hidden rounded-sm border border-white/10 shadow-2xl">
               <img
                 src="/images/businessMeets.jpeg"
-                alt="Corporate Stays at The Regaal"
+                alt="Corporate Stays at Regaal Hotels"
                 loading="lazy"
                 style={{ objectPosition: 'left center' }}
                 className="aspect-4/5 w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
@@ -337,7 +337,7 @@ export default function CorporateStaysPage() {
         <div className="container-x">
           <Reveal>
             <SectionHeading
-              title="Why Choose The Regaal for Corporate Stays?"
+              title="Why Choose Regaal Hotels for Corporate Stays?"
               blurb="Experience hospitality engineered specifically for the modern business traveller."
             />
           </Reveal>
@@ -375,7 +375,7 @@ export default function CorporateStaysPage() {
                 Looking for a Reliable Accommodation Partner in Jalgaon?
               </h2>
               <p className="mt-6 text-base leading-relaxed text-white/75">
-                Whether you're a corporate organisation, manufacturing company, travel management company (TMC), PSU, government department, or educational institution, <strong className="text-white">The Regaal</strong> offers customised corporate accommodation solutions designed around your business needs.
+                Whether you're a corporate organisation, manufacturing company, travel management company (TMC), PSU, government department, or educational institution, <strong className="text-white">Regaal Hotels</strong> offers customised corporate accommodation solutions designed around your business needs.
               </p>
 
               <div className="mt-8 space-y-5 border-t border-line pt-8">
@@ -430,7 +430,7 @@ export default function CorporateStaysPage() {
                       Inquiry Submitted Successfully!
                     </h4>
                     <p className="mt-2 text-sm text-white/80">
-                      Thank you for reaching out to The Regaal. Our Corporate Sales Manager will contact you shortly with custom corporate rate details.
+                      Thank you for reaching out to Regaal Hotels. Our Corporate Sales Manager will contact you shortly with custom corporate rate details.
                     </p>
                     <button
                       onClick={() => setSubmitted(false)}
