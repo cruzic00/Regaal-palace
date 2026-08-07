@@ -111,12 +111,22 @@ export default function Footer() {
           <ul className="space-y-3 text-sm">
             {usefulLinks.map((link) => (
               <li key={link.label}>
-                <Link
-                  to={link.to}
-                  className="transition-colors duration-300 hover:text-gold"
-                >
-                  {link.label}
-                </Link>
+                {/* A link with `href` points off-site, so it needs a plain
+                    anchor rather than a router Link. */}
+                {link.href ? (
+                  <a
+                    href={link.href}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="transition-colors duration-300 hover:text-gold"
+                  >
+                    {link.label}
+                  </a>
+                ) : (
+                  <Link to={link.to} className="transition-colors duration-300 hover:text-gold">
+                    {link.label}
+                  </Link>
+                )}
               </li>
             ))}
           </ul>

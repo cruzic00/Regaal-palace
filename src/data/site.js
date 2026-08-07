@@ -279,15 +279,18 @@ export const gallery = [
   '/images/1 (19).png',
 ]
 
+// Mirrors the header nav, plus the Regaal Spices brand link that lives in the
+// Our Brands dropdown.
 export const usefulLinks = [
   { label: 'Home', to: '/' },
-  { label: 'About Hotel', to: '/about' },
-  { label: 'Rooms & Suites', to: '/rooms' },
+  { label: 'About', to: '/about' },
+  { label: 'The Regaal', to: '/rooms' },
+  { label: 'Regaal Spices', href: 'https://regalchoice.in' },
   { label: 'Corporate Stays', to: '/corporate-stays' },
   { label: 'Meetings & Events', to: '/meetings-events' },
   { label: 'Gallery', to: '/gallery' },
   { label: 'Our Team', to: '/team' },
-  { label: 'Contact Us', to: '/contact' },
+  { label: 'Contact', to: '/contact' },
 ]
 
 export const departmentEmails = [
