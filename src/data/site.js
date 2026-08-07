@@ -52,7 +52,7 @@ export const nav = [
     label: 'Our Brands',
     to: '/rooms',
     children: [
-      { label: 'All Rooms', to: '/rooms' },
+      { label: 'The Regaal', to: '/rooms' },
       { label: 'Business Suite', to: '/rooms/double-suite-rooms' },
       { label: 'Executive Suite', to: '/rooms/delux-family-rooms' },
       { label: 'Premium Family Executive Room', to: '/rooms/suprior-bed-rooms' },
