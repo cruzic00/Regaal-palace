@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react'
-import { ChevronLeft, ChevronRight, Star } from 'lucide-react'
+import { ChevronLeft, ChevronRight } from 'lucide-react'
 import { slides } from '../data/site'
-import { Button } from './ui'
 
 const SLIDE_MS = 6000
 
