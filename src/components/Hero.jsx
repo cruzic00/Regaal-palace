@@ -47,38 +47,6 @@ export default function Hero() {
               } ${i === index && !sliding ? 'animate-ken-burns' : ''}`}
             />
             <div className="absolute inset-0 bg-scrim/55" />
-
-            <div
-              className={`absolute inset-0 flex items-center transition-[opacity,filter] duration-700 ${
-                i === index && !sliding ? 'opacity-100 blur-0' : 'opacity-0 blur-md'
-              }`}
-            >
-              <div className="container-x pt-20 text-center">
-                <div className="mb-6 flex justify-center gap-1.5">
-                  {Array.from({ length: 5 }).map((_, s) => (
-                    <Star key={s} className="size-4 fill-gold text-gold" />
-                  ))}
-                </div>
-                <p className="font-display text-xs tracking-[0.25em] text-white uppercase sm:text-sm sm:tracking-[0.3em]">
-                  
-                </p>
-                <h1 className="mx-auto mt-5 max-w-4xl font-display text-[1.4rem] leading-[1.25] font-bold tracking-wide text-white sm:text-5xl md:text-[52px] lg:text-6xl">
-                  {slide.headline.includes('Jalgaon') ? (
-                    <>
-                      Your Business Address in<br className="sm:hidden" /> Jalgaon.
-                    </>
-                  ) : (
-                    slide.headline
-                  )}
-                </h1>
-                <p className="mx-auto mt-5 max-w-2xl font-display text-lg font-semibold tracking-wide text-gold sm:text-xl lg:text-2xl">
-                  {slide.subline}
-                </p>
-                <Button to="/rooms" className="mt-9">
-                  Discover More
-                </Button>
-              </div>
-            </div>
           </div>
         ))}
       </div>
