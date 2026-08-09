@@ -29,14 +29,20 @@ export function jumpToTop() {
   else window.scrollTo(0, 0)
 }
 
-/** Scroll smoothly to a target element or selector. */
+// The header is fixed, so a section scrolled flush to the viewport top would sit
+// underneath it. Stop short by roughly its height.
+const HEADER_OFFSET = -110
+
+/** Scroll smoothly to a target element or selector, clearing the fixed header. */
 export function scrollToTarget(target) {
   if (!target) return
   if (lenis) {
-    lenis.scrollTo(target, { duration: 1.2 })
-  } else {
-    const el = typeof target === 'string' ? document.querySelector(target) : target
-    if (el) el.scrollIntoView({ behavior: 'smooth' })
+    lenis.scrollTo(target, { duration: 1.2, offset: HEADER_OFFSET })
+    return
   }
+  const el = typeof target === 'string' ? document.querySelector(target) : target
+  if (!el) return
+  const top = el.getBoundingClientRect().top + window.scrollY + HEADER_OFFSET
+  window.scrollTo({ top, behavior: 'smooth' })
 }
 

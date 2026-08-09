@@ -52,7 +52,8 @@ export const nav = [
   { label: 'About', to: '/about' },
   {
     label: 'Our Brands',
-    to: '#our-brands',
+    // Routes to the Rooms page, then scrolls to its Our Brands section.
+    to: '/rooms#our-brands',
     children: [
       { label: 'The Regaal', to: '/rooms' },
       // Ordering site; the home page card additionally deep-links Android to
