@@ -1,6 +1,5 @@
 import Hero from '../components/Hero'
 import About from '../sections/About'
-import BookingSection from '../sections/BookingSection'
 import Brands from '../sections/Brands'
 import BusinessBanner from '../sections/BusinessBanner'
 import EventsOverview from '../sections/EventsOverview'
@@ -13,7 +12,6 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <BookingSection />
       <Highlights />
       <Brands />
       <BusinessBanner />

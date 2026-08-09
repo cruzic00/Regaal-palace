@@ -2,6 +2,7 @@ import { useSearchParams } from 'react-router-dom'
 import PageHero from '../components/PageHero'
 import RoomCard from '../components/RoomCard'
 import Amenities from '../sections/Amenities'
+import BookingSection from '../sections/BookingSection'
 import { Reveal, SectionHeading } from '../components/ui'
 import { brand, rooms } from '../data/site'
 
@@ -23,6 +24,8 @@ export default function RoomsPage() {
         crumb="Rooms"
         image="/images/allrooms.jpeg"
       />
+
+      <BookingSection />
 
       <section className="pt-16 sm:pt-20 lg:pt-28">
         <div className="container-x">
