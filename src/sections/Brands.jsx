@@ -42,15 +42,17 @@ export default function Brands() {
                     href || to ? 'cursor-pointer' : ''
                   }`}
                 >
-                  {/* Both marks are 500x500, so sizing by width shows each one
-                      whole — no fixed height to clip against. */}
+                  {/* Both marks are square with generous padding, so a circular
+                      crop trims only empty backdrop. */}
                   <div className="flex w-full items-center justify-center">
-                    <img
-                      src={item.logo}
-                      alt={item.name}
-                      loading="lazy"
-                      className="h-auto w-full max-w-[240px] object-contain transition-transform duration-700 ease-out group-hover:scale-105 sm:max-w-[270px]"
-                    />
+                    <div className="aspect-square w-full max-w-[220px] overflow-hidden rounded-full sm:max-w-[250px]">
+                      <img
+                        src={item.logo}
+                        alt={item.name}
+                        loading="lazy"
+                        className="size-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                      />
+                    </div>
                   </div>
 
                   <h3 className="mt-6 font-display text-2xl font-medium text-white">{item.name}</h3>
