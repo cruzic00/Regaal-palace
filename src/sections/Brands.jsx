@@ -19,9 +19,6 @@ export default function Brands() {
           <h2 className="text-center font-display text-3xl leading-tight font-medium text-white sm:text-4xl lg:text-[44px]">
             Our Brands
           </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-center text-muted">
-            Two names, one standard of hospitality.
-          </p>
         </Reveal>
 
         <div className="mx-auto mt-12 grid max-w-4xl gap-8 sm:grid-cols-2 lg:mt-16">
