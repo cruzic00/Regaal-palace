@@ -10,7 +10,7 @@ export const brands = [
   {
     name: 'Regaal Hotels',
     blurb: 'Business stays, thoughtful hospitality and corporate-ready comfort in Jalgaon.',
-    logo: '/images/the-regaal-logo.png',
+    logo: '',
     to: '/rooms',
     cta: 'Explore Rooms',
   },
