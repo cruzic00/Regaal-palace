@@ -168,7 +168,7 @@ export const facilities = [
   {
     no: '01',
     tag: 'Food',
-    title: 'The Restaurant Center',
+    title: 'Regaal Spice',
     image: '/images/resturent1.jpeg',
   },
   {
