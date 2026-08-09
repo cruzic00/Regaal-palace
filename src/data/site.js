@@ -10,14 +10,14 @@ export const brands = [
   {
     name: 'Regaal Hotels',
     blurb: 'Business stays, thoughtful hospitality and corporate-ready comfort in Jalgaon.',
-    logo: '',
+    logo: '/images/.png',
     to: '/rooms',
     cta: 'Explore Rooms',
   },
   {
     name: 'Regaal Spices',
     blurb: 'Multi-cuisine dining and live kitchens, served with the same regal standard.',
-    logo: '/images/spices-logo.png',
+    logo: '/images/logohotel.png',
     cta: 'Click to Order',
     // Android goes to the Play Store app; everything else (iOS, desktop) to the
     // ordering site.
