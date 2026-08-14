@@ -12,6 +12,7 @@ import Home from './pages/Home'
 import MeetingsEventsPage from './pages/MeetingsEventsPage'
 import RoomDetail from './pages/RoomDetail'
 import RoomsPage from './pages/RoomsPage'
+import SpicesPage from './pages/SpicesPage'
 import TeamPage from './pages/TeamPage'
 import Brands from './sections/Brands'
 
@@ -50,6 +51,7 @@ export default function App() {
           <Route path="/about" element={<AboutPage />} />
           <Route path="/rooms" element={<RoomsPage />} />
           <Route path="/rooms/:slug" element={<RoomDetail />} />
+          <Route path="/spices" element={<SpicesPage />} />
           <Route path="/corporate-stays" element={<CorporateStaysPage />} />
           <Route path="/meetings-events" element={<MeetingsEventsPage />} />
           <Route path="/gallery" element={<GalleryPage />} />

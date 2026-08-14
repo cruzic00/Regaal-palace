@@ -18,13 +18,20 @@ export const brands = [
     name: 'Regaal Spices',
     blurb: 'Multi-cuisine dining and live kitchens, served with the same regal standard.',
     logo: '/images/logowhite1.jpeg',
-    cta: 'Click to Order',
-    // Android goes to the Play Store app; everything else (iOS, desktop) to the
-    // ordering site.
-    androidUrl: 'https://play.google.com/store/apps/details?id=innewregalpalace.thrivenow.app',
-    webUrl: 'https://regalchoice.in',
+    to: '/spices',
+    cta: 'Explore Dining',
   },
 ]
+
+// Ordering links for Regaal Spices. Android opens the app; everything else
+// (iOS, desktop) goes to the ordering site.
+export const spicesOrder = {
+  androidUrl: 'https://play.google.com/store/apps/details?id=innewregalpalace.thrivenow.app',
+  webUrl: 'https://regalchoice.in',
+}
+
+// Dish photography for the Regaal Spices gallery.
+export const spicesGallery = Array.from({ length: 19 }, (_, i) => `/images/1 (${i + 1}).png`)
 
 const img = (id, w = 1600) =>
   `https://images.unsplash.com/photo-${id}?auto=format&fit=crop&w=${w}&q=80`
@@ -56,9 +63,7 @@ export const nav = [
     to: '/rooms#our-brands',
     children: [
       { label: 'The Regaal', to: '/rooms' },
-      // Ordering site; the home page card additionally deep-links Android to
-      // the Play Store app.
-      { label: 'Regaal Spices', href: 'https://regalchoice.in' },
+      { label: 'Regaal Spices', to: '/spices' },
     ],
   },
   { label: 'Corporate Stays', to: '/corporate-stays' },
