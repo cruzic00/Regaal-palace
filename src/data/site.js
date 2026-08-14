@@ -293,7 +293,7 @@ export const usefulLinks = [
   { label: 'Home', to: '/' },
   { label: 'About', to: '/about' },
   { label: 'The Regaal', to: '/rooms' },
-  { label: 'Regaal Spices', href: 'https://regalchoice.in' },
+  { label: 'Regaal Spices', to: '/spices' },
   { label: 'Corporate Stays', to: '/corporate-stays' },
   { label: 'Meetings & Events', to: '/meetings-events' },
   { label: 'Gallery', to: '/gallery' },
