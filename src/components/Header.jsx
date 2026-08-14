@@ -103,7 +103,7 @@ export default function Header() {
     setOpen(false)
   }, [pathname])
 
-  // Prevent background scrolling when mobile menu is open.
+  // Prevent background scrolling when mobile menu is openfg.
   useEffect(() => {
     if (open) {
       document.body.style.overflow = 'hidden'
