@@ -5,6 +5,14 @@
  * instead so it can't race the React tree and so every caller shares one URL
  * builder. The query string matches their documented format exactly.
  */
+/**
+ * ⚠️ This URL currently resolves to KeyIO's demo property (Polo Hotel,
+ * Agartala), not Regaal — the snippet KeyIO supplied carries the property id
+ * only in the widget's element id ("kbe-widget-13"), never in the link itself.
+ * Verified that `?propertyId=13` is ignored and `/13` 404s, so the correct
+ * property URL has to come from KeyIO. Swap this one constant when they send
+ * it; every button on the site reads from here.
+ */
 const BOOKING_URL = 'https://internal-be.keyio.ai'
 
 /** Set true to open the engine in a new tab instead of navigating away. */
