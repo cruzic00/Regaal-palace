@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { Link, NavLink, useLocation } from 'react-router-dom'
 import { BedDouble, Briefcase, ChevronDown, Menu, X } from 'lucide-react'
 import { nav } from '../data/site'
+import { bookingUrl } from '../lib/booking'
 import { scrollToTarget } from '../lib/smoothScroll'
 import Logo from './Logo'
 
@@ -134,7 +135,7 @@ export default function Header() {
           <div className="flex items-center gap-1.5 sm:gap-2 shrink-0">
             {/* Desktop / Tablet text buttons */}
             <a
-              href="mailto:reservations@regaalpalace.com?subject=Room Booking Enquiry"
+              href={bookingUrl()}
               className="hidden border border-gold bg-gold px-2.5 py-1.5 font-display text-[9px] font-semibold tracking-[0.05em] whitespace-nowrap text-on-gold uppercase transition-colors duration-300 hover:bg-transparent hover:text-gold sm:inline-block xl:px-3.5 xl:py-2 xl:text-[11px] xl:tracking-[0.08em]"
             >
               Book Your Stay
@@ -149,7 +150,7 @@ export default function Header() {
 
             {/* Mobile icon buttons */}
             <a
-              href="mailto:reservations@regaalpalace.com?subject=Room Booking Enquiry"
+              href={bookingUrl()}
               title="Book Your Stay"
               aria-label="Book Your Stay"
               className="flex size-8.5 items-center justify-center rounded-sm border border-gold bg-gold text-on-gold transition-colors hover:bg-transparent hover:text-gold sm:hidden"
@@ -254,7 +255,7 @@ export default function Header() {
         {/* Mobile Footer CTA */}
         <div className="space-y-2.5 border-t border-white/10 pt-5">
           <a
-            href="mailto:reservations@regaalpalace.com?subject=Room Booking Enquiry"
+            href={bookingUrl()}
             onClick={() => setOpen(false)}
             className="block w-full bg-gold py-3 text-center font-display text-xs font-semibold tracking-[0.15em] text-on-gold uppercase transition-colors hover:bg-white"
           >
