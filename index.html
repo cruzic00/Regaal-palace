@@ -19,5 +19,47 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+
+    <!-- KeyIO Booking Engine Integration Script — pasted as supplied by KeyIO.
+         Defines window.KeyIOBooking.book(); src/lib/booking.js calls it.
+         When KeyIO sends an updated snippet, replace this block only. -->
+    <script>
+      /**
+       * KeyIO Booking Engine Integration Script
+       * Property: 13
+       * Booking Engine: https://internal-be.keyio.ai
+       */
+      ;(function () {
+        var BOOKING_URL = 'https://internal-be.keyio.ai'
+        var OPEN_NEW_TAB = false
+
+        window.KeyIOBooking = {
+          url: BOOKING_URL,
+          book: function (params) {
+            if (!params || !params.checkIn || !params.checkOut) {
+              console.error('[KeyIOBooking] checkIn and checkOut are required.')
+              return
+            }
+            var qs =
+              'checkIn=' +
+              encodeURIComponent(params.checkIn) +
+              '&checkOut=' +
+              encodeURIComponent(params.checkOut) +
+              '&adults=' +
+              (parseInt(params.adults, 10) || 1) +
+              '&children=' +
+              (parseInt(params.children, 10) || 0) +
+              '&infants=' +
+              (parseInt(params.infants, 10) || 0)
+            var target = BOOKING_URL + '?' + qs
+            if (OPEN_NEW_TAB) {
+              window.open(target, '_blank')
+            } else {
+              window.location.href = target
+            }
+          },
+        }
+      })()
+    </script>
   </body>
 </html>
