@@ -6,13 +6,18 @@
  * builder. The query string matches their documented format exactly.
  */
 /**
- * ⚠️ This URL currently resolves to KeyIO's demo property (Polo Hotel,
- * Agartala), not Regaal — the snippet KeyIO supplied carries the property id
- * only in the widget's element id ("kbe-widget-13"), never in the link itself.
- * Verified that `?propertyId=13` is ignored and `/13` 404s, so the correct
- * property URL has to come from KeyIO. Swap this one constant when they send
- * it; every button on the site reads from here.
+ * ⚠️ NEEDS THE REAL PROPERTY URL FROM KEYIO.
+ *
+ * This host always resolves to KeyIO's demo property (Polo Hotel, Agartala).
+ * It accepts no property identifier: ?propertyId, ?hotelId, ?propertyCode and
+ * ?property are all silently ignored, and /<id> paths 404 — tested with both
+ * the widget id (13) and the property id (35600020).
+ *
+ * So the fix is a different host/path, not an extra parameter. Swap this one
+ * constant once KeyIO supplies it; every booking button reads from here and the
+ * date/occupancy query string below is already in their documented format.
  */
+const PROPERTY_ID = '35600020'
 const BOOKING_URL = 'https://internal-be.keyio.ai'
 
 /** Set true to open the engine in a new tab instead of navigating away. */
