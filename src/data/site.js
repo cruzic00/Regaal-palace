@@ -310,9 +310,9 @@ export const departmentEmails = [
 ]
 
 export const manager = {
-  name: 'Arindam Roy Chowdhury',
-  role: 'Group General Manager',
-  avatar: '/images/manager1.jpeg',
+  name: 'Nandu Chaudhari',
+  role: 'Managing Director',
+  avatar: '/images/nandhu.jpeg',
   quote:
     '“The Regaal Jalgaon delivers an elevated hospitality experience, blending refined comfort, impeccable service, and contemporary amenities for both corporate and leisure travellers.”',
   image: '/images/back1.jpeg',
@@ -348,12 +348,6 @@ export const team = [
     role: 'Managing Director',
      focus: 'Business strategy',
     photo: '/images/vinod.jpeg',
-  },
-  {
-    name: 'Arindam Roy Chowdhury',
-    role: 'Corporate General Manager',
-    focus: 'Operations & Business Development',
-    photo: '/images/arindam.jpeg',
   },
   {
     name: 'Dipak Mandal',
