@@ -11,7 +11,7 @@ export const brands = [
     name: 'The Regaal',
     blurb: 'Business stays, thoughtful hospitality and corporate-ready comfort in Jalgaon.',
     logo: '/images/logowhite2.jpeg',
-    to: '/rooms',
+    to: '/rooms#room-suites',
     cta: 'Explore Rooms',
   },
   {

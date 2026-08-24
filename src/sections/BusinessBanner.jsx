@@ -1,4 +1,6 @@
+import { useLocation } from 'react-router-dom'
 import { Button, Reveal } from '../components/ui'
+import { scrollLinkClick } from '../lib/smoothScroll'
 
 const stats = [
   { value: '24 / 7', label: 'Room Service' },
@@ -6,6 +8,8 @@ const stats = [
 ]
 
 export default function BusinessBanner() {
+  const { pathname } = useLocation()
+
   return (
     <section className="bg-ink-soft py-16 sm:py-20 lg:py-32">
       <div className="container-x grid items-center gap-14 lg:grid-cols-2 lg:gap-20">
@@ -20,7 +24,11 @@ export default function BusinessBanner() {
 
           
 
-          <Button to="/rooms" className="mt-10">
+          <Button
+            to="/rooms#room-suites"
+            onClick={scrollLinkClick('/rooms#room-suites', pathname)}
+            className="mt-10"
+          >
             Explore Rooms
           </Button>
         </Reveal>

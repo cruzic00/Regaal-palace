@@ -1,10 +1,13 @@
 import { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import { ArrowUpRight } from 'lucide-react'
 import { Reveal } from '../components/ui'
 import { brands } from '../data/site'
+import { scrollLinkClick } from '../lib/smoothScroll'
 
 export default function Brands() {
+  const { pathname } = useLocation()
+
   // Resolved after mount so the rendered href is a real URL you can copy or
   // open in a new tab, rather than a click-time redirect.
   const [isAndroid, setIsAndroid] = useState(false)
@@ -31,7 +34,11 @@ export default function Brands() {
             const cardProps = isExternal
               ? { href, target: '_blank', rel: 'noreferrer', 'aria-label': `${item.cta ?? 'Open'} — ${item.name}` }
               : to
-              ? { to, 'aria-label': `${item.cta ?? 'Explore'} — ${item.name}` }
+              ? {
+                  to,
+                  onClick: scrollLinkClick(to, pathname),
+                  'aria-label': `${item.cta ?? 'Explore'} — ${item.name}`,
+                }
               : {}
 
             return (

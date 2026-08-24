@@ -46,3 +46,23 @@ export function scrollToTarget(target) {
   window.scrollTo({ top, behavior: 'smooth' })
 }
 
+/**
+ * Click handler for a `<Link to="/path#hash">` that may point at the page
+ * already on screen. React Router only re-runs the route-level scroll effect
+ * when the location actually changes — if you're already on that path, a
+ * second click leaves the hash unchanged, so nothing would scroll. This
+ * catches that case and scrolls directly; a real cross-page click is left
+ * alone so the normal route-change scroll (in App.jsx) handles it.
+ */
+export function scrollLinkClick(to, currentPathname) {
+  const hashIndex = to.indexOf('#')
+  if (hashIndex === -1) return undefined
+  const path = to.slice(0, hashIndex) || '/'
+  if (path !== currentPathname) return undefined
+  const hash = to.slice(hashIndex)
+  return (e) => {
+    e.preventDefault()
+    scrollToTarget(hash)
+  }
+}
+

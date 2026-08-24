@@ -50,7 +50,7 @@ export default function RoomsPage() {
 
       <Amenities />
 
-      <section className="pb-16 sm:pb-20 lg:pb-28">
+      <section id="room-suites" className="pb-16 sm:pb-20 lg:pb-28">
         <div className="container-x">
           <Reveal>
             <SectionHeading title={`${brand.name} Rooms & Suites`} blurb={roomsIntro} />
