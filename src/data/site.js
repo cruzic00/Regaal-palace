@@ -65,7 +65,9 @@ export const nav = [
     label: 'Home',
     to: '/',
   },
-  { label: 'About', to: '/about' },
+  // Hidden from the nav for now — the /about page and route are still live,
+  // just not linked. Uncomment to bring the link back.
+  // { label: 'About', to: '/about' },
   {
     label: 'Our Brands',
     // Routes to the Rooms page, then scrolls to its Our Brands section.
