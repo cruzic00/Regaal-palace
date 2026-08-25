@@ -30,8 +30,17 @@ export const spicesOrder = {
   webUrl: 'https://regalchoice.in',
 }
 
-// Dish photography for the Regaal Spices gallery.
-export const spicesGallery = Array.from({ length: 19 }, (_, i) => `/images/1 (${i + 1}).png`)
+// "From Our Kitchen" gallery on the Spices page - dish photography only.
+export const spicesGallery = [
+  '/images/1 (1).png',
+  '/images/1 (2).png',
+  '/images/1 (3).png',
+  '/images/1 (4).png',
+
+  '/images/1 (9).png',
+  '/images/1 (17).png',
+  
+]
 
 const img = (id, w = 1600) =>
   `https://images.unsplash.com/photo-${id}?auto=format&fit=crop&w=${w}&q=80`
