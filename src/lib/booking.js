@@ -2,16 +2,9 @@
  * Thin wrapper over KeyIO's integration script (pasted verbatim in index.html,
  * which defines window.KeyIOBooking). Calling through the vendor global keeps
  * index.html the single place to update when KeyIO sends a new snippet; the
- * constants below are only a fallback for when the script hasn't loaded.
- *
- * ⚠️ NEEDS THE REAL PROPERTY URL FROM KEYIO.
- * The supplied host always resolves to KeyIO's demo property (Polo Hotel,
- * Agartala) and accepts no property identifier: ?propertyId, ?hotelId,
- * ?propertyCode and ?property are all silently ignored, and /<id> paths 404 —
- * tested with both the widget id (13) and the property id (35600020). So the
- * fix is a different host, not an extra parameter.
+ * constant below is only a fallback for when the script hasn't loaded.
  */
-const FALLBACK_URL = 'https://internal-be.keyio.ai'
+const FALLBACK_URL = 'https://booking.regaalpalace.in'
 
 /** The engine's base URL — the vendor script's value wins if it has loaded. */
 export function engineUrl() {

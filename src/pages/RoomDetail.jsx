@@ -1,13 +1,19 @@
+import { useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { BedDouble, Check, Maximize, Users } from 'lucide-react'
 import PageHero from '../components/PageHero'
 import RoomCard from '../components/RoomCard'
 import { Button } from '../components/ui'
 import { amenities, rooms } from '../data/site'
+import { book } from '../lib/booking'
+
+const today = new Date().toISOString().slice(0, 10)
+const tomorrow = new Date(Date.now() + 864e5).toISOString().slice(0, 10)
 
 export default function RoomDetail() {
   const { slug } = useParams()
   const room = rooms.find((r) => r.slug === slug)
+  const [dates, setDates] = useState({ checkIn: today, checkOut: tomorrow })
 
   if (!room) {
     return (
@@ -72,10 +78,16 @@ export default function RoomDetail() {
               <span className="ml-2 text-sm text-muted">/ Night</span>
             </p>
 
-            <form onSubmit={(e) => e.preventDefault()} className="mt-8 space-y-4">
+            <form
+              onSubmit={(e) => {
+                e.preventDefault()
+                book({ checkIn: dates.checkIn, checkOut: dates.checkOut })
+              }}
+              className="mt-8 space-y-4"
+            >
               {[
-                { id: 'in', label: 'Check In', type: 'date' },
-                { id: 'out', label: 'Check Out', type: 'date' },
+                { id: 'checkIn', label: 'Check In' },
+                { id: 'checkOut', label: 'Check Out' },
               ].map((field) => (
                 <div key={field.id}>
                   <label
@@ -86,12 +98,17 @@ export default function RoomDetail() {
                   </label>
                   <input
                     id={field.id}
-                    type={field.type}
+                    type="date"
+                    min={field.id === 'checkOut' ? dates.checkIn : undefined}
+                    value={dates[field.id]}
+                    onChange={(e) => setDates((d) => ({ ...d, [field.id]: e.target.value }))}
                     className="w-full border border-line bg-transparent px-4 py-3 text-sm text-white focus:border-gold focus:outline-none"
                   />
                 </div>
               ))}
-              <Button className="w-full">Book This Room</Button>
+              <Button type="submit" className="w-full">
+                Book This Room
+              </Button>
             </form>
 
             <p className="mt-5 text-center text-xs text-faint">
